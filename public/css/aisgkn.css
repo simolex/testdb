@@ -1,0 +1,206 @@
+*
+{
+	font-family:"Tahoma";
+	font-size:10pt;
+}
+
+body
+{
+	background-color:#f0efed;
+	color:#000000;
+	margin:0;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+table.invisible td
+{
+	border: none;
+}
+
+td,th
+{
+	border: 1px solid #7C7C7C;
+	padding-left: 1mm;
+	padding-right: 1mm;
+}
+
+td
+{
+	background-color:#faf9f7;
+}
+
+th
+{
+	background-color:#425e85;
+	color:#FFFFFF;
+}
+
+table.hover_track tr:hover td
+{
+	background-color:#DADADA;
+}
+
+th.head_l
+{
+	background-color:#DADADA;
+	color:#000000;
+	text-align:left;
+}
+
+th.head_r
+{
+	background-color:#DADADA;
+	color:#000000;
+	text-align:right;
+}
+
+td.r
+{
+	text-align:right;
+}
+
+p
+{
+}
+
+h1
+{
+	background-color:#425e85;
+	padding:0.2cm;
+	margin:0 0 0.2cm 0;
+	color:#FFFFFF;
+	font-size:200%;
+}
+
+h2
+{
+	margin:0.5cm 0 0.2cm 0;
+	font-size:150%;
+	border-bottom:1px solid #7C7C7C;
+}
+
+h3
+{
+	margin:0.5cm 0 0.2cm 0;
+	font-size:120%;
+	border-bottom:1px solid #7C7C7C;
+}
+
+h4
+{
+	margin:0.5cm 0 0 0;
+}
+
+input, select
+{
+	border:1px solid #7C7C7C;
+}
+
+input.date
+{
+	background: url(../img/small/calendar.png) no-repeat right center #FFF;
+}
+
+option.splitter
+{
+	background-color:#CCC;
+	font-weight: bold;
+}
+
+a img
+{
+	border:0;
+}
+
+img.hover_track:hover
+{
+	cursor: pointer;
+}
+
+.archive {color:#5555BB;}
+.street {color:#777777;}
+.main {padding:0.2cm;}
+.subdiv{padding:0 0.2cm 0 0.2cm;}
+
+.bar
+{
+	background:#CCFFAA;
+	text-align:center;
+	border-color:#EEFFCC #88BB66 #88BB66 #EEFFCC;
+	border-style:outset;
+}
+
+.bar2
+{
+	background:#FFCCAA;
+	text-align:center;
+	border-color:#FFEECC #BB8866 #BB8866 #FFEECC;
+	border-style:outset;
+}
+td.dis {background-color:#AAAAAA;}
+td.black {background-color:#000000;}
+
+#title_add {color: #FF0000; font-size: 100%}
+
+a {
+	margin:0.5cm 0 0.2cm 0;
+	font-size: 120%;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.area {
+	color: blue;
+	font-size: 100%;
+}
+
+/* ------------------- tooltips style -----------------------------*/
+    
+    .tooltip:hover span{
+    	display:block;
+    	transform-origin: 100% 0%;
+    
+    	-webkit-animation: fadeIn 0.3s ease-in-out;
+    	animation: fadeIn 0.3s ease-in-out;
+    
+    }
+    
+    .tooltip span{
+    	display: none;
+    	text-align: left;
+    	background-color: #1E2021;
+    	padding: 5px;
+    	width: 200px;
+    	position: absolute;
+    	border-radius: 3px;
+    	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    	left: -4px;
+    	color: #FFF;
+    	font-size: 13px;
+    	line-height: 1.4;
+    }
+    
+    .tooltip span:before{
+    	position: absolute;
+    	content: '';
+    	width:0;
+    	height: 0;
+    	border:6px solid transparent;
+    	border-bottom-color:#1E2021;
+    	left:10px;
+    	top:-12px;
+    }
+    
+    .tooltip span:after{
+    	width:100%;
+    	height:40px;
+    	content:'';
+    	position: absolute;
+    	top:-40px;
+    	left:0;
+    }
+/* ------------------- END (tooltips style) -----------------------------*/
