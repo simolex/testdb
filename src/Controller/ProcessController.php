@@ -76,6 +76,10 @@ class ProcessController extends AbstractController
      */
     public function index()
     {
+        $rowsProcess=[];
+        $currentRowProcess=[];
+        $rowsStages=[];
+
         $this->connect_ais = $this->connect();
 
 
@@ -96,7 +100,7 @@ class ProcessController extends AbstractController
             //$proc_form_stage = $t[1];
             //$proc_form_status = $t[2];
         }
-        else $proc_recheck='0';
+        else $proc_recheck=null;
 
         $q = $this->query_exec(0,"select t.*, vb.ver_type || ' - ' || vb.attr as type_ver, vb.block_type,level
                         from OTHERGKN.VER_PROCESS t, OTHERGKN.VER_BLOCKS vb
@@ -110,6 +114,9 @@ class ProcessController extends AbstractController
         $html = '';
 
         while (($row = oci_fetch_array($q, OCI_ASSOC+OCI_RETURN_NULLS)) != null) {
+
+
+
             $html_row = '';
             //echo "<tr>";
             $i = $row['ID'];
@@ -117,15 +124,24 @@ class ProcessController extends AbstractController
             $proc_ver_block[$i] = $row['ID_VER_BLOCK'];
             $proc_block_type[$i] = $row['BLOCK_TYPE'];
 
+            $rowsProcess[]=$row;
+
+            //-----------------------------------------
+
             $proc_note[$i] = $row['NOTE'];
             if($row['LEVEL']==1)
-                $html_row .= "<td colspan = 2>".$proc_note[$i]."</td>";
+                //$html_row .= "<td colspan = 2>".$proc_note[$i]."</td>";
+                $currentRowProcess[] = [$proc_note[$i], 'colspan'=>2];
             else{
-                $html_row .= '<td width="10px" align="center">&deg;</td><td>'.$proc_note[$row['PARENT_ID']].$row['NOTE']."</td>";
+                $currentRowProcess[] = ['&#42774;'];
+                $currentRowProcess[] = [$proc_note[$row['PARENT_ID']].$row['NOTE']];
+                //$html_row .= '<td width="10px" align="center">&#42774;</td><td>'.$proc_note[$row['PARENT_ID']].$row['NOTE']."</td>";
+
             }
 
             $proc_type[$i] = $row['TYPE_VER'];
-            $html_row .= "<td>".$proc_type[$i]."</td>";
+            //$html_row .= "<td>".$proc_type[$i]."</td>";
+            $currentRowProcess[] = [$proc_type[$i]];
 
             $vps = $this->query_exec(0,"
                     select vps.*
@@ -144,36 +160,38 @@ class ProcessController extends AbstractController
                 $vps_array[$vps_row['STAGE_ID']]=$vps_row;
             }
             oci_free_statement($vps);
+            $rowsStages[$i] = $vps_array;
+
 
             $prev_stage = -1;
             $proc_state = '';
             foreach($vbs_array as $key => $vbs_value){
                 if(array_key_exists($key, $vps_array)){
                     if($vps_array[$key]['STATUS'] == 1) {
-                        $v_status = '<img src="./img/ball_greenS.gif" title="'.$vbs_value['PUB_NAME'].' [Стадия завершена]'.'">';
+                        $v_status = '<img src="img/ball_greenS.gif" title="'.$vbs_value['PUB_NAME'].' [Стадия завершена]'.'">';
                         $prev_stage = 1;
                     }
                     else {
-                        $v_status = '<img src="./img/ball_yellowS.gif" title="'.$vbs_value['PUB_NAME'].' [Идет обработка]'.'">';
+                        $v_status = '<img src="img/ball_yellowS.gif" title="'.$vbs_value['PUB_NAME'].' [Идет обработка]'.'">';
                         $proc_state = '/'.$key.'/w';
                         $prev_stage = 0;
                     }
                 }
                 else {
                     if($prev_stage == 1){
-                        $v_status = '<img src="./img/ball_blueS.gif" title="'.$vbs_value['PUB_NAME'].' [Текущая стадия]'.'">';
+                        $v_status = '<img src="img/ball_blueS.gif" title="'.$vbs_value['PUB_NAME'].' [Текущая стадия]'.'">';
                         $proc_state = '/'.$key.'/r';
                         $prev_stage = 0;
                     }
                     else{
-                        $v_status = '<img src="./img/ball_redS.gif" title="'.$vbs_value['PUB_NAME'].' [Последующая стадия]'.'">';
+                        $v_status = '<img src="img/ball_redS.gif" title="'.$vbs_value['PUB_NAME'].' [Последующая стадия]'.'">';
                         $prev_stage = 0;
                     }
                 }
                 $html_row .= "<td>".$v_status."</td>";
             }
 
-            $html =  "<tr>".
+            $html .=  "<tr>".
                 '<td><input onchange="this.form.submit()" type="radio" name="proc_num" value="'.$i.$proc_state.'/'.$row['PARENT_ID'].'" '.(($proc_recheck==$i)?'checked':'').' /></td>'.
                     $html_row.
                     "<tr>";
@@ -187,6 +205,9 @@ class ProcessController extends AbstractController
         return $this->render('process/index.html.twig', [
             'controller_name' => 'NormalizationController',
             'thProcess' => $this->thProcess,
+            'trProcess' => $rowsProcess,
+            'stagesProcess' => $rowsStages,
+            'allStages' => $vbs_array,
             'html' => $html,
         ]);
     }

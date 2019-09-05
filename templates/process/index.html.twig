@@ -6,15 +6,40 @@
 	<div class="subdiv">
 	<form enctype="multipart/form-data" method="post" action="index.php#start">
 		<table>
-			{% for oneThProcess in thProcess %}
-		        <th {% if oneThProcess['colspan'] is defined %} colspan={{ oneThProcess['colspan'] }} {% endif %}>
-				{{ oneThProcess[0] }}</th>
+			<tr>
+				{% for oneThProcess in thProcess %}
+			        <th {% if oneThProcess['colspan'] is defined %} colspan={{ oneThProcess['colspan'] }} {% endif %}>
+					{{ oneThProcess[0] }}</th>
+			    {% endfor %}
+			</tr>
+
+		    {% for oneTrProcess in trProcess %}
+		    	{% set id = oneTrProcess.ID %}
+		    	<tr>
+			    	{% if oneTrProcess.LEVEL == 1 %}
+			        	<td colspan = 2> {{ oneTrProcess.NOTE|convert_encoding(_charset,'cp1251') }} </td>
+			        	{% set parentNote = oneTrProcess.NOTE|convert_encoding(_charset,'cp1251') %}
+			        {% else  %}
+						<td width="10px" align="center">&#42774;</td>
+						<td> {{ parentNote }} {{ oneTrProcess.NOTE|convert_encoding(_charset,'cp1251') }}</td>
+			        {% endif %}
+
+					<td>{{ oneTrProcess.TYPE_VER|convert_encoding(_charset,'cp1251') }}</td>
+
+				{% set vps_array = attribute(stagesProcess,id) %}
+
+				{% for key, vbs_value in allStages %}
+
+				{% endfor %}
+
+		    	</tr>
 		    {% endfor %}
-		    {{ html|convert_encoding('utf-8','cp1251')|raw }}
+
+		   {# {{ html|raw }} |convert_encoding('utf-8','cp1251')#}
 		</table>
 		</div>
 
 
-			&#42774;
+
 
 {% endblock %}
