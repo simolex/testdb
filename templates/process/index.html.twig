@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HelpController!{% endblock %}
+
+{% block process %}
+	<div class="subdiv">
+	<form enctype="multipart/form-data" method="post" action="index.php#start">
+		<table>
+			{% for oneThProcess in thProcess %}
+		        <th {% if oneThProcess['colspan'] is defined %} colspan={{ oneThProcess['colspan'] }} {% endif %}>
+				{{ oneThProcess[0] }}</th>
+		    {% endfor %}
+		    {{ html|convert_encoding('utf-8','cp1251')|raw }}
+		</table>
+		</div>
+
+
+			&#42774;
+
+{% endblock %}
