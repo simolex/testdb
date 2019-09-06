@@ -14,7 +14,9 @@
 			</tr>
 
 		    {% for oneTrProcess in trProcess %}
+
 		    	{% set id = oneTrProcess.ID %}
+
 		    	<tr>
 			    	{% if oneTrProcess.LEVEL == 1 %}
 			        	<td colspan = 2> {{ oneTrProcess.NOTE|convert_encoding(_charset,'cp1251') }} </td>
@@ -26,12 +28,49 @@
 
 					<td>{{ oneTrProcess.TYPE_VER|convert_encoding(_charset,'cp1251') }}</td>
 
-				{% set vps_array = attribute(stagesProcess,id) %}
+					{% set prevStage = -2 %}
+					{% for oneStage in oneTrProcess.ST %}
+						{% if oneStage.STATUS is defined  %}
+							{% if oneStage.STATUS == 1 %}
+								<td>
+									<img
+										src="{{ asset('img/ball_greenS.gif') }}"
+										title="{{ oneStage.PUB_NAME|convert_encoding(_charset,'cp1251') }} [Стадия завершена]"
+									>
+								</td>
+							{% else %}
+								<td>
+									<img
+										src="{{ asset('img/ball_yellowS.gif') }}"
+										title="{{ oneStage.PUB_NAME|convert_encoding(_charset,'cp1251') }} [Идет обработка]"
+									>
+								</td>
+							{% endif %}
 
-				{% for key, vbs_value in allStages %}
-
-				{% endfor %}
-
+							{% set prevStage =  oneStage.STATUS %}
+						{% else %}
+							{% if prevStage == -2 %}
+								<td width="10px" align="center">&#42774;</td>
+							{% elseif prevStage == 1%}
+								<td>
+									<img
+										src="{{ asset('img/ball_blueS.gif') }}"
+										title="{{ oneStage.PUB_NAME|convert_encoding(_charset,'cp1251') }} [Текущая стадия]"
+									>
+								</td>
+								{% set prevStage = -1 %}
+							{% elseif prevStage == 0 or prevStage == -1 %}
+								<td>
+									<img
+										src="{{ asset('img/ball_redS.gif') }}"
+										title="{{ oneStage.PUB_NAME|convert_encoding(_charset,'cp1251') }} [Последующая стадия]"
+									>
+								</td>
+							{% else %}
+								<td> - </td>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
 		    	</tr>
 		    {% endfor %}
 

@@ -11,6 +11,7 @@ class ProcessController extends AbstractController
     // no-refactoring data
     private $db;
     private $connect_ais;
+    private $vbs_array = [];
 
 
     private $date_uchet_begin = '03.04.2000';
@@ -85,9 +86,9 @@ class ProcessController extends AbstractController
 
         $vbs = $this->query_exec(0,"select vbs.* from OTHERGKN.VER_BLOCK_STAGES vbs
                             where vbs.id_bl_type = :id_bl order by vbs.orders", array('id_bl' => 201));
-        $vbs_array = array();
+        //$vbs_array = array();
         while(($vbs_row = oci_fetch_array($vbs, OCI_ASSOC+OCI_RETURN_NULLS)) != null){
-            $vbs_array[$vbs_row['ORDERS']]=$vbs_row;
+            $this->vbs_array['ord'.$vbs_row['ORDERS']]=$vbs_row;
         }
         oci_free_statement($vbs);
 
@@ -123,6 +124,7 @@ class ProcessController extends AbstractController
             //echo '<td><input onchange="this.form.submit()" type="radio" name="proc_num" value="'.$proc_id_tag[$i].'" '.(($proc_recheck==$proc_id_tag[$i])?'checked':'').' /></td>';
             $proc_ver_block[$i] = $row['ID_VER_BLOCK'];
             $proc_block_type[$i] = $row['BLOCK_TYPE'];
+            $row['ST'] = $this->getStagesProcess($i, '201');
 
             $rowsProcess[]=$row;
 
@@ -143,6 +145,32 @@ class ProcessController extends AbstractController
             //$html_row .= "<td>".$proc_type[$i]."</td>";
             $currentRowProcess[] = [$proc_type[$i]];
 
+/*
+
+            $html .=  "<tr>".
+                '<td><input onchange="this.form.submit()" type="radio" name="proc_num" value="'.$i.$proc_state.'/'.$row['PARENT_ID'].'" '.(($proc_recheck==$i)?'checked':'').' /></td>'.
+                    $html_row.
+                    "<tr>";*/
+            //$i++;
+        }
+        $html .= '<tr><td><input onchange="this.form.submit()" type="radio" name="proc_num" value="0" '.(($proc_recheck=='0')?'checked':'').' /></td><td colspan = 2>Добавить задание</td></tr>';
+        $html .= "</table>";
+        oci_free_statement($q);
+
+
+        return $this->render('process/index.html.twig', [
+            'controller_name' => 'NormalizationController',
+            'thProcess' => $this->thProcess,
+            'trProcess' => $rowsProcess,
+            'stagesProcess' => $rowsStages,
+            'allStages' => $this->vbs_array,
+            'html' => $html,
+        ]);
+    }
+
+
+    private function getStagesProcess (int $nProcess, string $typeBlock = '201')
+    {
             $vps = $this->query_exec(0,"
                     select vps.*
                       from OTHERGKN.VER_PROC_STAGES vps,
@@ -153,19 +181,20 @@ class ProcessController extends AbstractController
                        and vp.id_ver_block = vb.id
                        and vb.block_type = :bl_type
                     order by vps.stage_id, vps.status desc
-                    ", array('proc_id' => $i, 'bl_type' => 201));
+                    ", array('proc_id' => $nProcess, 'bl_type' => $typeBlock));
 
             $vps_array = array();
             while(($vps_row = oci_fetch_array($vps, OCI_ASSOC+OCI_RETURN_NULLS)) != null){
-                $vps_array[$vps_row['STAGE_ID']]=$vps_row;
+                $vps_array['ord'.$vps_row['STAGE_ID']]=$vps_row;
             }
             oci_free_statement($vps);
-            $rowsStages[$i] = $vps_array;
+            //$rowsStages[$i] = $vps_array;
 
 
+            $test = array_merge_recursive($this->vbs_array, $vps_array);
             $prev_stage = -1;
             $proc_state = '';
-            foreach($vbs_array as $key => $vbs_value){
+            /*foreach($vbs_array as $key => $vbs_value){
                 if(array_key_exists($key, $vps_array)){
                     if($vps_array[$key]['STATUS'] == 1) {
                         $v_status = '<img src="img/ball_greenS.gif" title="'.$vbs_value['PUB_NAME'].' [Стадия завершена]'.'">';
@@ -189,27 +218,25 @@ class ProcessController extends AbstractController
                     }
                 }
                 $html_row .= "<td>".$v_status."</td>";
-            }
+            }*/
+            $f = function ($a) use (&$f)
+                {
 
-            $html .=  "<tr>".
-                '<td><input onchange="this.form.submit()" type="radio" name="proc_num" value="'.$i.$proc_state.'/'.$row['PARENT_ID'].'" '.(($proc_recheck==$i)?'checked':'').' /></td>'.
-                    $html_row.
-                    "<tr>";
-            //$i++;
-        }
-        $html .= '<tr><td><input onchange="this.form.submit()" type="radio" name="proc_num" value="0" '.(($proc_recheck=='0')?'checked':'').' /></td><td colspan = 2>Добавить задание</td></tr>';
-        $html .= "</table>";
-        oci_free_statement($q);
+                    return array_map (
+                        function ($b) use (&$f)
+                        {
 
+                            if(is_array($b)) {
+                                 return $f($b);
+                            } else {
+                                return iconv('cp1251','utf-8', $b);
+                            }
+                        },
+                        $a
+                    );
+                };
 
-        return $this->render('process/index.html.twig', [
-            'controller_name' => 'NormalizationController',
-            'thProcess' => $this->thProcess,
-            'trProcess' => $rowsProcess,
-            'stagesProcess' => $rowsStages,
-            'allStages' => $vbs_array,
-            'html' => $html,
-        ]);
+            return $test;//$this->json($f($test));
     }
 
 
