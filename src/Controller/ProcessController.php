@@ -35,11 +35,19 @@ class ProcessController extends AbstractController
     private $aisgkn = array(
                 array(  'name'  => 'АИС ГКН (Основной)',
                         'as_ip' => '10.52.141.12',
-                        'db_ip'   => '10.52.138.32',
+                        /*'db_ip'   => '10.52.138.32',
                         //'db_ip' => '10.52.141.18',
                         'sid'   => 'R52GZK0',
                         'user'  => 'zkoks',
-                        'pass'  => 'GknAdmin',
+                        'pass'  => 'GknAdmin',*/
+
+                        'db_ip'   => '192.168.0.103',
+                        //'db_ip' => '10.52.141.18',
+                        'sid'   => 'ORCL',
+                        'user'  => 'system',
+                        'pass'  => 'oracle',
+
+
                         'kr'    => "'52:00','52:01','52:02','52:03','52:04','52:05','52:06','52:07','52:08','52:09',
                                         '52:10','52:11','52:12','52:13','52:15','52:16','52:17','52:18','52:19','52:20',
                                         '52:21','52:22','52:23','52:24','52:25','52:26','52:27','52:28','52:29','52:30',
@@ -47,7 +55,7 @@ class ProcessController extends AbstractController
                                         '52:41','52:42','52:43','52:44','52:45','52:46','52:47','52:48','52:49','52:50',
                                         '52:51','52:52','52:53','52:54','52:55','52:56','52:57','52:58','52:59'"
                 ),
-                array(  'name'  => 'АИС ГКН (Саров)',
+              /*  array(  'name'  => 'АИС ГКН (Саров)',
                         'as_ip' => '10.52.141.16',
                         'db_ip' => '10.52.141.28',
                         'sid'   => 'R52GZK60',
@@ -55,7 +63,7 @@ class ProcessController extends AbstractController
                         'pass'  => 'GknAdmin',
                         'dblink'=> '@PRM52',
                         'kr'    => "'52:60','13:60'"
-                )
+                )*/
     );
 
     // ССД
@@ -103,7 +111,10 @@ class ProcessController extends AbstractController
         }
         else $proc_recheck=null;
 
-        $q = $this->query_exec(0,"select t.*, vb.ver_type || ' - ' || vb.attr as type_ver, vb.block_type,level
+        $q = $this->query_exec(0,"select t.id, t.ID_VER_BLOCK, t.NOTE, PARENT_ID,
+                        vb.ver_type || ' - ' || vb.attr as type_ver,
+                        vb.block_type,
+                        level
                         from OTHERGKN.VER_PROCESS t, OTHERGKN.VER_BLOCKS vb
                         where t.id >= :id
                         and vb.id = t.ID_VER_BLOCK
@@ -124,7 +135,10 @@ class ProcessController extends AbstractController
             //echo '<td><input onchange="this.form.submit()" type="radio" name="proc_num" value="'.$proc_id_tag[$i].'" '.(($proc_recheck==$proc_id_tag[$i])?'checked':'').' /></td>';
             $proc_ver_block[$i] = $row['ID_VER_BLOCK'];
             $proc_block_type[$i] = $row['BLOCK_TYPE'];
+
             $row['ST'] = $this->getStagesProcess($i, '201');
+            $row['uriKey'] = $row['ST']['uriKey'];
+            unset($row['ST']['uriKey']);
 
             $rowsProcess[]=$row;
 
@@ -191,9 +205,46 @@ class ProcessController extends AbstractController
             //$rowsStages[$i] = $vps_array;
 
 
-            $test = array_merge_recursive($this->vbs_array, $vps_array);
-            $prev_stage = -1;
-            $proc_state = '';
+            $stTemp = array_merge_recursive($this->vbs_array, $vps_array);
+
+            $prevSt = -2;
+            $uriKey = '';
+            $stResult = [];
+            foreach ($stTemp as &$oneSt) {
+                if (isset($oneSt['STATUS'])) {
+                    $oneSt['stview'] = $oneSt['STATUS'];
+                    $prevSt = $oneSt['STATUS'];
+
+                    if ($oneSt['STATUS'] == 0) {
+                        $uriKey = '/' . $oneSt['ORDERS'] . '/w';
+                    }
+                } else {
+                    switch ($prevSt)
+                    {
+                        case -2:
+                            $oneSt['stview'] = -2;
+                            break;
+                        case -1:
+                            //no break;
+                        case 0:
+                            $oneSt['stview'] = -1;
+                            break;
+                        case 1:
+                            $oneSt['stview'] = 2;
+                            $uriKey = '/' . $oneSt['ORDERS'] . '/r';
+                            $prevSt = -1;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                //$stResult[] = $oneSt;
+            }
+            unset($oneSt);
+            $stTemp['uriKey'] = $uriKey;
+
+            //$prev_stage = -1;
+
             /*foreach($vbs_array as $key => $vbs_value){
                 if(array_key_exists($key, $vps_array)){
                     if($vps_array[$key]['STATUS'] == 1) {
@@ -219,7 +270,9 @@ class ProcessController extends AbstractController
                 }
                 $html_row .= "<td>".$v_status."</td>";
             }*/
-            $f = function ($a) use (&$f)
+
+            //iconv_recursive
+            /*$f = function ($a) use (&$f)
                 {
 
                     return array_map (
@@ -234,9 +287,9 @@ class ProcessController extends AbstractController
                         },
                         $a
                     );
-                };
+                };*/
 
-            return $test;//$this->json($f($test));
+            return $stTemp;//$this->json($f($test));
     }
 
 
@@ -261,7 +314,7 @@ class ProcessController extends AbstractController
             $db_ip  = $db_param['db_ip'];
             $sid    = $db_param['sid'];
 
-            $this->db[$db_num] = oci_connect('zkoks', $db_param['pass'], "$db_ip/$sid", 'CL8MSWIN1251');
+            $this->db[$db_num] = oci_connect($db_param['user'], $db_param['pass'], "$db_ip/$sid", 'CL8MSWIN1251');
             if (!$this->db[$db_num]) {
                 $e = oci_error();
                 trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);

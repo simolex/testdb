@@ -33,11 +33,16 @@ class NormalizationController extends AbstractController
     private $aisgkn = array(
                 array(  'name'  => 'АИС ГКН (Основной)',
                         'as_ip' => '10.52.141.12',
-                        'db_ip'   => '10.52.138.32',
+                        /*'db_ip'   => '10.52.138.32',
                         //'db_ip' => '10.52.141.18',
                         'sid'   => 'R52GZK0',
                         'user'  => 'zkoks',
-                        'pass'  => 'GknAdmin',
+                        'pass'  => 'GknAdmin',*/
+                        'db_ip'   => '192.168.0.103',
+                        //'db_ip' => '10.52.141.18',
+                        'sid'   => 'ORCL',
+                        'user'  => 'othergkn',
+                        'pass'  => 'othergkn',
                         'kr'    => "'52:00','52:01','52:02','52:03','52:04','52:05','52:06','52:07','52:08','52:09',
                                         '52:10','52:11','52:12','52:13','52:15','52:16','52:17','52:18','52:19','52:20',
                                         '52:21','52:22','52:23','52:24','52:25','52:26','52:27','52:28','52:29','52:30',
@@ -45,7 +50,7 @@ class NormalizationController extends AbstractController
                                         '52:41','52:42','52:43','52:44','52:45','52:46','52:47','52:48','52:49','52:50',
                                         '52:51','52:52','52:53','52:54','52:55','52:56','52:57','52:58','52:59'"
                 ),
-                array(  'name'  => 'АИС ГКН (Саров)',
+                /*array(  'name'  => 'АИС ГКН (Саров)',
                         'as_ip' => '10.52.141.16',
                         'db_ip' => '10.52.141.28',
                         'sid'   => 'R52GZK60',
@@ -53,7 +58,7 @@ class NormalizationController extends AbstractController
                         'pass'  => 'GknAdmin',
                         'dblink'=> '@PRM52',
                         'kr'    => "'52:60','13:60'"
-                )
+                )*/
     );
 
     // ССД
@@ -397,7 +402,7 @@ class NormalizationController extends AbstractController
             $db_ip  = $db_param['db_ip'];
             $sid    = $db_param['sid'];
 
-            $this->db[$db_num] = oci_connect('zkoks', $db_param['pass'], "$db_ip/$sid", 'CL8MSWIN1251');
+            $this->db[$db_num] = oci_connect($db_param['user'], $db_param['pass'], "$db_ip/$sid", 'CL8MSWIN1251');
             if (!$this->db[$db_num]) {
                 $e = oci_error();
                 trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
