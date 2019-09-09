@@ -35,17 +35,17 @@ class ProcessController extends AbstractController
     private $aisgkn = array(
                 array(  'name'  => 'АИС ГКН (Основной)',
                         'as_ip' => '10.52.141.12',
-                        /*'db_ip'   => '10.52.138.32',
+                        'db_ip'   => '10.52.138.32',
                         //'db_ip' => '10.52.141.18',
                         'sid'   => 'R52GZK0',
                         'user'  => 'zkoks',
-                        'pass'  => 'GknAdmin',*/
+                        'pass'  => 'GknAdmin',
 
-                        'db_ip'   => '192.168.0.103',
+                        /*'db_ip'   => '192.168.0.103',
                         //'db_ip' => '10.52.141.18',
                         'sid'   => 'ORCL',
                         'user'  => 'system',
-                        'pass'  => 'oracle',
+                        'pass'  => 'oracle',*/
 
 
                         'kr'    => "'52:00','52:01','52:02','52:03','52:04','52:05','52:06','52:07','52:08','52:09',

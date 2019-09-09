@@ -1,22 +1,53 @@
 doctrine:
     dbal:
-        # configure these for your database server
-        driver: 'pdo_mysql'
-        server_version: '5.7'
-        charset: utf8mb4
-        default_table_options:
-            charset: utf8mb4
-            collate: utf8mb4_unicode_ci
 
-        url: '%env(resolve:DATABASE_URL)%'
+        default_connection: oracle
+        connections:
+            oracle:
+                driver: 'oci8'
+                #dbname: 'othergkn'
+                user: 'othergkn'
+                password: 'othergkn'
+                host: '10.52.138.32'
+                port: '1521'
+                service: true
+                servicename: 'R52GZK0'
+                charset: utf8
+                url: '%env(resolve:DATABASE_URL)%'
+                schema_filter: /^(VER_BLOCK_STAGES|VER_PROC_STAGES)/
+        # configure these for your database server
+            mysql:
+                driver: 'pdo_mysql'
+                server_version: '5.7'
+                charset: utf8mb4
+                default_table_options:
+                    charset: utf8mb4
+                    collate: CL8MSWIN1251 #utf8mb4_unicode_ci
+
+                url: '%env(resolve:DATABASE_URL)%'
+
     orm:
         auto_generate_proxy_classes: true
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
-        mappings:
-            App:
-                is_bundle: false
-                type: annotation
-                dir: '%kernel.project_dir%/src/Entity'
-                prefix: 'App\Entity'
-                alias: App
+        #naming_strategy: doctrine.orm.naming_strategy.underscore
+        default_entity_manager: oracle_em
+        entity_managers:
+            oracle_em:
+                connection: oracle
+    #auto_mapping: true
+                mappings:
+                    App:
+                        is_bundle: false
+                        type: annotation
+                        dir: '%kernel.project_dir%/src/Entity'
+                        prefix: 'App\Entity'
+                        alias: App
+        #default_entity_manager: oracle
+        #entity_managers:
+        #    oracle:
+        #        connection: oracle
+
+services:
+    oracle.listener:
+        class: Doctrine\DBAL\Event\Listeners\OracleSessionInit
+        tags:
+            - { name: doctrine.event_listener, event: postConnect }
