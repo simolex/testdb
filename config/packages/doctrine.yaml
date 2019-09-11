@@ -8,10 +8,10 @@ doctrine:
                 #dbname: 'othergkn'
                 user: 'othergkn'
                 password: 'othergkn'
-                host: '10.52.138.32'
+                host: '192.168.0.103'
                 port: '1521'
                 service: true
-                servicename: 'R52GZK0'
+                servicename: 'orcl'
                 charset: utf8
                 url: '%env(resolve:DATABASE_URL)%'
                 schema_filter: /^(VER_BLOCK_STAGES|VER_PROC_STAGES|VER_PROCESS|VER_BLOCK)/

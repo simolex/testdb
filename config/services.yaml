@@ -35,5 +35,12 @@ services:
         arguments: [~, App\Entity\VerProcess, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, label: VerProcess }
+    admin.ver_blocks:
+        class: App\Admin\VerBlocksAdmin
+        arguments: [~, App\Entity\VerBlocks, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: VerBlocks }
+
+
    # nbd.upload.excel-files:
     #    class: Excel
