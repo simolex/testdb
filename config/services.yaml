@@ -25,6 +25,15 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-
+    admin.ver_block_stages:
+        class: App\Admin\VerBlockStagesAdmin
+        arguments: [~, App\Entity\VerBlockStages, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: VerBlockStages }
+    admin.ver_process:
+        class: App\Admin\VerProcessAdmin
+        arguments: [~, App\Entity\VerProcess, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: VerProcess }
    # nbd.upload.excel-files:
     #    class: Excel
