@@ -29,18 +29,27 @@ services:
         class: App\Admin\VerBlockStagesAdmin
         arguments: [~, App\Entity\VerBlockStages, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: VerBlockStages }
+            - { name: sonata.admin, manager_type: orm, group: Verification, label: VerBlockStages }
+
     admin.ver_process:
         class: App\Admin\VerProcessAdmin
         arguments: [~, App\Entity\VerProcess, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: VerProcess }
+            - { name: sonata.admin, manager_type: orm, group: Verification, label: VerProcess }
+
     admin.ver_blocks:
         class: App\Admin\VerBlocksAdmin
         arguments: [~, App\Entity\VerBlocks, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: VerBlocks }
+            - { name: sonata.admin, manager_type: orm, group: Verification, label: VerBlocks }
 
 
    # nbd.upload.excel-files:
     #    class: Excel
+
+    admin.ver_kinds:
+        class: App\Admin\VerKindsAdmin
+        arguments: [~, App\Entity\VerKinds, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Verification, label: VerKinds }
+        #public: true

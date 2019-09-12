@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"E",
+				"EntityType"
+			],
+			[
+				"A",
+				"App"
+			],
+			[
 				"vb",
 				"vbs_array"
 			],
@@ -81,6 +89,93 @@
 			}
 		},
 		{
+			"file": "src/Admin/VerBlockStagesAdmin.php",
+			"settings":
+			{
+				"buffer_size": 831,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Admin/VerProcessAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1822,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Admin/EventListener/AddNameFieldSubscriber.php",
+			"settings":
+			{
+				"buffer_size": 825,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
+			"settings":
+			{
+				"buffer_size": 8758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Admin/VerBlocksAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1217,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Entity/VerBlocks.php",
+			"settings":
+			{
+				"buffer_size": 2515,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/packages/framework.yaml",
+			"settings":
+			{
+				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php",
+			"settings":
+			{
+				"buffer_size": 85662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/sonata-project/admin-bundle/src/Datagrid/ListMapper.php",
+			"settings":
+			{
+				"buffer_size": 5966,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/work/Поручения/РАзное/Цена сделки/1.sql",
+			"settings":
+			{
+				"buffer_size": 8944,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/Controller/NormalizationController.php",
 			"settings":
 			{
@@ -93,7 +188,7 @@
 			"file": "config/services.yaml",
 			"settings":
 			{
-				"buffer_size": 1751,
+				"buffer_size": 1951,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -126,6 +221,14 @@
 			}
 		},
 		{
+			"file": "config/routes.yaml",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/Entity/VerBlockStages.php",
 			"settings":
 			{
@@ -139,7 +242,7 @@
 			{
 				"buffer_size": 2302,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -157,6 +260,15 @@
 			"settings":
 			{
 				"buffer_size": 105472,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/packages/sonata_admin.yaml",
+			"settings":
+			{
+				"buffer_size": 237,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -297,15 +409,17 @@
 	},
 	"expanded_folders":
 	[
-		"/E/work/Laravel/lararoot/kodicms"
+		"/D/laravel-distr/HSVM/laraval/kodicms",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config/routes",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity"
 	],
 	"file_history":
 	[
-		"/E/work/Laravel/lararoot/firstsite/app/config/parameters.yml",
-		"/E/work/Laravel/lararoot/kodicms/kod.sublime-project",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/E/work/Laravel/Homestead/Homestead.yaml",
-		"/D/work/Поручения/РАзное/Цена сделки/1.sql",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/form/Extension/Core/Type/TextType.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/kod.sublime-project",
 		"/D/work/Web_exchange/fias-master/src/task/Unpack.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Filesystem.php",
@@ -428,11 +542,14 @@
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Console/Parser.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/october/rain/src/Support/Facades/Http.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/http-foundation/BinaryFileResponse.php",
-		"//r52p-01-app1/c$/ZKOKS/kn.txt"
+		"//r52p-01-app1/c$/ZKOKS/kn.txt",
+		"//r52p-01-app1/c$/ZKOKS/temp/Выгрузка ЗУ в xml по списку/19.04.2019 13_52_55/protocol.txt",
+		"/D/work/Поручения/РАзное/Минимущество/Разбивка по виду прав.txt",
+		"/D/laravel-distr/HSVM/laraval/kodicms/php_info.php"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -492,7 +609,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -527,17 +644,313 @@
 						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Admin/VerBlockStagesAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Admin/VerProcessAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								647
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Admin/EventListener/AddNameFieldSubscriber.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								825,
+								825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1368,
+								1368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 619.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Admin/VerBlocksAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Entity/VerBlocks.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/packages/framework.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12997,
+								12997
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10206.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "vendor/sonata-project/admin-bundle/src/Datagrid/ListMapper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2198,
+								2198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1970.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 8,
+			"selected": 6,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 10,
+					"file": "/D/work/Поручения/РАзное/Цена сделки/1.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "src/Controller/NormalizationController.php",
 					"semi_transient": false,
 					"settings":
@@ -563,24 +976,24 @@
 						"translation.y": 496.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 12,
 					"file": "config/services.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1751,
+						"buffer_size": 1951,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1280,
-								1280
+								871,
+								871
 							]
 						],
 						"settings":
@@ -590,14 +1003,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 356.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 13,
 					"file": ".env",
 					"semi_transient": false,
 					"settings":
@@ -609,8 +1022,8 @@
 						"selection":
 						[
 							[
-								708,
-								708
+								1291,
+								1291
 							]
 						],
 						"settings":
@@ -618,14 +1031,14 @@
 							"syntax": "Packages/YAML/YAML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 14,
 					"file": "src/Controller/TaskController.php",
 					"semi_transient": false,
 					"settings":
@@ -651,11 +1064,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 15,
 					"file": "config/packages/doctrine.yaml",
 					"semi_transient": false,
 					"settings":
@@ -667,8 +1080,8 @@
 						"selection":
 						[
 							[
-								662,
-								662
+								196,
+								196
 							]
 						],
 						"settings":
@@ -678,14 +1091,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 16,
+					"file": "config/routes.yaml",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "src/Entity/VerBlockStages.php",
 					"semi_transient": false,
 					"settings":
@@ -697,25 +1138,26 @@
 						"selection":
 						[
 							[
-								63,
-								63
+								1155,
+								1162
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 757.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 18,
 					"file": "src/Entity/VerProcStages.php",
 					"semi_transient": false,
 					"settings":
@@ -727,25 +1169,26 @@
 						"selection":
 						[
 							[
-								6,
-								6
+								62,
+								62
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 19,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1867,11 +2310,11 @@
 						"translation.y": 2700.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 20,
 					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php",
 					"semi_transient": false,
 					"settings":
@@ -1894,14 +2337,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1997.0,
+						"translation.y": 61037.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 21,
+					"file": "config/packages/sonata_admin.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
 					"file": "src/Controller/ProcessController.php",
 					"semi_transient": false,
 					"settings":
@@ -1927,11 +2398,11 @@
 						"translation.y": 509.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 23,
 					"file": "templates/base.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -1957,11 +2428,11 @@
 						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 24,
 					"file": "templates/normalization/index.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -1985,7 +2456,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 23,
 					"type": "text"
 				}
 			]
@@ -1993,11 +2464,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 30.0
 	},
 	"input":
 	{
-		"height": 45.0
+		"height": 46.0
 	},
 	"layout":
 	{
@@ -2024,7 +2495,7 @@
 		"rows":
 		[
 			0.0,
-			0.127237433,
+			0.784596871239,
 			1.0
 		]
 	},
@@ -2041,7 +2512,7 @@
 	"project": "kod.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2151,7 +2622,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -2159,7 +2630,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 339.0,
+	"side_bar_width": 332.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

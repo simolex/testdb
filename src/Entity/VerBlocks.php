@@ -3,15 +3,23 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * VerBlocks
  *
  * @ORM\Table(name="VER_BLOCKS", indexes={@ORM\Index(name="i$og$ver_blocks$type", columns={"VER_TYPE"}), @ORM\Index(name="i$og$ver_blocks$kind", columns={"ATTR", "MESSAGE"}), @ORM\Index(name="i$og$ver_blocks$block_type", columns={"BLOCK_TYPE"})})
  * @ORM\Entity
+ * @UniqueEntity(
+ *     fields={"vertype", "attr","message"},
+ *     errorPath="message",
+ *     message="Такой тип проверки данных уже существует."
+ * )
  */
 class VerBlocks
 {
+
+
     /**
      * @var string|null
      *
