@@ -23,6 +23,8 @@ class VerKinds
     private $id;
 
     /**
+     * @var string
+     *
      * @ORM\Column(name="NAME", type="string", length=200, nullable=false)
      */
     private $name;
@@ -43,4 +45,6 @@ class VerKinds
 
         return $this;
     }
+
+
 }

@@ -89,24 +89,6 @@
 			}
 		},
 		{
-			"file": "src/Admin/VerBlockStagesAdmin.php",
-			"settings":
-			{
-				"buffer_size": 831,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/Admin/VerProcessAdmin.php",
-			"settings":
-			{
-				"buffer_size": 1822,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/Admin/EventListener/AddNameFieldSubscriber.php",
 			"settings":
 			{
@@ -127,25 +109,77 @@
 			"file": "src/Admin/VerBlocksAdmin.php",
 			"settings":
 			{
-				"buffer_size": 1217,
+				"buffer_size": 1338,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/packages/doctrine.yaml",
+			"settings":
+			{
+				"buffer_size": 1766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Entity/VerKinds.php",
+			"settings":
+			{
+				"buffer_size": 836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php",
+			"settings":
+			{
+				"buffer_size": 1325,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Repository/VerBlocksRepository.php",
+			"settings":
+			{
+				"buffer_size": 124,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
+			"settings":
+			{
+				"buffer_size": 9723,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "src/Entity/VerBlocks.php",
 			"settings":
 			{
-				"buffer_size": 2515,
+				"buffer_size": 2712,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/packages/framework.yaml",
+			"file": "src/Entity/VerProcess.php",
 			"settings":
 			{
-				"buffer_size": 450,
+				"buffer_size": 1759,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Entity/VerProcStages.php",
+			"settings":
+			{
+				"buffer_size": 2341,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -167,15 +201,6 @@
 			}
 		},
 		{
-			"file": "/D/work/Поручения/РАзное/Цена сделки/1.sql",
-			"settings":
-			{
-				"buffer_size": 8944,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/Controller/NormalizationController.php",
 			"settings":
 			{
@@ -185,10 +210,28 @@
 			}
 		},
 		{
+			"file": "src/Admin/VerBlockStagesAdmin.php",
+			"settings":
+			{
+				"buffer_size": 831,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "config/services.yaml",
 			"settings":
 			{
-				"buffer_size": 1951,
+				"buffer_size": 2255,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Admin/VerProcessAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1822,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -203,100 +246,10 @@
 			}
 		},
 		{
-			"file": "src/Controller/TaskController.php",
-			"settings":
-			{
-				"buffer_size": 577,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/packages/doctrine.yaml",
-			"settings":
-			{
-				"buffer_size": 1750,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/routes.yaml",
-			"settings":
-			{
-				"buffer_size": 78,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/Entity/VerBlockStages.php",
 			"settings":
 			{
 				"buffer_size": 2294,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Entity/VerProcStages.php",
-			"settings":
-			{
-				"buffer_size": 2302,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 12700 files for \"ClassMetadataInfo\"\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine-dbal:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine-migrations:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\php-parse:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\simple-phpunit:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\var-dump-server:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\doctrine-bundle\\DataCollector\\DoctrineDataCollector.php:\n    9  use Doctrine\\ORM\\EntityManager;\n   10  use Doctrine\\ORM\\Mapping\\ClassMetadataFactory;\n   11: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   12  use Doctrine\\ORM\\Tools\\SchemaValidator;\n   13  use Exception;\n   ..\n   65              $validator = new SchemaValidator($em);\n   66  \n   67:             /** @var ClassMetadataInfo $class */\n   68              foreach ($factory->getLoadedMetadata() as $class) {\n   69                  if (isset($entities[$name][$class->getName()])) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\docs\\en\\cookbook\\sql-table-prefixes.rst:\n   48  \n   49              foreach ($classMetadata->getAssociationMappings() as $fieldName => $mapping) {\n   50:                 if ($mapping['type'] == \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo::MANY_TO_MANY && $mapping['isOwningSide']) {\n   51                      $mappedTableName = $mapping['joinTable']['name'];\n   52                      $classMetadata->associationMappings[$fieldName]['joinTable']['name'] = $this->prefix . $mappedTableName;\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\docs\\en\\reference\\events.rst:\n  961  \n  962  When the mapping information for an entity is read, it is populated\n  963: in to a ``ClassMetadataInfo`` instance. You can hook in to this\n  964  process and manipulate the instance.\n  965  \n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\docs\\en\\reference\\metadata-drivers.rst:\n   61      namespace Doctrine\\ORM\\Mapping\\Driver;\n   62      \n   63:     use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   64      \n   65      interface Driver\n   ..\n   69           * \n   70           * @param string $className\n   71:          * @param ClassMetadataInfo $metadata\n   72           */\n   73:         function loadMetadataForClass($className, ClassMetadataInfo $metadata);\n   74      \n   75          /**\n   ..\n  108           * {@inheritdoc}\n  109           */\n  110:         public function loadMetadataForClass($className, ClassMetadataInfo $metadata)\n  111          {\n  112              $data = $this->_loadMappingFile($file);\n  113      \n  114:             // populate ClassMetadataInfo instance from $data\n  115          }\n  116      \n  ...\n  155  You have all the methods you need to manually specify the mapping\n  156  information instead of using some mapping file to populate it from.\n  157: The base ``ClassMetadataInfo`` class is responsible for only data\n  158  storage and is not meant for runtime use. It does not require that\n  159  the class actually exists yet so it is useful for describing some\n  160  entity before it exists and using that information to generate for\n  161  example the entities themselves. The class ``ClassMetadata``\n  162: extends ``ClassMetadataInfo`` and adds some functionality required\n  163  for runtime usage and requires that the PHP class is present and\n  164  can be autoloaded.\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\docs\\en\\reference\\php-mapping.rst:\n  181  -   ``createOneToMany($name, $targetEntity)`` returns an ``OneToManyAssociationBuilder`` instance\n  182  \n  183: ClassMetadataInfo API\n  184  ---------------------\n  185  \n  186: The ``ClassMetadataInfo`` class is the base data object for storing\n  187  the mapping metadata for a single entity. It contains all the\n  188  getters and setters you need populate and retrieve information for\n  ...\n  308  -----------------\n  309  \n  310: The ``ClassMetadata`` class extends ``ClassMetadataInfo`` and adds\n  311  the runtime functionality required by Doctrine. It adds a few extra\n  312  methods related to runtime reflection for working with the entities\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\docs\\en\\reference\\tools.rst:\n  174  ``SchemaTool`` and pass it an instance of the ``EntityManager``\n  175  that you want to use to create the schema. This method receives an\n  176: array of ``ClassMetadataInfo`` instances.\n  177  \n  178  .. code-block:: php\n  ...\n  206  easily with the ``updateSchema()`` method. It will compare your\n  207  existing database schema to the passed array of\n  208: ``ClassMetadataInfo`` instances.\n  209  \n  210  .. code-block:: php\n  ...\n  362  \n  363  You can use the ``DatabaseDriver`` to reverse engineer a database\n  364: to an array of ``ClassMetadataInfo`` instances and generate YAML,\n  365  XML, etc. from them.\n  366  \n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\Builder\\ClassMetadataBuilder.php:\n   21  \n   22  use Doctrine\\ORM\\Mapping\\ClassMetadata;\n   23: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   24  \n   25  /**\n   ..\n   35  {\n   36      /**\n   37:      * @var \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo\n   38       */\n   39      private $cm;\n   40  \n   41      /**\n   42:      * @param \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo $cm\n   43       */\n   44:     public function __construct(ClassMetadataInfo $cm)\n   45      {\n   46          $this->cm = $cm;\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\ClassMetadata.php:\n   23   * {@inheritDoc}\n   24   *\n   25:  * @todo remove or rename ClassMetadataInfo to ClassMetadata\n   26   */\n   27: class ClassMetadata extends ClassMetadataInfo\n   28  {\n   29  }\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\ClassMetadataFactory.php:\n  607       * most appropriate for the targeted database platform.\n  608       *\n  609:      * @param ClassMetadataInfo $class\n  610       *\n  611       * @return void\n  ...\n  613       * @throws ORMException\n  614       */\n  615:     private function completeIdGeneratorMapping(ClassMetadataInfo $class)\n  616      {\n  617          $idGenType = $class->generatorType;\n  ...\n  719       * Inherits the ID generator mapping from a parent class.\n  720       *\n  721:      * @param ClassMetadataInfo $class\n  722:      * @param ClassMetadataInfo $parent\n  723       */\n  724:     private function inheritIdGeneratorMapping(ClassMetadataInfo $class, ClassMetadataInfo $parent)\n  725      {\n  726          if ($parent->isIdGeneratorSequence()) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\ClassMetadataInfo.php:\n   48   * @since 2.0\n   49   */\n   50: class ClassMetadataInfo implements ClassMetadata\n   51  {\n   52      /* The inheritance mapping types */\n   ..\n 1242       * Gets the mapping of an association.\n 1243       *\n 1244:      * @see ClassMetadataInfo::$associationMappings\n 1245       *\n 1246       * @param string $fieldName The field name that represents the association in\n ....\n 1288       * Gets the named query.\n 1289       *\n 1290:      * @see ClassMetadataInfo::$namedQueries\n 1291       *\n 1292       * @param string $queryName The query name.\n ....\n 1318       * Gets the named native query.\n 1319       *\n 1320:      * @see ClassMetadataInfo::$namedNativeQueries\n 1321       *\n 1322       * @param string $queryName The query name.\n ....\n 1348       * Gets the result set mapping.\n 1349       *\n 1350:      * @see ClassMetadataInfo::$sqlResultSetMappings\n 1351       *\n 1352       * @param string $name The result set mapping name.\n ....\n 1626              if ($uniqueConstraintColumns) {\n 1627                  if ( ! $this->table) {\n 1628:                     throw new RuntimeException(\"ClassMetadataInfo::setTable() has to be called before defining a one to one relationship.\");\n 1629                  }\n 1630  \n ....\n 3307       *\n 3308       * @param string            $property\n 3309:      * @param ClassMetadataInfo $embeddable\n 3310       */\n 3311:     public function inlineEmbeddable($property, ClassMetadataInfo $embeddable)\n 3312      {\n 3313          foreach ($embeddable->fieldMappings as $fieldMapping) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\Driver\\AnnotationDriver.php:\n   52      public function loadMetadataForClass($className, ClassMetadata $metadata)\n   53      {\n   54:         /* @var $metadata \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo */\n   55          $class = $metadata->getReflectionClass();\n   56  \n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\Driver\\DatabaseDriver.php:\n   28  use Doctrine\\DBAL\\Schema\\Column;\n   29  use Doctrine\\DBAL\\Types\\Type;\n   30: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   31  use Doctrine\\ORM\\Mapping\\MappingException;\n   32  \n   ..\n  313       * Build indexes from a class metadata.\n  314       *\n  315:      * @param \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo $metadata\n  316       */\n  317:     private function buildIndexes(ClassMetadataInfo $metadata)\n  318      {\n  319          $tableName = $metadata->table['name'];\n  ...\n  338       * Build field mapping from class metadata.\n  339       *\n  340:      * @param \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo $metadata\n  341       */\n  342:     private function buildFieldMappings(ClassMetadataInfo $metadata)\n  343      {\n  344          $tableName      = $metadata->table['name'];\n  ...\n  372          // We need to check for the columns here, because we might have associations as id as well.\n  373          if ($ids && count($primaryKeys) == 1) {\n  374:             $metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_AUTO);\n  375          }\n  376  \n  ...\n  440       * Build to one (one to one, many to one) association mapping from class metadata.\n  441       *\n  442:      * @param \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo $metadata\n  443       */\n  444:     private function buildToOneAssociationMappings(ClassMetadataInfo $metadata)\n  445      {\n  446          $tableName   = $metadata->table['name'];\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\Driver\\XmlDriver.php:\n   56      public function loadMetadataForClass($className, ClassMetadata $metadata)\n   57      {\n   58:         /* @var $metadata \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo */\n   59          /* @var $xmlRoot SimpleXMLElement */\n   60          $xmlRoot = $this->getElement($className);\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Mapping\\Driver\\YamlDriver.php:\n   53      public function loadMetadataForClass($className, ClassMetadata $metadata)\n   54      {\n   55:         /* @var $metadata \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo */\n   56          $element = $this->getElement($className);\n   57  \n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Proxy\\ProxyFactory.php:\n   91      protected function skipClass(ClassMetadata $metadata)\n   92      {\n   93:         /* @var $metadata \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo */\n   94          return $metadata->isMappedSuperclass\n   95              || $metadata->isEmbeddedClass\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Query\\ResultSetMappingBuilder.php:\n   21  \n   22  use Doctrine\\ORM\\EntityManagerInterface;\n   23: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   24  use Doctrine\\ORM\\Mapping\\MappingException;\n   25  use Doctrine\\ORM\\Utility\\PersisterHelper;\n   ..\n  162  \n  163          foreach ($classMetadata->associationMappings as $associationMapping) {\n  164:             if ($associationMapping['isOwningSide'] && $associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n  165                  $targetClass  = $this->em->getClassMetadata($associationMapping['targetEntity']);\n  166                  $isIdentifier = isset($associationMapping['id']) && $associationMapping['id'] === true;\n  ...\n  181      }\n  182  \n  183:     private function isInheritanceSupported(ClassMetadataInfo $classMetadata)\n  184      {\n  185          if ($classMetadata->isInheritanceTypeSingleTable()\n  ...\n  240  \n  241          foreach ($class->associationMappings as $associationMapping) {\n  242:             if ($associationMapping['isOwningSide'] && $associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n  243                  foreach ($associationMapping['joinColumns'] as $joinColumn) {\n  244                      $columnName = $joinColumn['name'];\n  ...\n  254       * Adds the mappings of the results of native SQL queries to the result set.\n  255       *\n  256:      * @param ClassMetadataInfo $class\n  257       * @param array             $queryMapping\n  258       *\n  259       * @return ResultSetMappingBuilder\n  260       */\n  261:     public function addNamedNativeQueryMapping(ClassMetadataInfo $class, array $queryMapping)\n  262      {\n  263          if (isset($queryMapping['resultClass'])) {\n  ...\n  271       * Adds the class mapping of the results of native SQL queries to the result set.\n  272       *\n  273:      * @param ClassMetadataInfo $class\n  274       * @param string            $resultClassName\n  275       *\n  276       * @return  ResultSetMappingBuilder\n  277       */\n  278:     public function addNamedNativeQueryResultClassMapping(ClassMetadataInfo $class, $resultClassName)\n  279      {\n  280          $classMetadata  = $this->em->getClassMetadata($resultClassName);\n  ...\n  298  \n  299          foreach ($classMetadata->associationMappings as $associationMapping) {\n  300:             if ($associationMapping['isOwningSide'] && $associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n  301                  $targetClass = $this->em->getClassMetadata($associationMapping['targetEntity']);\n  302  \n  ...\n  316       * Adds the result set mapping of the results of native SQL queries to the result set.\n  317       *\n  318:      * @param ClassMetadataInfo $class\n  319       * @param string            $resultSetMappingName\n  320       *\n  321       * @return ResultSetMappingBuilder\n  322       */\n  323:     public function addNamedNativeQueryResultSetMapping(ClassMetadataInfo $class, $resultSetMappingName)\n  324      {\n  325          $counter        = 0;\n  ...\n  367       * Adds the entity result mapping of the results of native SQL queries to the result set.\n  368       *\n  369:      * @param ClassMetadataInfo $classMetadata\n  370       * @param array             $entityMapping\n  371       * @param string            $alias\n  ...\n  376       * @throws \\InvalidArgumentException\n  377       */\n  378:     public function addNamedNativeQueryEntityResultMapping(ClassMetadataInfo $classMetadata, array $entityMapping, $alias)\n  379      {\n  380          if (isset($entityMapping['discriminatorColumn']) && $entityMapping['discriminatorColumn']) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Query\\SqlWalker.php:\n   23  use Doctrine\\DBAL\\Types\\Type;\n   24  use Doctrine\\ORM\\Mapping\\ClassMetadata;\n   25: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   26  use Doctrine\\ORM\\OptimisticLockException;\n   27  use Doctrine\\ORM\\Query;\n   ..\n 1697  \n 1698          foreach ($this->queryComponents[$groupByItem]['metadata']->associationMappings as $mapping) {\n 1699:             if ($mapping['isOwningSide'] && $mapping['type'] & ClassMetadataInfo::TO_ONE) {\n 1700                  $item       = new AST\\PathExpression(AST\\PathExpression::TYPE_SINGLE_VALUED_ASSOCIATION, $groupByItem, $mapping['fieldName']);\n 1701                  $item->type = AST\\PathExpression::TYPE_SINGLE_VALUED_ASSOCIATION;\n ....\n 2291  \n 2292      /**\n 2293:      * @param ClassMetadataInfo $rootClass\n 2294       * @param AST\\InstanceOfExpression $instanceOfExpr\n 2295       * @return string The list in parentheses of valid child discriminators from the given class\n 2296       * @throws QueryException\n 2297       */\n 2298:     private function getChildDiscriminatorsFromClassMetadata(ClassMetadataInfo $rootClass, AST\\InstanceOfExpression $instanceOfExpr): string\n 2299      {\n 2300          $sqlParameterList = [];\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\ConvertDoctrine1Schema.php:\n   20  namespace Doctrine\\ORM\\Tools;\n   21  \n   22: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   23  use Doctrine\\Common\\Inflector\\Inflector;\n   24  use Doctrine\\DBAL\\Types\\Type;\n   ..\n   66  \n   67      /**\n   68:      * Gets an array of ClassMetadataInfo instances from the passed\n   69       * Doctrine 1 schema.\n   70       *\n   71:      * @return array An array of ClassMetadataInfo instances\n   72       */\n   73      public function getMetadata()\n   ..\n   87          $metadatas = [];\n   88          foreach ($schema as $className => $mappingInformation) {\n   89:             $metadatas[] = $this->convertToClassMetadataInfo($className, $mappingInformation);\n   90          }\n   91  \n   ..\n   97       * @param array  $mappingInformation\n   98       *\n   99:      * @return \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo\n  100       */\n  101:     private function convertToClassMetadataInfo($className, $mappingInformation)\n  102      {\n  103:         $metadata = new ClassMetadataInfo($className);\n  104  \n  105          $this->convertTableName($className, $mappingInformation, $metadata);\n  ...\n  114       * @param string            $className\n  115       * @param array             $model\n  116:      * @param ClassMetadataInfo $metadata\n  117       *\n  118       * @return void\n  119       */\n  120:     private function convertTableName($className, array $model, ClassMetadataInfo $metadata)\n  121      {\n  122          if (isset($model['tableName']) && $model['tableName']) {\n  ...\n  135       * @param string            $className\n  136       * @param array             $model\n  137:      * @param ClassMetadataInfo $metadata\n  138       *\n  139       * @return void\n  140       */\n  141:     private function convertColumns($className, array $model, ClassMetadataInfo $metadata)\n  142      {\n  143          $id = false;\n  ...\n  161              ];\n  162              $metadata->mapField($fieldMapping);\n  163:             $metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_AUTO);\n  164          }\n  165      }\n  ...\n  169       * @param string            $name\n  170       * @param string|array      $column\n  171:      * @param ClassMetadataInfo $metadata\n  172       *\n  173       * @return array\n  ...\n  175       * @throws ToolsException\n  176       */\n  177:     private function convertColumn($className, $name, $column, ClassMetadataInfo $metadata)\n  178      {\n  179          if (is_string($column)) {\n  ...\n  234  \n  235          if (isset($column['autoincrement'])) {\n  236:             $metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_AUTO);\n  237          } elseif (isset($column['sequence'])) {\n  238:             $metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_SEQUENCE);\n  239  \n  240              $definition = [\n  ...\n  259       * @param string            $className\n  260       * @param array             $model\n  261:      * @param ClassMetadataInfo $metadata\n  262       *\n  263       * @return void\n  264       */\n  265:     private function convertIndexes($className, array $model, ClassMetadataInfo $metadata)\n  266      {\n  267          if (empty($model['indexes'])) {\n  ...\n  282       * @param string            $className\n  283       * @param array             $model\n  284:      * @param ClassMetadataInfo $metadata\n  285       *\n  286       * @return void\n  287       */\n  288:     private function convertRelations($className, array $model, ClassMetadataInfo $metadata)\n  289      {\n  290          if (empty($model['relations'])) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\DisconnectedClassMetadataFactory.php:\n   24  \n   25  /**\n   26:  * The DisconnectedClassMetadataFactory is used to create ClassMetadataInfo objects\n   27   * that do not require the entity class actually exist. This allows us to\n   28   * load some mapping information and use it to do things like generate code\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\EntityGenerator.php:\n   23  use Doctrine\\Common\\Inflector\\Inflector;\n   24  use Doctrine\\DBAL\\Types\\Type;\n   25: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   26  \n   27  /**\n   28:  * Generic class used to generate PHP5 entity classes from ClassMetadataInfo instances.\n   29   *\n   30   *     [php]\n   ..\n   71  \n   72      /**\n   73:      * Whether or not the current ClassMetadataInfo instance is new or old.\n   74       *\n   75       * @var boolean\n   ..\n  177       */\n  178      protected static $generatorStrategyMap = [\n  179:         ClassMetadataInfo::GENERATOR_TYPE_AUTO      => 'AUTO',\n  180:         ClassMetadataInfo::GENERATOR_TYPE_SEQUENCE  => 'SEQUENCE',\n  181:         ClassMetadataInfo::GENERATOR_TYPE_TABLE     => 'TABLE',\n  182:         ClassMetadataInfo::GENERATOR_TYPE_IDENTITY  => 'IDENTITY',\n  183:         ClassMetadataInfo::GENERATOR_TYPE_NONE      => 'NONE',\n  184:         ClassMetadataInfo::GENERATOR_TYPE_UUID      => 'UUID',\n  185:         ClassMetadataInfo::GENERATOR_TYPE_CUSTOM    => 'CUSTOM'\n  186      ];\n  187  \n  ...\n  192       */\n  193      protected static $changeTrackingPolicyMap = [\n  194:         ClassMetadataInfo::CHANGETRACKING_DEFERRED_IMPLICIT  => 'DEFERRED_IMPLICIT',\n  195:         ClassMetadataInfo::CHANGETRACKING_DEFERRED_EXPLICIT  => 'DEFERRED_EXPLICIT',\n  196:         ClassMetadataInfo::CHANGETRACKING_NOTIFY             => 'NOTIFY',\n  197      ];\n  198  \n  ...\n  203       */\n  204      protected static $inheritanceTypeMap = [\n  205:         ClassMetadataInfo::INHERITANCE_TYPE_NONE            => 'NONE',\n  206:         ClassMetadataInfo::INHERITANCE_TYPE_JOINED          => 'JOINED',\n  207:         ClassMetadataInfo::INHERITANCE_TYPE_SINGLE_TABLE    => 'SINGLE_TABLE',\n  208:         ClassMetadataInfo::INHERITANCE_TYPE_TABLE_PER_CLASS => 'TABLE_PER_CLASS',\n  209      ];\n  210  \n  ...\n  341  \n  342      /**\n  343:      * Generates and writes entity classes for the given array of ClassMetadataInfo instances.\n  344       *\n  345       * @param array  $metadatas\n  ...\n  356  \n  357      /**\n  358:      * Generates and writes entity class to disk for the given ClassMetadataInfo instance.\n  359       *\n  360:      * @param ClassMetadataInfo $metadata\n  361       * @param string            $outputDirectory\n  362       *\n  ...\n  365       * @throws \\RuntimeException\n  366       */\n  367:     public function writeEntityClass(ClassMetadataInfo $metadata, $outputDirectory)\n  368      {\n  369          $path = $outputDirectory . '/' . str_replace('\\\\', DIRECTORY_SEPARATOR, $metadata->name) . $this->extension;\n  ...\n  400  \n  401      /**\n  402:      * Generates a PHP5 Doctrine 2 entity class from the given ClassMetadataInfo instance.\n  403       *\n  404:      * @param ClassMetadataInfo $metadata\n  405       *\n  406       * @return string\n  407       */\n  408:     public function generateEntityClass(ClassMetadataInfo $metadata)\n  409      {\n  410          $placeHolders = [\n  ...\n  430  \n  431      /**\n  432:      * Generates the updated code for the given ClassMetadataInfo and entity at path.\n  433       *\n  434:      * @param ClassMetadataInfo $metadata\n  435       * @param string            $path\n  436       *\n  437       * @return string\n  438       */\n  439:     public function generateUpdatedEntityClass(ClassMetadataInfo $metadata, $path)\n  440      {\n  441          $currentCode = file_get_contents($path);\n  ...\n  600  \n  601      /**\n  602:      * @param ClassMetadataInfo $metadata\n  603       *\n  604       * @return string\n  605       */\n  606:     protected function generateEntityNamespace(ClassMetadataInfo $metadata)\n  607      {\n  608          if (! $this->hasNamespace($metadata)) {\n  ...\n  626  \n  627      /**\n  628:      * @param ClassMetadataInfo $metadata\n  629       *\n  630       * @return string\n  631       */\n  632:     protected function generateEntityClassName(ClassMetadataInfo $metadata)\n  633      {\n  634          return 'class ' . $this->getClassName($metadata) .\n  ...\n  637  \n  638      /**\n  639:      * @param ClassMetadataInfo $metadata\n  640       *\n  641       * @return string\n  642       */\n  643:     protected function generateEntityBody(ClassMetadataInfo $metadata)\n  644      {\n  645          $fieldMappingProperties = $this->generateEntityFieldMappingProperties($metadata);\n  ...\n  677  \n  678      /**\n  679:      * @param ClassMetadataInfo $metadata\n  680       *\n  681       * @return string\n  682       */\n  683:     protected function generateEntityConstructor(ClassMetadataInfo $metadata)\n  684      {\n  685          if ($this->hasMethod('__construct', $metadata)) {\n  ...\n  694  \n  695          foreach ($metadata->associationMappings as $mapping) {\n  696:             if ($mapping['type'] & ClassMetadataInfo::TO_MANY) {\n  697                  $collections[] = '$this->'.$mapping['fieldName'].' = new \\Doctrine\\Common\\Collections\\ArrayCollection();';\n  698              }\n  ...\n  707  \n  708      /**\n  709:      * @param ClassMetadataInfo $metadata\n  710       *\n  711       * @return string\n  712       */\n  713:     private function generateEmbeddableConstructor(ClassMetadataInfo $metadata)\n  714      {\n  715          $paramTypes = [];\n  ...\n  855      /**\n  856       * @param string            $property\n  857:      * @param ClassMetadataInfo $metadata\n  858       *\n  859       * @return bool\n  860       */\n  861:     protected function hasProperty($property, ClassMetadataInfo $metadata)\n  862      {\n  863          if ($this->extendsClass() || (!$this->isNew && class_exists($metadata->name))) {\n  ...\n  884      /**\n  885       * @param string            $method\n  886:      * @param ClassMetadataInfo $metadata\n  887       *\n  888       * @return bool\n  889       */\n  890:     protected function hasMethod($method, ClassMetadataInfo $metadata)\n  891      {\n  892          if ($this->extendsClass() || (!$this->isNew && class_exists($metadata->name))) {\n  ...\n  913  \n  914      /**\n  915:      * @param ClassMetadataInfo $metadata\n  916       *\n  917       * @return array\n  ...\n  919       * @throws \\ReflectionException\n  920       */\n  921:     protected function getTraits(ClassMetadataInfo $metadata)\n  922      {\n  923          if (! ($metadata->reflClass !== null || class_exists($metadata->name))) {\n  ...\n  939  \n  940      /**\n  941:      * @param ClassMetadataInfo $metadata\n  942       *\n  943       * @return bool\n  944       */\n  945:     protected function hasNamespace(ClassMetadataInfo $metadata)\n  946      {\n  947          return (bool) strpos($metadata->name, '\\\\');\n  ...\n  975  \n  976      /**\n  977:      * @param ClassMetadataInfo $metadata\n  978       *\n  979       * @return string\n  980       */\n  981:     protected function getClassName(ClassMetadataInfo $metadata)\n  982      {\n  983          return ($pos = strrpos($metadata->name, '\\\\'))\n  ...\n  986  \n  987      /**\n  988:      * @param ClassMetadataInfo $metadata\n  989       *\n  990       * @return string\n  991       */\n  992:     protected function getNamespace(ClassMetadataInfo $metadata)\n  993      {\n  994          return substr($metadata->name, 0, strrpos($metadata->name, '\\\\'));\n  ...\n  996  \n  997      /**\n  998:      * @param ClassMetadataInfo $metadata\n  999       *\n 1000       * @return string\n 1001       */\n 1002:     protected function generateEntityDocBlock(ClassMetadataInfo $metadata)\n 1003      {\n 1004          $lines = [];\n ....\n 1035  \n 1036      /**\n 1037:      * @param ClassMetadataInfo $metadata\n 1038       *\n 1039       * @return string\n 1040       */\n 1041:     protected function generateEntityAnnotation(ClassMetadataInfo $metadata)\n 1042      {\n 1043          $prefix = '@' . $this->annotationsPrefix;\n ....\n 1055  \n 1056      /**\n 1057:      * @param ClassMetadataInfo $metadata\n 1058       *\n 1059       * @return string\n 1060       */\n 1061:     protected function generateTableAnnotation(ClassMetadataInfo $metadata)\n 1062      {\n 1063          if ($metadata->isEmbeddedClass) {\n ....\n 1113  \n 1114      /**\n 1115:      * @param ClassMetadataInfo $metadata\n 1116       *\n 1117       * @return string\n 1118       */\n 1119:     protected function generateInheritanceAnnotation(ClassMetadataInfo $metadata)\n 1120      {\n 1121:         if ($metadata->inheritanceType === ClassMetadataInfo::INHERITANCE_TYPE_NONE) {\n 1122              return '';\n 1123          }\n ....\n 1127  \n 1128      /**\n 1129:      * @param ClassMetadataInfo $metadata\n 1130       *\n 1131       * @return string\n 1132       */\n 1133:     protected function generateDiscriminatorColumnAnnotation(ClassMetadataInfo $metadata)\n 1134      {\n 1135:         if ($metadata->inheritanceType === ClassMetadataInfo::INHERITANCE_TYPE_NONE) {\n 1136              return '';\n 1137          }\n ....\n 1146  \n 1147      /**\n 1148:      * @param ClassMetadataInfo $metadata\n 1149       *\n 1150       * @return string\n 1151       */\n 1152:     protected function generateDiscriminatorMapAnnotation(ClassMetadataInfo $metadata)\n 1153      {\n 1154:         if ($metadata->inheritanceType === ClassMetadataInfo::INHERITANCE_TYPE_NONE) {\n 1155              return null;\n 1156          }\n ....\n 1166  \n 1167      /**\n 1168:      * @param ClassMetadataInfo $metadata\n 1169       *\n 1170       * @return string\n 1171       */\n 1172:     protected function generateEntityStubMethods(ClassMetadataInfo $metadata)\n 1173      {\n 1174          $methods = [];\n ....\n 1182  \n 1183              if ((!$metadata->isEmbeddedClass || !$this->embeddablesImmutable)\n 1184:                 && (!isset($fieldMapping['id']) || ! $fieldMapping['id'] || $metadata->generatorType === ClassMetadataInfo::GENERATOR_TYPE_NONE)\n 1185                  && $code = $this->generateEntityStubMethod($metadata, 'set', $fieldMapping['fieldName'], $fieldMapping['type'], $nullableField)\n 1186              ) {\n ....\n 1210  \n 1211          foreach ($metadata->associationMappings as $associationMapping) {\n 1212:             if ($associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n 1213                  $nullable = $this->isAssociationIsNullable($associationMapping) ? 'null' : null;\n 1214                  if ($code = $this->generateEntityStubMethod($metadata, 'set', $associationMapping['fieldName'], $associationMapping['targetEntity'], $nullable)) {\n ....\n 1218                      $methods[] = $code;\n 1219                  }\n 1220:             } elseif ($associationMapping['type'] & ClassMetadataInfo::TO_MANY) {\n 1221                  if ($code = $this->generateEntityStubMethod($metadata, 'add', $associationMapping['fieldName'], $associationMapping['targetEntity'])) {\n 1222                      $methods[] = $code;\n ....\n 1262  \n 1263      /**\n 1264:      * @param ClassMetadataInfo $metadata\n 1265       *\n 1266       * @return string\n 1267       */\n 1268:     protected function generateEntityLifecycleCallbackMethods(ClassMetadataInfo $metadata)\n 1269      {\n 1270          if (empty($metadata->lifecycleCallbacks)) {\n ....\n 1284  \n 1285      /**\n 1286:      * @param ClassMetadataInfo $metadata\n 1287       *\n 1288       * @return string\n 1289       */\n 1290:     protected function generateEntityAssociationMappingProperties(ClassMetadataInfo $metadata)\n 1291      {\n 1292          $lines = [];\n ....\n 1306  \n 1307      /**\n 1308:      * @param ClassMetadataInfo $metadata\n 1309       *\n 1310       * @return string\n 1311       */\n 1312:     protected function generateEntityFieldMappingProperties(ClassMetadataInfo $metadata)\n 1313      {\n 1314          $lines = [];\n ....\n 1331  \n 1332      /**\n 1333:      * @param ClassMetadataInfo $metadata\n 1334       *\n 1335       * @return string\n 1336       */\n 1337:     protected function generateEntityEmbeddedProperties(ClassMetadataInfo $metadata)\n 1338      {\n 1339          $lines = [];\n ....\n 1352  \n 1353      /**\n 1354:      * @param ClassMetadataInfo $metadata\n 1355       * @param string            $type\n 1356       * @param string            $fieldName\n ....\n 1360       * @return string\n 1361       */\n 1362:     protected function generateEntityStubMethod(ClassMetadataInfo $metadata, $type, $fieldName, $typeHint = null, $defaultValue = null)\n 1363      {\n 1364          $methodName = $type . Inflector::classify($fieldName);\n ....\n 1409       * @param string            $name\n 1410       * @param string            $methodName\n 1411:      * @param ClassMetadataInfo $metadata\n 1412       *\n 1413       * @return string\n 1414       */\n 1415:     protected function generateLifecycleCallbackMethod($name, $methodName, ClassMetadataInfo $metadata)\n 1416      {\n 1417          if ($this->hasMethod($methodName, $metadata)) {\n ....\n 1473      /**\n 1474       * @param array             $associationMapping\n 1475:      * @param ClassMetadataInfo $metadata\n 1476       *\n 1477       * @return string\n 1478       */\n 1479:     protected function generateAssociationMappingPropertyDocBlock(array $associationMapping, ClassMetadataInfo $metadata)\n 1480      {\n 1481          $lines = [];\n 1482          $lines[] = $this->spaces . '/**';\n 1483  \n 1484:         if ($associationMapping['type'] & ClassMetadataInfo::TO_MANY) {\n 1485              $lines[] = $this->spaces . ' * @var \\Doctrine\\Common\\Collections\\Collection';\n 1486          } else {\n ....\n 1501              $type = null;\n 1502              switch ($associationMapping['type']) {\n 1503:                 case ClassMetadataInfo::ONE_TO_ONE:\n 1504                      $type = 'OneToOne';\n 1505                      break;\n 1506:                 case ClassMetadataInfo::MANY_TO_ONE:\n 1507                      $type = 'ManyToOne';\n 1508                      break;\n 1509:                 case ClassMetadataInfo::ONE_TO_MANY:\n 1510                      $type = 'OneToMany';\n 1511                      break;\n 1512:                 case ClassMetadataInfo::MANY_TO_MANY:\n 1513                      $type = 'ManyToMany';\n 1514                      break;\n ....\n 1548              }\n 1549  \n 1550:             if (isset($associationMapping['fetch']) && $associationMapping['fetch'] !== ClassMetadataInfo::FETCH_LAZY) {\n 1551                  $fetchMap = [\n 1552:                     ClassMetadataInfo::FETCH_EXTRA_LAZY => 'EXTRA_LAZY',\n 1553:                     ClassMetadataInfo::FETCH_EAGER      => 'EAGER',\n 1554                  ];\n 1555  \n ....\n 1625      /**\n 1626       * @param array             $fieldMapping\n 1627:      * @param ClassMetadataInfo $metadata\n 1628       *\n 1629       * @return string\n 1630       */\n 1631:     protected function generateFieldMappingPropertyDocBlock(array $fieldMapping, ClassMetadataInfo $metadata)\n 1632      {\n 1633          $lines = [];\n ....\n 1774      }\n 1775  \n 1776:     private function generateEntityListenerAnnotation(ClassMetadataInfo $metadata): string\n 1777      {\n 1778          if (0 === \\count($metadata->entityListeners)) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Export\\Driver\\AbstractExporter.php:\n   20  namespace Doctrine\\ORM\\Tools\\Export\\Driver;\n   21  \n   22: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   23  use Doctrine\\ORM\\Tools\\Export\\ExportException;\n   24  \n   ..\n   75       * and returns it.\n   76       *\n   77:      * @param ClassMetadataInfo $metadata\n   78       *\n   79       * @return string\n   80       */\n   81:     abstract public function exportClassMetadata(ClassMetadataInfo $metadata);\n   82  \n   83      /**\n   84:      * Sets the array of ClassMetadataInfo instances to export.\n   85       *\n   86       * @param array $metadata\n   ..\n  152  \n  153      /**\n  154:      * Generates the path to write the class for the given ClassMetadataInfo instance.\n  155       *\n  156:      * @param ClassMetadataInfo $metadata\n  157       *\n  158       * @return string\n  159       */\n  160:     protected function _generateOutputPath(ClassMetadataInfo $metadata)\n  161      {\n  162          return $this->_outputDir . '/' . str_replace('\\\\', '.', $metadata->name) . $this->_extension;\n  ...\n  188      {\n  189          switch ($type) {\n  190:             case ClassMetadataInfo::INHERITANCE_TYPE_NONE:\n  191                  return 'NONE';\n  192  \n  193:             case ClassMetadataInfo::INHERITANCE_TYPE_JOINED:\n  194                  return 'JOINED';\n  195  \n  196:             case ClassMetadataInfo::INHERITANCE_TYPE_SINGLE_TABLE:\n  197                  return 'SINGLE_TABLE';\n  198  \n  199:             case ClassMetadataInfo::INHERITANCE_TYPE_TABLE_PER_CLASS:\n  200                  return 'PER_CLASS';\n  201          }\n  ...\n  210      {\n  211          switch ($mode) {\n  212:             case ClassMetadataInfo::FETCH_EAGER:\n  213                  return 'EAGER';\n  214  \n  215:             case ClassMetadataInfo::FETCH_EXTRA_LAZY:\n  216                  return 'EXTRA_LAZY';\n  217  \n  218:             case ClassMetadataInfo::FETCH_LAZY:\n  219                  return 'LAZY';\n  220          }\n  ...\n  229      {\n  230          switch ($policy) {\n  231:             case ClassMetadataInfo::CHANGETRACKING_DEFERRED_IMPLICIT:\n  232                  return 'DEFERRED_IMPLICIT';\n  233  \n  234:             case ClassMetadataInfo::CHANGETRACKING_DEFERRED_EXPLICIT:\n  235                  return 'DEFERRED_EXPLICIT';\n  236  \n  237:             case ClassMetadataInfo::CHANGETRACKING_NOTIFY:\n  238                  return 'NOTIFY';\n  239          }\n  ...\n  248      {\n  249          switch ($type) {\n  250:             case ClassMetadataInfo::GENERATOR_TYPE_AUTO:\n  251                  return 'AUTO';\n  252  \n  253:             case ClassMetadataInfo::GENERATOR_TYPE_SEQUENCE:\n  254                  return 'SEQUENCE';\n  255  \n  256:             case ClassMetadataInfo::GENERATOR_TYPE_TABLE:\n  257                  return 'TABLE';\n  258  \n  259:             case ClassMetadataInfo::GENERATOR_TYPE_IDENTITY:\n  260                  return 'IDENTITY';\n  261  \n  262:             case ClassMetadataInfo::GENERATOR_TYPE_UUID:\n  263                  return 'UUID';\n  264  \n  265:             case ClassMetadataInfo::GENERATOR_TYPE_CUSTOM:\n  266                  return 'CUSTOM';\n  267          }\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Export\\Driver\\AnnotationExporter.php:\n   20  namespace Doctrine\\ORM\\Tools\\Export\\Driver;\n   21  \n   22: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   23  use Doctrine\\ORM\\Tools\\EntityGenerator;\n   24  \n   ..\n   45       * {@inheritdoc}\n   46       */\n   47:     public function exportClassMetadata(ClassMetadataInfo $metadata)\n   48      {\n   49          if ( ! $this->_entityGenerator) {\n   ..\n   60  \n   61      /**\n   62:      * @param ClassMetadataInfo $metadata\n   63       *\n   64       * @return string\n   65       */\n   66:     protected function _generateOutputPath(ClassMetadataInfo $metadata)\n   67      {\n   68          return $this->_outputDir . '/' . str_replace('\\\\', '/', $metadata->name) . $this->_extension;\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Export\\Driver\\PhpExporter.php:\n   20  namespace Doctrine\\ORM\\Tools\\Export\\Driver;\n   21  \n   22: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   23  \n   24  /**\n   ..\n   39       * {@inheritdoc}\n   40       */\n   41:     public function exportClassMetadata(ClassMetadataInfo $metadata)\n   42      {\n   43          $lines = [];\n   44          $lines[] = '<?php';\n   45          $lines[] = null;\n   46:         $lines[] = 'use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;';\n   47          $lines[] = null;\n   48  \n   ..\n   52  \n   53          if ($metadata->inheritanceType) {\n   54:             $lines[] = '$metadata->setInheritanceType(ClassMetadataInfo::INHERITANCE_TYPE_' . $this->_getInheritanceTypeString($metadata->inheritanceType) . ');';\n   55          }\n   56  \n   ..\n   72  \n   73          if ($metadata->changeTrackingPolicy) {\n   74:             $lines[] = '$metadata->setChangeTrackingPolicy(ClassMetadataInfo::CHANGETRACKING_' . $this->_getChangeTrackingPolicyString($metadata->changeTrackingPolicy) . ');';\n   75          }\n   76  \n   ..\n   90  \n   91          if ( ! $metadata->isIdentifierComposite && $generatorType = $this->_getIdGeneratorTypeString($metadata->generatorType)) {\n   92:             $lines[] = '$metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_' . $generatorType . ');';\n   93          }\n   94  \n   ..\n  116              }\n  117  \n  118:             if ($associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n  119                  $method = 'mapOneToOne';\n  120                  $oneToOneMappingArray = [\n  ...\n  126  \n  127                  $associationMappingArray = array_merge($associationMappingArray, $oneToOneMappingArray);\n  128:             } elseif ($associationMapping['type'] == ClassMetadataInfo::ONE_TO_MANY) {\n  129                  $method = 'mapOneToMany';\n  130                  $potentialAssociationMappingIndexes = [\n  ...\n  140                  }\n  141                  $associationMappingArray = array_merge($associationMappingArray, $oneToManyMappingArray);\n  142:             } elseif ($associationMapping['type'] == ClassMetadataInfo::MANY_TO_MANY) {\n  143                  $method = 'mapManyToMany';\n  144                  $potentialAssociationMappingIndexes = [\n  ...\n  181      }\n  182  \n  183:     private function processEntityListeners(ClassMetadataInfo $metadata) : array\n  184      {\n  185          $lines = [];\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Export\\Driver\\XmlExporter.php:\n   20  namespace Doctrine\\ORM\\Tools\\Export\\Driver;\n   21  \n   22: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   23  use SimpleXMLElement;\n   24  \n   ..\n   40       * {@inheritdoc}\n   41       */\n   42:     public function exportClassMetadata(ClassMetadataInfo $metadata)\n   43      {\n   44          $xml = new SimpleXmlElement('<?xml version=\"1.0\" encoding=\"utf-8\"?><doctrine-mapping ' .\n   ..\n   67          }\n   68  \n   69:         if ($metadata->inheritanceType && $metadata->inheritanceType !== ClassMetadataInfo::INHERITANCE_TYPE_NONE) {\n   70              $root->addAttribute('inheritance-type', $this->_getInheritanceTypeString($metadata->inheritanceType));\n   71          }\n   ..\n  228  \n  229          $orderMap = [\n  230:             ClassMetadataInfo::ONE_TO_ONE,\n  231:             ClassMetadataInfo::ONE_TO_MANY,\n  232:             ClassMetadataInfo::MANY_TO_ONE,\n  233:             ClassMetadataInfo::MANY_TO_MANY,\n  234          ];\n  235  \n  ...\n  243          foreach ($metadata->associationMappings as $associationMapping) {\n  244              $associationMappingXml = null;\n  245:             if ($associationMapping['type'] == ClassMetadataInfo::ONE_TO_ONE) {\n  246                  $associationMappingXml = $root->addChild('one-to-one');\n  247:             } elseif ($associationMapping['type'] == ClassMetadataInfo::MANY_TO_ONE) {\n  248                  $associationMappingXml = $root->addChild('many-to-one');\n  249:             } elseif ($associationMapping['type'] == ClassMetadataInfo::ONE_TO_MANY) {\n  250                  $associationMappingXml = $root->addChild('one-to-many');\n  251:             } elseif ($associationMapping['type'] == ClassMetadataInfo::MANY_TO_MANY) {\n  252                  $associationMappingXml = $root->addChild('many-to-many');\n  253              }\n  ...\n  423       *\n  424       * @param SimpleXMLElement  $identifierXmlNode\n  425:      * @param ClassMetadataInfo $metadata\n  426       *\n  427       * @return void\n  428       */\n  429:     private function exportSequenceInformation(SimpleXMLElement $identifierXmlNode, ClassMetadataInfo $metadata) : void\n  430      {\n  431          $sequenceDefinition = $metadata->sequenceGeneratorDefinition;\n  432  \n  433:         if (! ($metadata->generatorType === ClassMetadataInfo::GENERATOR_TYPE_SEQUENCE && $sequenceDefinition)) {\n  434              return;\n  435          }\n  ...\n  451      }\n  452  \n  453:     private function processEntityListeners(ClassMetadataInfo $metadata, SimpleXMLElement $root): void\n  454      {\n  455          if (0 === \\count($metadata->entityListeners)) {\n  ...\n  463      }\n  464  \n  465:     private function generateEntityListenerXml(ClassMetadataInfo $metadata, array $entityListenersXmlMap, SimpleXMLElement $entityListenersXml): void\n  466      {\n  467          foreach ($metadata->entityListeners as $event => $entityListenerConfig) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Export\\Driver\\YamlExporter.php:\n   21  \n   22  use Symfony\\Component\\Yaml\\Yaml;\n   23: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   24  \n   25  /**\n   ..\n   40       * {@inheritdoc}\n   41       */\n   42:     public function exportClassMetadata(ClassMetadataInfo $metadata)\n   43      {\n   44          $array = [];\n   ..\n   58          $inheritanceType = $metadata->inheritanceType;\n   59  \n   60:         if ($inheritanceType !== ClassMetadataInfo::INHERITANCE_TYPE_NONE) {\n   61              $array['inheritanceType'] = $this->_getInheritanceTypeString($inheritanceType);\n   62          }\n   ..\n   70          }\n   71  \n   72:         if ($metadata->changeTrackingPolicy !== ClassMetadataInfo::CHANGETRACKING_DEFERRED_IMPLICIT) {\n   73              $array['changeTrackingPolicy'] = $this->_getChangeTrackingPolicyString($metadata->changeTrackingPolicy);\n   74          }\n   ..\n  163              }\n  164  \n  165:             if ($associationMapping['type'] & ClassMetadataInfo::TO_ONE) {\n  166                  $joinColumns = $associationMapping['isOwningSide'] ? $associationMapping['joinColumns'] : [];\n  167                  $newJoinColumns = [];\n  ...\n  184                  $associationMappingArray = array_merge($associationMappingArray, $oneToOneMappingArray);\n  185  \n  186:                 if ($associationMapping['type'] & ClassMetadataInfo::ONE_TO_ONE) {\n  187                      $array['oneToOne'][$name] = $associationMappingArray;\n  188                  } else {\n  189                      $array['manyToOne'][$name] = $associationMappingArray;\n  190                  }\n  191:             } elseif ($associationMapping['type'] == ClassMetadataInfo::ONE_TO_MANY) {\n  192                  $oneToManyMappingArray = [\n  193                      'mappedBy'      => $associationMapping['mappedBy'],\n  ...\n  199                  $associationMappingArray = array_merge($associationMappingArray, $oneToManyMappingArray);\n  200                  $array['oneToMany'][$name] = $associationMappingArray;\n  201:             } elseif ($associationMapping['type'] == ClassMetadataInfo::MANY_TO_MANY) {\n  202                  $manyToManyMappingArray = [\n  203                      'mappedBy'   => $associationMapping['mappedBy'],\n  ...\n  236      }\n  237  \n  238:     private function processEntityListeners(ClassMetadataInfo $metadata, array $array) : array\n  239      {\n  240          if (0 === \\count($metadata->entityListeners)) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\Pagination\\LimitSubqueryWalker.php:\n   21  \n   22  use Doctrine\\DBAL\\Types\\Type;\n   23: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   24  use Doctrine\\ORM\\Query;\n   25  use Doctrine\\ORM\\Query\\TreeWalkerAdapter;\n   ..\n  147                      $queryComponent = $queryComponents[$expression->identificationVariable];\n  148                      if (isset($queryComponent['parent'])\n  149:                         && $queryComponent['relation']['type'] & ClassMetadataInfo::TO_MANY) {\n  150                          throw new \\RuntimeException(\"Cannot select distinct identifiers from query with LIMIT and ORDER BY on a column from a fetch joined to-many association. Use output walkers.\");\n  151                      }\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\ResolveTargetEntityListener.php:\n  114  \n  115      /**\n  116:      * @param \\Doctrine\\ORM\\Mapping\\ClassMetadataInfo $classMetadata\n  117       * @param array                                   $mapping\n  118       *\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\SchemaValidator.php:\n   21  \n   22  use Doctrine\\ORM\\EntityManagerInterface;\n   23: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   24  use Doctrine\\DBAL\\Types\\Type;\n   25  \n   ..\n   80       * Validates a single class of the current.\n   81       *\n   82:      * @param ClassMetadataInfo $class\n   83       *\n   84       * @return array\n   85       */\n   86:     public function validateClass(ClassMetadataInfo $class)\n   87      {\n   88          $ce = [];\n   ..\n  156                  if (array_key_exists($assoc['inversedBy'], $targetMetadata->associationMappings)) {\n  157                      $targetAssoc = $targetMetadata->associationMappings[$assoc['inversedBy']];\n  158:                     if ($assoc['type'] == ClassMetadataInfo::ONE_TO_ONE && $targetAssoc['type'] !== ClassMetadataInfo::ONE_TO_ONE) {\n  159                          $ce[] = \"If association \" . $class->name . \"#\" . $fieldName . \" is one-to-one, then the inversed \" .\n  160                                  \"side \" . $targetMetadata->name . \"#\" . $assoc['inversedBy'] . \" has to be one-to-one as well.\";\n  161:                     } elseif ($assoc['type'] == ClassMetadataInfo::MANY_TO_ONE && $targetAssoc['type'] !== ClassMetadataInfo::ONE_TO_MANY) {\n  162                          $ce[] = \"If association \" . $class->name . \"#\" . $fieldName . \" is many-to-one, then the inversed \" .\n  163                                  \"side \" . $targetMetadata->name . \"#\" . $assoc['inversedBy'] . \" has to be one-to-many.\";\n  164:                     } elseif ($assoc['type'] == ClassMetadataInfo::MANY_TO_MANY && $targetAssoc['type'] !== ClassMetadataInfo::MANY_TO_MANY) {\n  165                          $ce[] = \"If association \" . $class->name . \"#\" . $fieldName . \" is many-to-many, then the inversed \" .\n  166                                  \"side \" . $targetMetadata->name . \"#\" . $assoc['inversedBy'] . \" has to be many-to-many as well.\";\n  ...\n  170  \n  171              if ($assoc['isOwningSide']) {\n  172:                 if ($assoc['type'] == ClassMetadataInfo::MANY_TO_MANY) {\n  173                      $identifierColumns = $class->getIdentifierColumnNames();\n  174                      foreach ($assoc['joinTable']['joinColumns'] as $joinColumn) {\n  ...\n  203                      }\n  204  \n  205:                 } elseif ($assoc['type'] & ClassMetadataInfo::TO_ONE) {\n  206                      $identifierColumns = $targetMetadata->getIdentifierColumnNames();\n  207                      foreach ($assoc['joinColumns'] as $joinColumn) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\doctrine\\persistence\\lib\\Doctrine\\Common\\Persistence\\Mapping\\Driver\\PHPDriver.php:\n    6  \n    7  /**\n    8:  * The PHPDriver includes php files which just populate ClassMetadataInfo\n    9   * instances with plain PHP code.\n   10   */\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\symfony\\doctrine-bridge\\Form\\DoctrineOrmTypeGuesser.php:\n   16  use Doctrine\\Common\\Persistence\\Proxy;\n   17  use Doctrine\\DBAL\\Types\\Type;\n   18: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   19  use Doctrine\\ORM\\Mapping\\MappingException as LegacyMappingException;\n   20  use Symfony\\Component\\Form\\FormTypeGuesserInterface;\n   ..\n  103          }\n  104  \n  105:         /** @var ClassMetadataInfo $classMetadata */\n  106          $classMetadata = $classMetadatas[0];\n  107  \n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\symfony\\doctrine-bridge\\PropertyInfo\\DoctrineExtractor.php:\n   17  use Doctrine\\ORM\\EntityManagerInterface;\n   18  use Doctrine\\ORM\\Mapping\\ClassMetadata;\n   19: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   20  use Doctrine\\ORM\\Mapping\\MappingException as OrmMappingException;\n   21  use Symfony\\Component\\PropertyInfo\\PropertyAccessExtractorInterface;\n   ..\n   60          $properties = array_merge($metadata->getFieldNames(), $metadata->getAssociationNames());\n   61  \n   62:         if ($metadata instanceof ClassMetadataInfo && class_exists('Doctrine\\ORM\\Mapping\\Embedded') && $metadata->embeddedClasses) {\n   63              $properties = array_filter($properties, function ($property) {\n   64                  return false === strpos($property, '.');\n   ..\n   84  \n   85              if ($metadata->isSingleValuedAssociation($property)) {\n   86:                 if ($metadata instanceof ClassMetadataInfo) {\n   87                      $associationMapping = $metadata->getAssociationMapping($property);\n   88  \n   ..\n   97              $collectionKeyType = Type::BUILTIN_TYPE_INT;\n   98  \n   99:             if ($metadata instanceof ClassMetadataInfo) {\n  100                  $associationMapping = $metadata->getAssociationMapping($property);\n  101  \n  102                  if (isset($associationMapping['indexBy'])) {\n  103                      $indexProperty = $associationMapping['indexBy'];\n  104:                     /** @var ClassMetadataInfo $subMetadata */\n  105                      $subMetadata = $this->entityManager ? $this->entityManager->getClassMetadata($associationMapping['targetEntity']) : $this->classMetadataFactory->getMetadataFor($associationMapping['targetEntity']);\n  106                      $typeOfField = $subMetadata->getTypeOfField($indexProperty);\n  ...\n  109                          $associationMapping = $subMetadata->getAssociationMapping($indexProperty);\n  110  \n  111:                         /** @var ClassMetadataInfo $subMetadata */\n  112                          $indexProperty = $subMetadata->getSingleAssociationReferencedJoinColumnName($indexProperty);\n  113                          $subMetadata = $this->entityManager ? $this->entityManager->getClassMetadata($associationMapping['targetEntity']) : $this->classMetadataFactory->getMetadataFor($associationMapping['targetEntity']);\n  ...\n  129          }\n  130  \n  131:         if ($metadata instanceof ClassMetadataInfo && class_exists('Doctrine\\ORM\\Mapping\\Embedded') && isset($metadata->embeddedClasses[$property])) {\n  132              return [new Type(Type::BUILTIN_TYPE_OBJECT, false, $metadata->embeddedClasses[$property]['class'])];\n  133          }\n  ...\n  135          if ($metadata->hasField($property)) {\n  136              $typeOfField = $metadata->getTypeOfField($property);\n  137:             $nullable = $metadata instanceof ClassMetadataInfo && $metadata->isNullable($property);\n  138  \n  139              switch ($typeOfField) {\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\symfony\\doctrine-bridge\\Validator\\DoctrineLoader.php:\n   14  use Doctrine\\Common\\Persistence\\Mapping\\MappingException;\n   15  use Doctrine\\ORM\\EntityManagerInterface;\n   16: use Doctrine\\ORM\\Mapping\\ClassMetadataInfo;\n   17  use Doctrine\\ORM\\Mapping\\MappingException as OrmMappingException;\n   18  use Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity;\n   ..\n   54          }\n   55  \n   56:         if (!$doctrineMetadata instanceof ClassMetadataInfo) {\n   57              return false;\n   58          }\n\n271 matches across 32 files\n",
-			"settings":
-			{
-				"buffer_size": 55336,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php",
-			"settings":
-			{
-				"buffer_size": 105472,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/packages/sonata_admin.yaml",
-			"settings":
-			{
-				"buffer_size": 237,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Controller/ProcessController.php",
-			"settings":
-			{
-				"buffer_size": 14692,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/base.html.twig",
-			"settings":
-			{
-				"buffer_size": 607,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/normalization/index.html.twig",
-			"settings":
-			{
-				"buffer_size": 823,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -410,17 +363,37 @@
 	"expanded_folders":
 	[
 		"/D/laravel-distr/HSVM/laraval/kodicms",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/routes",
 		"/D/laravel-distr/HSVM/laraval/kodicms/src",
 		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity"
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Repository"
 	],
 	"file_history":
 	[
+		"/D/laravel-distr/HSVM/laraval/kodicms/kod.sublime-project",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SequenceGenerator.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/CustomIdGenerator.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Id/AssignedGenerator.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/dependency-injection/Loader/Configurator/Traits/ClassTrait.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20190913073719.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Annotation.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/framework.yaml",
+		"/D/work/Поручения/РАзное/Цена сделки/1.sql",
+		"/D/laravel-distr/HSVM/laraval/kodicms/.env",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/sonata_admin.yaml",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/ProcessController.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/templates/normalization/index.html.twig",
+		"/D/laravel-distr/HSVM/laraval/kodicms/templates/base.html.twig",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/TaskController.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/doctrine.yaml",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerKind.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/form/Extension/Core/Type/TextType.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/kod.sublime-project",
 		"/D/work/Web_exchange/fias-master/src/task/Unpack.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Filesystem.php",
 		"/D/work/Web_exchange/fias-master/staging/install.php",
@@ -445,7 +418,6 @@
 		"/D/laravel-distr/HSVM/laraval/kodicms/config/routes.yaml",
 		"/D/laravel-distr/HSVM/laraval/kodicms/src/Kernel.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/public/index.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/.env",
 		"/C/xampp/htdocs/works/recalc_request/index.php",
 		"//r52p-01-app1/d$/to_fir/R52GZK0_ora_9681_ZKOKS_TRIG_TRACE.trc",
 		"//r52p-01-app1/d$/to_fir/R52GZK0_ora_9994_REQUEST_TRIG_TRACE.trc",
@@ -526,30 +498,11 @@
 		"/D/laravel-distr/HSVM/fias-master/composer.phar",
 		"/D/laravel-distr/HSVM/fias-master/composer.json",
 		"/D/work/Web_exchange/fias-master/src/ServiceLocator.php",
-		"/D/work/Web_exchange/fias-master/src/TaskFactory.php",
-		"/D/work/Web_exchange/fias-master/src/Pipe.php",
-		"/D/work/Web_exchange/fias-master/src/service/downloader/DownloaderInterface.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/AdapterInterface.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Helper/HelperInterface.php",
-		"/D/work/Web_exchange/fias-master/src/service/bag/BagInterface.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Directory.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/october/drivers/vendor/league/flysystem/src/Filesystem.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/components/weather/default.htm",
-		"/d/@USER_~1/AppData/Local/Temp/Rar$DRa0.021/fias-master/app/Http/Controllers/UpdateController.php",
-		"//r52p-01-app1/c$/ZKOKS/kn2.txt",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/anandpatel/wysiwygeditors/Plugin.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Store.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Console/Parser.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/october/rain/src/Support/Facades/Http.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/http-foundation/BinaryFileResponse.php",
-		"//r52p-01-app1/c$/ZKOKS/kn.txt",
-		"//r52p-01-app1/c$/ZKOKS/temp/Выгрузка ЗУ в xml по списку/19.04.2019 13_52_55/protocol.txt",
-		"/D/work/Поручения/РАзное/Минимущество/Разбивка по виду прав.txt",
-		"/D/laravel-distr/HSVM/laraval/kodicms/php_info.php"
+		"/D/work/Web_exchange/fias-master/src/TaskFactory.php"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -609,7 +562,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -644,69 +597,11 @@
 						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/Admin/VerBlockStagesAdmin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 831,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								831
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Admin/VerProcessAdmin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								647,
-								647
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "src/Admin/EventListener/AddNameFieldSubscriber.php",
 					"semi_transient": false,
 					"settings":
@@ -724,17 +619,19 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
 					"semi_transient": false,
 					"settings":
@@ -746,8 +643,8 @@
 						"selection":
 						[
 							[
-								1368,
-								1368
+								1561,
+								1568
 							]
 						],
 						"settings":
@@ -757,27 +654,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 619.0,
+						"translation.y": 1105.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "src/Admin/VerBlocksAdmin.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1217,
+						"buffer_size": 1338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								869,
+								869
 							]
 						],
 						"settings":
@@ -787,62 +684,62 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 70.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/Entity/VerBlocks.php",
+					"buffer": 4,
+					"file": "config/packages/doctrine.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2515,
+						"buffer_size": 1766,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								605
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "config/packages/framework.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 450,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								43,
-								43
+								548,
+								548
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Entity/VerKinds.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -854,7 +751,187 @@
 					"type": "text"
 				},
 				{
+					"buffer": 6,
+					"file": "vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Repository/VerBlocksRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
 					"buffer": 8,
+					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2298,
+								2354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 942.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/Entity/VerBlocks.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								544,
+								544
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/Entity/VerProcess.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/Entity/VerProcStages.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								504
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
 					"file": "vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php",
 					"semi_transient": false,
 					"settings":
@@ -880,11 +957,11 @@
 						"translation.y": 10206.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 13,
 					"file": "vendor/sonata-project/admin-bundle/src/Datagrid/ListMapper.php",
 					"semi_transient": false,
 					"settings":
@@ -910,47 +987,17 @@
 						"translation.y": 1970.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 6,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 10,
-					"file": "/D/work/Поручения/РАзное/Цена сделки/1.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1486.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "src/Controller/NormalizationController.php",
 					"semi_transient": false,
 					"settings":
@@ -976,24 +1023,54 @@
 						"translation.y": 496.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "config/services.yaml",
+					"buffer": 15,
+					"file": "src/Admin/VerBlockStagesAdmin.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1951,
+						"buffer_size": 831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								871,
-								871
+								829,
+								829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "config/services.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2213,
+								2213
 							]
 						],
 						"settings":
@@ -1003,14 +1080,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 356.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 17,
+					"file": "src/Admin/VerProcessAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
 					"file": ".env",
 					"semi_transient": false,
 					"settings":
@@ -1022,111 +1129,23 @@
 						"selection":
 						[
 							[
-								1291,
-								1291
+								1356,
+								1356
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "src/Controller/TaskController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "config/packages/doctrine.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1750,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 486.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "config/routes.yaml",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 78,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								47,
-								47
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
+					"buffer": 19,
 					"file": "src/Entity/VerBlockStages.php",
 					"semi_transient": false,
 					"settings":
@@ -1138,8 +1157,8 @@
 						"selection":
 						[
 							[
-								1155,
-								1162
+								819,
+								835
 							]
 						],
 						"settings":
@@ -1150,1313 +1169,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 757.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "src/Entity/VerProcStages.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								62
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 55336,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										859,
-										876
-									],
-									[
-										1047,
-										1064
-									],
-									[
-										1494,
-										1511
-									],
-									[
-										1955,
-										1972
-									],
-									[
-										2258,
-										2275
-									],
-									[
-										2410,
-										2427
-									],
-									[
-										2514,
-										2531
-									],
-									[
-										2696,
-										2713
-									],
-									[
-										2844,
-										2861
-									],
-									[
-										3083,
-										3100
-									],
-									[
-										3444,
-										3461
-									],
-									[
-										3813,
-										3830
-									],
-									[
-										3885,
-										3902
-									],
-									[
-										4174,
-										4191
-									],
-									[
-										4604,
-										4621
-									],
-									[
-										4811,
-										4828
-									],
-									[
-										4988,
-										5005
-									],
-									[
-										5278,
-										5295
-									],
-									[
-										5387,
-										5404
-									],
-									[
-										5510,
-										5527
-									],
-									[
-										5586,
-										5603
-									],
-									[
-										5824,
-										5841
-									],
-									[
-										5905,
-										5922
-									],
-									[
-										6153,
-										6170
-									],
-									[
-										6330,
-										6347
-									],
-									[
-										6530,
-										6547
-									],
-									[
-										6576,
-										6593
-									],
-									[
-										6671,
-										6688
-									],
-									[
-										6697,
-										6714
-									],
-									[
-										6944,
-										6961
-									],
-									[
-										7132,
-										7149
-									],
-									[
-										7350,
-										7367
-									],
-									[
-										7534,
-										7551
-									],
-									[
-										7724,
-										7741
-									],
-									[
-										8000,
-										8017
-									],
-									[
-										8216,
-										8233
-									],
-									[
-										8316,
-										8333
-									],
-									[
-										8697,
-										8714
-									],
-									[
-										9003,
-										9020
-									],
-									[
-										9194,
-										9211
-									],
-									[
-										9278,
-										9295
-									],
-									[
-										9492,
-										9509
-									],
-									[
-										9582,
-										9599
-									],
-									[
-										9900,
-										9917
-									],
-									[
-										10123,
-										10140
-									],
-									[
-										10224,
-										10241
-									],
-									[
-										10581,
-										10598
-									],
-									[
-										10971,
-										10988
-									],
-									[
-										11290,
-										11307
-									],
-									[
-										11611,
-										11628
-									],
-									[
-										11921,
-										11938
-									],
-									[
-										12244,
-										12261
-									],
-									[
-										12541,
-										12558
-									],
-									[
-										12846,
-										12863
-									],
-									[
-										13053,
-										13070
-									],
-									[
-										13305,
-										13322
-									],
-									[
-										13527,
-										13544
-									],
-									[
-										13856,
-										13873
-									],
-									[
-										14136,
-										14153
-									],
-									[
-										14360,
-										14377
-									],
-									[
-										14600,
-										14617
-									],
-									[
-										14868,
-										14885
-									],
-									[
-										15266,
-										15283
-									],
-									[
-										15558,
-										15575
-									],
-									[
-										15876,
-										15893
-									],
-									[
-										16191,
-										16208
-									],
-									[
-										16510,
-										16527
-									],
-									[
-										16674,
-										16691
-									],
-									[
-										16805,
-										16822
-									],
-									[
-										17049,
-										17066
-									],
-									[
-										17238,
-										17255
-									],
-									[
-										17308,
-										17325
-									],
-									[
-										17403,
-										17420
-									],
-									[
-										17649,
-										17666
-									],
-									[
-										17804,
-										17821
-									],
-									[
-										18041,
-										18058
-									],
-									[
-										18194,
-										18211
-									],
-									[
-										18396,
-										18413
-									],
-									[
-										18586,
-										18603
-									],
-									[
-										18784,
-										18801
-									],
-									[
-										18984,
-										19001
-									],
-									[
-										19129,
-										19146
-									],
-									[
-										19340,
-										19357
-									],
-									[
-										19493,
-										19510
-									],
-									[
-										19705,
-										19722
-									],
-									[
-										19860,
-										19877
-									],
-									[
-										20155,
-										20172
-									],
-									[
-										20565,
-										20582
-									],
-									[
-										20669,
-										20686
-									],
-									[
-										20798,
-										20815
-									],
-									[
-										20971,
-										20988
-									],
-									[
-										21041,
-										21058
-									],
-									[
-										21115,
-										21132
-									],
-									[
-										21186,
-										21203
-									],
-									[
-										21260,
-										21277
-									],
-									[
-										21330,
-										21347
-									],
-									[
-										21400,
-										21417
-									],
-									[
-										21571,
-										21588
-									],
-									[
-										21663,
-										21680
-									],
-									[
-										21755,
-										21772
-									],
-									[
-										21931,
-										21948
-									],
-									[
-										22009,
-										22026
-									],
-									[
-										22089,
-										22106
-									],
-									[
-										22175,
-										22192
-									],
-									[
-										22373,
-										22390
-									],
-									[
-										22554,
-										22571
-									],
-									[
-										22617,
-										22634
-									],
-									[
-										22820,
-										22837
-									],
-									[
-										23103,
-										23120
-									],
-									[
-										23166,
-										23183
-									],
-									[
-										23299,
-										23316
-									],
-									[
-										23458,
-										23475
-									],
-									[
-										23531,
-										23548
-									],
-									[
-										23716,
-										23733
-									],
-									[
-										23871,
-										23888
-									],
-									[
-										24011,
-										24028
-									],
-									[
-										24158,
-										24175
-									],
-									[
-										24298,
-										24315
-									],
-									[
-										24456,
-										24473
-									],
-									[
-										24591,
-										24608
-									],
-									[
-										24780,
-										24797
-									],
-									[
-										24922,
-										24939
-									],
-									[
-										25155,
-										25172
-									],
-									[
-										25386,
-										25403
-									],
-									[
-										25530,
-										25547
-									],
-									[
-										25696,
-										25713
-									],
-									[
-										25833,
-										25850
-									],
-									[
-										26060,
-										26077
-									],
-									[
-										26193,
-										26210
-									],
-									[
-										26381,
-										26398
-									],
-									[
-										26555,
-										26572
-									],
-									[
-										26736,
-										26753
-									],
-									[
-										26863,
-										26880
-									],
-									[
-										27015,
-										27032
-									],
-									[
-										27144,
-										27161
-									],
-									[
-										27298,
-										27315
-									],
-									[
-										27427,
-										27444
-									],
-									[
-										27601,
-										27618
-									],
-									[
-										27740,
-										27757
-									],
-									[
-										27860,
-										27877
-									],
-									[
-										28001,
-										28018
-									],
-									[
-										28150,
-										28167
-									],
-									[
-										28290,
-										28307
-									],
-									[
-										28431,
-										28448
-									],
-									[
-										28577,
-										28594
-									],
-									[
-										28669,
-										28686
-									],
-									[
-										28810,
-										28827
-									],
-									[
-										28964,
-										28981
-									],
-									[
-										29056,
-										29073
-									],
-									[
-										29197,
-										29214
-									],
-									[
-										29348,
-										29365
-									],
-									[
-										29440,
-										29457
-									],
-									[
-										29583,
-										29600
-									],
-									[
-										29725,
-										29742
-									],
-									[
-										30008,
-										30025
-									],
-									[
-										30370,
-										30387
-									],
-									[
-										30810,
-										30827
-									],
-									[
-										31096,
-										31113
-									],
-									[
-										31251,
-										31268
-									],
-									[
-										31402,
-										31419
-									],
-									[
-										31561,
-										31578
-									],
-									[
-										31681,
-										31698
-									],
-									[
-										31834,
-										31851
-									],
-									[
-										31954,
-										31971
-									],
-									[
-										32103,
-										32120
-									],
-									[
-										32223,
-										32240
-									],
-									[
-										32451,
-										32468
-									],
-									[
-										32745,
-										32762
-									],
-									[
-										32913,
-										32930
-									],
-									[
-										33119,
-										33136
-									],
-									[
-										33305,
-										33322
-									],
-									[
-										33481,
-										33498
-									],
-									[
-										33757,
-										33774
-									],
-									[
-										33897,
-										33914
-									],
-									[
-										34039,
-										34056
-									],
-									[
-										34181,
-										34198
-									],
-									[
-										34427,
-										34444
-									],
-									[
-										34524,
-										34541
-									],
-									[
-										34604,
-										34621
-									],
-									[
-										34781,
-										34798
-									],
-									[
-										34955,
-										34972
-									],
-									[
-										35113,
-										35130
-									],
-									[
-										35435,
-										35452
-									],
-									[
-										35587,
-										35604
-									],
-									[
-										35729,
-										35746
-									],
-									[
-										35814,
-										35831
-									],
-									[
-										35999,
-										36016
-									],
-									[
-										36062,
-										36079
-									],
-									[
-										36198,
-										36215
-									],
-									[
-										36424,
-										36441
-									],
-									[
-										36536,
-										36553
-									],
-									[
-										36652,
-										36669
-									],
-									[
-										36780,
-										36797
-									],
-									[
-										36968,
-										36985
-									],
-									[
-										37071,
-										37088
-									],
-									[
-										37184,
-										37201
-									],
-									[
-										37347,
-										37364
-									],
-									[
-										37483,
-										37500
-									],
-									[
-										37619,
-										37636
-									],
-									[
-										37793,
-										37810
-									],
-									[
-										37903,
-										37920
-									],
-									[
-										38021,
-										38038
-									],
-									[
-										38133,
-										38150
-									],
-									[
-										38251,
-										38268
-									],
-									[
-										38361,
-										38378
-									],
-									[
-										38671,
-										38688
-									],
-									[
-										38841,
-										38858
-									],
-									[
-										38982,
-										38999
-									],
-									[
-										39118,
-										39135
-									],
-									[
-										39473,
-										39490
-									],
-									[
-										39607,
-										39624
-									],
-									[
-										39796,
-										39813
-									],
-									[
-										39981,
-										39998
-									],
-									[
-										40249,
-										40266
-									],
-									[
-										40603,
-										40620
-									],
-									[
-										40777,
-										40794
-									],
-									[
-										41089,
-										41106
-									],
-									[
-										41439,
-										41456
-									],
-									[
-										41665,
-										41682
-									],
-									[
-										41947,
-										41964
-									],
-									[
-										42099,
-										42116
-									],
-									[
-										42356,
-										42373
-									],
-									[
-										42601,
-										42618
-									],
-									[
-										42651,
-										42668
-									],
-									[
-										42702,
-										42719
-									],
-									[
-										42753,
-										42770
-									],
-									[
-										43003,
-										43020
-									],
-									[
-										43175,
-										43192
-									],
-									[
-										43349,
-										43366
-									],
-									[
-										43523,
-										43540
-									],
-									[
-										43759,
-										43776
-									],
-									[
-										43934,
-										43951
-									],
-									[
-										44119,
-										44136
-									],
-									[
-										44311,
-										44328
-									],
-									[
-										44527,
-										44544
-									],
-									[
-										44926,
-										44943
-									],
-									[
-										45060,
-										45077
-									],
-									[
-										45246,
-										45263
-									],
-									[
-										45492,
-										45509
-									],
-									[
-										45776,
-										45793
-									],
-									[
-										46150,
-										46167
-									],
-									[
-										46463,
-										46480
-									],
-									[
-										46883,
-										46900
-									],
-									[
-										47123,
-										47140
-									],
-									[
-										47445,
-										47462
-									],
-									[
-										47786,
-										47803
-									],
-									[
-										48232,
-										48249
-									],
-									[
-										48540,
-										48557
-									],
-									[
-										48700,
-										48717
-									],
-									[
-										48823,
-										48840
-									],
-									[
-										49151,
-										49168
-									],
-									[
-										49209,
-										49226
-									],
-									[
-										49565,
-										49582
-									],
-									[
-										49624,
-										49641
-									],
-									[
-										49975,
-										49992
-									],
-									[
-										50035,
-										50052
-									],
-									[
-										50450,
-										50467
-									],
-									[
-										50751,
-										50768
-									],
-									[
-										51160,
-										51177
-									],
-									[
-										51448,
-										51465
-									],
-									[
-										51658,
-										51675
-									],
-									[
-										51987,
-										52004
-									],
-									[
-										52313,
-										52330
-									],
-									[
-										52695,
-										52712
-									],
-									[
-										52940,
-										52957
-									],
-									[
-										53239,
-										53256
-									],
-									[
-										53746,
-										53763
-									],
-									[
-										54204,
-										54221
-									],
-									[
-										54642,
-										54659
-									],
-									[
-										54993,
-										55010
-									],
-									[
-										55236,
-										55253
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								6956,
-								6956
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2700.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 105472,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104494,
-								104494
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 61037.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "config/packages/sonata_admin.yaml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "src/Controller/ProcessController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14692,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1262,
-								1043
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 509.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "templates/base.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 607,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								378,
-								378
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "templates/normalization/index.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								357,
-								358
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
 					"type": "text"
 				}
 			]
@@ -2464,7 +1180,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -2495,7 +1211,7 @@
 		"rows":
 		[
 			0.0,
-			0.784596871239,
+			0.456841322302,
 			1.0
 		]
 	},
@@ -2506,13 +1222,13 @@
 	},
 	"output.git":
 	{
-		"height": 122.0
+		"height": 27.0
 	},
 	"pinned_build_system": "",
 	"project": "kod.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2622,7 +1338,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

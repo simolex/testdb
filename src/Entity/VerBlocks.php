@@ -3,23 +3,23 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * VerBlocks
  *
- * @ORM\Table(name="VER_BLOCKS", indexes={@ORM\Index(name="i$og$ver_blocks$type", columns={"VER_TYPE"}), @ORM\Index(name="i$og$ver_blocks$kind", columns={"ATTR", "MESSAGE"}), @ORM\Index(name="i$og$ver_blocks$block_type", columns={"BLOCK_TYPE"})})
- * @ORM\Entity
- * @UniqueEntity(
- *     fields={"vertype", "attr","message"},
- *     errorPath="message",
- *     message="Такой тип проверки данных уже существует."
+ * @ORM\Table(
+ *     name="VER_BLOCKS",
+ *     uniqueConstraints={@ORM\UniqueConstraint(name="i_og_ver_blocks_code", columns={"ID"})},
+ *     indexes={
+ *         @ORM\Index(name="i_og_ver_blocks_type", columns={"VER_TYPE"}),
+ *         @ORM\Index(name="i_og_ver_blocks_kind", columns={"ATTR", "MESSAGE"}),
+ *         @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"})
+ *      }
  * )
+ * @ORM\Entity(repositoryClass="App\Repository\VerBlocksRepository")
  */
 class VerBlocks
 {
-
-
     /**
      * @var string|null
      *
@@ -44,10 +44,7 @@ class VerBlocks
     /**
      * @var int
      *
-     * @ORM\Column(name="ID", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="VER_BLOCKS_ID_seq", allocationSize=1, initialValue=1)
+     * @ORM\Column(name="ID", type="integer", nullable=false, options={"comment"="kls_code"})
      */
     private $id;
 
@@ -57,6 +54,16 @@ class VerBlocks
      * @ORM\Column(name="BLOCK_TYPE", type="integer", nullable=true)
      */
     private $blockType;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="BL_ID", type="integer", nullable=false, options={"comment"="id"})
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="VER_BLOCKS_BL_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $blId;
 
     public function getVerType(): ?string
     {
@@ -99,6 +106,13 @@ class VerBlocks
         return $this->id;
     }
 
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
     public function getBlockType(): ?int
     {
         return $this->blockType;
@@ -109,6 +123,11 @@ class VerBlocks
         $this->blockType = $blockType;
 
         return $this;
+    }
+
+    public function getBlId(): ?int
+    {
+        return $this->blId;
     }
 
 
