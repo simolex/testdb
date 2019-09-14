@@ -7,13 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * VerProcess
  *
- * @ORM\Table(
- *     name="VER_PROCESS",
- *     indexes={
- *         @ORM\Index(name="i_ver_process_block_id", columns={"ID_VER_BLOCK"}),
- *         @ORM\Index(name="i_ver_process_parent_id", columns={"PARENT_ID"})
- *     }
- * )
+ * @ORM\Table(name="VER_PROCESS", indexes={@ORM\Index(name="i_ver_process_parent_id", columns={"PARENT_ID"}), @ORM\Index(name="i_ver_process_block_id", columns={"ID_VER_BLOCK"})})
  * @ORM\Entity
  */
 class VerProcess

@@ -7,12 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * VerProcStages
  *
- * @ORM\Table(
- *     name="VER_PROC_STAGES",
- *     uniqueConstraints={
- *         @ORM\UniqueConstraint(name="fk_ver_proc_stages", columns={"PROC_ID", "STAGE_ID", "DB_NUM"})
- *     }
- * )
+ * @ORM\Table(name="VER_PROC_STAGES", uniqueConstraints={@ORM\UniqueConstraint(name="fk_ver_proc_stages", columns={"PROC_ID", "STAGE_ID", "DB_NUM"})})
  * @ORM\Entity
  */
 class VerProcStages

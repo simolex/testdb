@@ -7,16 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * VerBlocks
  *
- * @ORM\Table(
- *     name="VER_BLOCKS",
- *     uniqueConstraints={@ORM\UniqueConstraint(name="i_og_ver_blocks_code", columns={"ID"})},
- *     indexes={
- *         @ORM\Index(name="i_og_ver_blocks_type", columns={"VER_TYPE"}),
- *         @ORM\Index(name="i_og_ver_blocks_kind", columns={"ATTR", "MESSAGE"}),
- *         @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"})
- *      }
- * )
- * @ORM\Entity(repositoryClass="App\Repository\VerBlocksRepository")
+ * @ORM\Table(name="VER_BLOCKS", indexes={@ORM\Index(name="i_og_ver_blocks_code", columns={"ID"}), @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"}), @ORM\Index(name="i_og_ver_blocks_kind", columns={"ATTR", "MESSAGE"}), @ORM\Index(name="i_og_ver_blocks_type", columns={"VER_TYPE"})})
+ * @ORM\Entity
  */
 class VerBlocks
 {
@@ -25,28 +17,28 @@ class VerBlocks
      *
      * @ORM\Column(name="VER_TYPE", type="string", length=1000, nullable=true)
      */
-    private $verType;
+    private $Type;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="ATTR", type="string", length=1000, nullable=true)
      */
-    private $attr;
+    private $Attr;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="MESSAGE", type="string", length=1000, nullable=true)
      */
-    private $message;
+    private $Message;
 
     /**
-     * @var int
+     * @var int|null
      *
      * @ORM\Column(name="ID", type="integer", nullable=false, options={"comment"="kls_code"})
      */
-    private $id;
+    private $klsCode;
 
     /**
      * @var int|null
@@ -63,52 +55,67 @@ class VerBlocks
      * @ORM\GeneratedValue(strategy="SEQUENCE")
      * @ORM\SequenceGenerator(sequenceName="VER_BLOCKS_BL_ID_seq", allocationSize=1, initialValue=1)
      */
-    private $blId;
+    private $Id;
 
-    public function getVerType(): ?string
+    private function setSplitCode()
     {
-        return $this->verType;
+        preg_match(
+            '/^(\d{1,})(\d{2,2})(\d{2,2})(\d{2,2})$/',
+            $this->klsCode,
+            $split
+        );
+        array_shift($split);
+        return $split;
     }
 
-    public function setVerType(?string $verType): self
+    public function getType(): ?string
     {
-        $this->verType = $verType;
+        return $this->Type;
+    }
+
+    public function setVerType(?string $Type): self
+    {
+        $this->Type = $Type;
 
         return $this;
     }
 
     public function getAttr(): ?string
     {
-        return $this->attr;
+        return $this->Attr;
     }
 
-    public function setAttr(?string $attr): self
+    public function setAttr(?string $Attr): self
     {
-        $this->attr = $attr;
+        $this->Attr = $Attr;
 
         return $this;
     }
 
     public function getMessage(): ?string
     {
-        return $this->message;
+        return $this->Message;
     }
 
     public function setMessage(?string $message): self
     {
-        $this->message = $message;
+        $this->Message = $Message;
 
         return $this;
     }
 
-    public function getId(): ?int
+    public function getKlsCode(): ?string//?int
     {
-        return $this->id;
+
+        return
+            //implode(' ', $this->setSplitCode());
+            $this->setSplitCode()[1];
+            //$this->klsCode;
     }
 
-    public function setId(int $id): self
+    public function setKlsCode(int $klsCode): self
     {
-        $this->id = $id;
+        $this->klsCode = $klsCode;
 
         return $this;
     }
@@ -125,9 +132,9 @@ class VerBlocks
         return $this;
     }
 
-    public function getBlId(): ?int
+    public function getId(): ?int
     {
-        return $this->blId;
+        return $this->Id;
     }
 
 

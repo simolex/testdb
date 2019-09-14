@@ -14,7 +14,7 @@ doctrine:
                 #servicename: 'R52GZK0'
                 charset: utf8
                 url: '%env(resolve:DATABASE_URL)%'
-                schema_filter: /^(VER_BLOCK_STAGES|VER_PROC_STAGES|VER_PROCESS|VER_BLOCK|VER_KINDS)/
+                schema_filter: /^(VER_BLOCK_STAGES|VER_PROC_STAGES|VER_PROCESS|VER_BLOCK|VER_KINDS|VER_BLOCK_STAGES)/
         # configure these for your database server
             mysql:
                 driver: 'pdo_mysql'
