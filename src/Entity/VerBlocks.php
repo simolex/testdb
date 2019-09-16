@@ -7,7 +7,19 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * VerBlocks
  *
- * @ORM\Table(name="VER_BLOCKS", indexes={@ORM\Index(name="i_og_ver_blocks_code", columns={"ID"}), @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"}), @ORM\Index(name="i_og_ver_blocks_kind", columns={"ATTR", "MESSAGE"}), @ORM\Index(name="i_og_ver_blocks_type", columns={"VER_TYPE"})})
+ * @ORM\Table(
+ *     name="VER_BLOCKS",
+ *     uniqueConstraints={
+ *         @ORM\UniqueConstraint(
+ *             name="i_og_ver_blocks_code", columns={"ID"}
+ *         )
+ *     },
+ *     indexes={
+ *         @ORM\Index(name="i_og_ver_blocks_type", columns={"VER_TYPE"}),
+ *         @ORM\Index(name="i_og_ver_blocks_kind", columns={"ATTR", "MESSAGE"}),
+ *         @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"})
+ *     }
+ * )
  * @ORM\Entity
  */
 class VerBlocks
@@ -17,24 +29,24 @@ class VerBlocks
      *
      * @ORM\Column(name="VER_TYPE", type="string", length=1000, nullable=true)
      */
-    private $Type;
+    private $verType;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="ATTR", type="string", length=1000, nullable=true)
      */
-    private $Attr;
+    private $attr;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="MESSAGE", type="string", length=1000, nullable=true)
      */
-    private $Message;
+    private $message;
 
     /**
-     * @var int|null
+     * @var int
      *
      * @ORM\Column(name="ID", type="integer", nullable=false, options={"comment"="kls_code"})
      */
@@ -68,45 +80,44 @@ class VerBlocks
         return $split;
     }
 
-    public function getType(): ?string
+    public function getVerType(): ?string
     {
-        return $this->Type;
+        return $this->verType;
     }
 
-    public function setVerType(?string $Type): self
+    public function setVerType(?string $verType): self
     {
-        $this->Type = $Type;
+        $this->verType = $verType;
 
         return $this;
     }
 
     public function getAttr(): ?string
     {
-        return $this->Attr;
+        return $this->attr;
     }
 
-    public function setAttr(?string $Attr): self
+    public function setAttr(?string $attr): self
     {
-        $this->Attr = $Attr;
+        $this->attr = $attr;
 
         return $this;
     }
 
     public function getMessage(): ?string
     {
-        return $this->Message;
+        return $this->message;
     }
 
     public function setMessage(?string $message): self
     {
-        $this->Message = $Message;
+        $this->message = $message;
 
         return $this;
     }
 
     public function getKlsCode(): ?string//?int
     {
-
         return
             //implode(' ', $this->setSplitCode());
             $this->setSplitCode()[1];
@@ -116,7 +127,6 @@ class VerBlocks
     public function setKlsCode(int $klsCode): self
     {
         $this->klsCode = $klsCode;
-
         return $this;
     }
 
@@ -136,6 +146,7 @@ class VerBlocks
     {
         return $this->Id;
     }
+
 
 
 }
