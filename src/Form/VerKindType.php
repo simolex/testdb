@@ -1,5 +1,5 @@
 <?php
-namespace App\Form\Type;
+namespace App\Form;
 
 use App\Entity\VerKinds;
 
@@ -15,9 +15,20 @@ class VerKindType extends AbstractType
 
 	public function buildForm(FormBuilderInterface $builder, array $options)
     {
-    	$builder->add('kind',EntityType::class, [
-    		'class' => VerKinds::class,
-    		'chioce_label' => 'name'
-    	]);
+    	$builder->add('kind',EntityType::class,[
+		    'class' => VerKinds::class,
+		    'choice_label' => 'name',
+		]);
     }
+
+	/**
+     * {@inheritdoc}
+     */
+	/*public function configureOptions(OptionsResolver $resolver)
+	{
+		$resolver->setDefaults([
+            'data_class' => VerKinds::class
+
+        ]);
+	}*/
 }

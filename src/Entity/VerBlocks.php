@@ -20,7 +20,7 @@ use Doctrine\ORM\Mapping as ORM;
  *         @ORM\Index(name="i_og_ver_blocks_block_type", columns={"BLOCK_TYPE"})
  *     }
  * )
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\VerBlocksRepository")
  */
 class VerBlocks
 {
@@ -29,7 +29,7 @@ class VerBlocks
      *
      * @ORM\Column(name="VER_TYPE", type="string", length=1000, nullable=true)
      */
-    private $verType;
+    private $type;
 
     /**
      * @var string|null
@@ -80,14 +80,14 @@ class VerBlocks
         return $split;
     }
 
-    public function getVerType(): ?string
+    public function getType(): ?string
     {
-        return $this->verType;
+        return $this->type;
     }
 
-    public function setVerType(?string $verType): self
+    public function setType(?string $Type): self
     {
-        $this->verType = $verType;
+        $this->type = $type;
 
         return $this;
     }

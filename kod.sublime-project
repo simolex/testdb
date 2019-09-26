@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "D:\\laravel-distr\\HSVM\\laraval\\octobercms"
 		}
 	]
 }
