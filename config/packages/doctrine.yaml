@@ -5,7 +5,7 @@ doctrine:
         connections:
             oracle:
                 driver: 'oci8'
-                #dbname: 'othergkn'
+                dbname: 'othergkn'
                 #user: 'othergkn'
                 #password: 'othergkn'
                 #host: '10.52.138.32'
