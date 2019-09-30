@@ -148,8 +148,8 @@
 			"file": "vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
+				"buffer_size": 1725,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -165,8 +165,16 @@
 			"file": "config/packages/doctrine.yaml",
 			"settings":
 			{
-				"buffer_size": 1794,
+				"buffer_size": 1793,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/bundles.php",
+			"settings":
+			{
+				"buffer_size": 1508,
 				"line_ending": "Windows"
 			}
 		},
@@ -182,8 +190,8 @@
 			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
+				"buffer_size": 27567,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -195,18 +203,10 @@
 			}
 		},
 		{
-			"file": "/E/work/Laravel/lararoot/octobercms/src/Controller/ArticleAdminController.php",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": ".env",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1760,
 				"line_ending": "Windows"
 			}
 		}
@@ -323,10 +323,21 @@
 	},
 	"expanded_folders":
 	[
-		"/E/work/Laravel/lararoot/octobercms"
+		"/E/work/Laravel/lararoot/kodicms",
+		"/E/work/Laravel/lararoot/kodicms/config",
+		"/E/work/Laravel/lararoot/kodicms/config/packages",
+		"/E/work/Laravel/lararoot/octobercms",
+		"/E/work/Laravel/lararoot/octobercms/vendor",
+		"/E/work/Laravel/lararoot/octobercms/vendor/symfony",
+		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle",
+		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src",
+		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src/Command",
+		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src/Doctrine"
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Event/LoadClassMetadataEventArgs.php",
+		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20190928090925.php",
 		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php",
 		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/AbstractHydrator.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/templates/content_base.html.twig",
@@ -452,9 +463,7 @@
 		"//r52p-01-app1/d$/Distr/R52GZK0_ora_23040.trm",
 		"//r52p-01-app1/d$/Distr/R52GZK0_ora_23040.trc",
 		"//r52p-01-app1/d$/Distr/R52GZK0_ora_1832.trm",
-		"//r52p-01-app1/d$/Distr/R52GZK0_ora_1832.trc",
-		"/D/@USER_PROFILE/Downloads/раздел_2.2.1-Здания-в_отчетном_периоде с площадью (2) (1).sql",
-		"/D/work/Поручения/ОКиАД/раздел_2.2.1-Здания-в_отчетном_периоде с площадью + связь с ЗУ.sql"
+		"//r52p-01-app1/d$/Distr/R52GZK0_ora_1832.trc"
 	],
 	"find":
 	{
@@ -465,6 +474,7 @@
 		"height": 136.0,
 		"where_history":
 		[
+			"E:\\work\\Laravel\\lararoot\\kodicms",
 			"D:\\laravel-distr\\HSVM\\laraval\\kodicms",
 			"D:\\laravel-distr\\HSVM\\laraval\\octobercms\\",
 			"D:\\laravel-distr\\HSVM\\laraval\\octobercms\\public\\vendor\\",
@@ -479,6 +489,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"make:entity",
 			"VerKindType",
 			"ClassMetadataInfo",
 			"ClassMetadataInfo\n                        //'db_ip' => '10.52.141.18',\n                        'sid'   => 'ORCL',\n                        'user'  => 'system',\n                        'pass'  => 'oracle',",
@@ -519,7 +530,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -607,7 +618,7 @@
 						"translation.y": 468.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -637,7 +648,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -664,10 +675,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 245.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -697,7 +708,7 @@
 						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -725,7 +736,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -734,7 +745,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1725,
 						"regions":
 						{
 						},
@@ -755,7 +766,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -785,7 +796,7 @@
 						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -794,15 +805,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1794,
+						"buffer_size": 1793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1200,
-								1200
+								144,
+								144
 							]
 						],
 						"settings":
@@ -812,20 +823,50 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config/bundles.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
 					"semi_transient": false,
 					"settings":
@@ -851,16 +892,16 @@
 						"translation.y": 2574.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 27567,
 						"regions":
 						{
 						},
@@ -881,11 +922,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
 					"semi_transient": false,
 					"settings":
@@ -909,40 +950,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4213.0,
+						"translation.y": 4105.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/E/work/Laravel/lararoot/octobercms/src/Controller/ArticleAdminController.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -951,7 +962,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1760,
 						"regions":
 						{
 						},
@@ -970,7 +981,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1009,7 +1020,7 @@
 		"rows":
 		[
 			0.0,
-			0.511258680268,
+			0.390458559949,
 			1.0
 		]
 	},
@@ -1144,7 +1155,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 328.0,
+	"side_bar_width": 255.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
