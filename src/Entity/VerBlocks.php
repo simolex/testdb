@@ -69,7 +69,7 @@ class VerBlocks
      */
     private $Id;
 
-    private function setSplitCode()
+    private function getSplitCode()
     {
         preg_match(
             '/^(\d{1,})(\d{2,2})(\d{2,2})(\d{2,2})$/',
@@ -118,11 +118,24 @@ class VerBlocks
 
     public function getKlsCode(): ?string//?int
     {
-        return
-            //implode(' ', $this->setSplitCode());
-            $this->setSplitCode()[1];
-            //$this->klsCode;
+        return $this->klsCode;
     }
+
+    public function getTypeCode(): ?string
+    {
+        $this->getSplitCode()[0];
+    }
+
+    public function getAttrCode(): ?string
+    {
+        $this->getSplitCode()[1];
+    }
+
+    public function getMessageCode(): ?string
+    {
+        $this->getSplitCode()[2];
+    }
+
 
     public function setKlsCode(int $klsCode): self
     {

@@ -32,8 +32,16 @@ class VerBlocksRepository extends ServiceEntityRepository
      */
     public function getAllDistinctType()
     {
+    	$em = $this->getEntityManager();
+    	$query = $em->createQuery(
+    		'SELECT substr()
+    		FROM VerBlocks vb
+    		group by vb.type'
+    	)
+
     	return $this->getOrCreateQueryBuilder()
     		->groupBy('vb.type')
+    		->groupBy('')
     		->getQuery()
             ->execute()
     	;
