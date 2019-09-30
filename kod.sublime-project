@@ -10,5 +10,10 @@
 		{
 			"path": "E:\\work\\Laravel\\lararoot\\octobercms"
 		}
-	]
+	],
+	"settings": {
+        "xdebug": {
+             "url": "http://kodicms.tst/",
+        }
+    }
 }
