@@ -148,8 +148,8 @@
 			"file": "vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
 			"settings":
 			{
-				"buffer_size": 1725,
-				"line_ending": "Unix"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -171,71 +171,6 @@
 			}
 		},
 		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Model/UserRegistrationFormModel.php",
-			"settings":
-			{
-				"buffer_size": 614,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/ArticleAdminController.php",
-			"settings":
-			{
-				"buffer_size": 3481,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/ArticleFormType.php",
-			"settings":
-			{
-				"buffer_size": 5162,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/ArticleRepository.php",
-			"settings":
-			{
-				"buffer_size": 2391,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/UserRepository.php",
-			"settings":
-			{
-				"buffer_size": 1936,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/_form.html.twig",
-			"settings":
-			{
-				"buffer_size": 812,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/SecurityController.php",
-			"settings":
-			{
-				"buffer_size": 2866,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/UserRegistrationFormType.php",
-			"settings":
-			{
-				"buffer_size": 2066,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
 			"settings":
 			{
@@ -244,18 +179,34 @@
 			}
 		},
 		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/list.html.twig",
+			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
 			"settings":
 			{
-				"buffer_size": 1137,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/content_base.html.twig",
+			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
 			"settings":
 			{
-				"buffer_size": 381,
+				"buffer_size": 19321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/Laravel/lararoot/octobercms/src/Controller/ArticleAdminController.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -372,32 +323,22 @@
 	},
 	"expanded_folders":
 	[
-		"/D/laravel-distr/HSVM/laraval/kodicms",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Model",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Repository",
-		"/D/laravel-distr/HSVM/laraval/kodicms/templates",
-		"/D/laravel-distr/HSVM/laraval/kodicms/templates/help",
-		"/D/laravel-distr/HSVM/laraval/octobercms",
-		"/D/laravel-distr/HSVM/laraval/octobercms/config",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Controller",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Entity",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Model",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Type",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/TypeExtension",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Repository",
-		"/D/laravel-distr/HSVM/laraval/octobercms/templates",
-		"/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin"
+		"/E/work/Laravel/lararoot/octobercms"
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/AbstractHydrator.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/templates/content_base.html.twig",
+		"/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/list.html.twig",
+		"/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/_form.html.twig",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/SecurityController.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/ArticleRepository.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/UserRepository.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/ArticleFormType.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/ArticleAdminController.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Model/UserRegistrationFormModel.php",
+		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/UserRegistrationFormType.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ManagerRegistry.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ConnectionRegistry.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Model/VerKindModel.php",
@@ -513,19 +454,7 @@
 		"//r52p-01-app1/d$/Distr/R52GZK0_ora_1832.trm",
 		"//r52p-01-app1/d$/Distr/R52GZK0_ora_1832.trc",
 		"/D/@USER_PROFILE/Downloads/раздел_2.2.1-Здания-в_отчетном_периоде с площадью (2) (1).sql",
-		"/D/work/Поручения/ОКиАД/раздел_2.2.1-Здания-в_отчетном_периоде с площадью + связь с ЗУ.sql",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Factory.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/october/rain/src/Filesystem/Filesystem.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php",
-		"/D/work/Web_exchange/fias-master/src/service/filesystem/DirectoryInterface.php",
-		"/D/work/Web_exchange/fias-master/src/service/filesystem/Directory.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/sebastian/resource-operations/src/ResourceOperations.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Config.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Adapter/Ftp.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Adapter/Polyfill/StreamedCopyTrait.php"
+		"/D/work/Поручения/ОКиАД/раздел_2.2.1-Здания-в_отчетном_периоде с площадью + связь с ЗУ.sql"
 	],
 	"find":
 	{
@@ -612,13 +541,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -646,7 +577,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -673,10 +604,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 468.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -706,7 +637,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -736,7 +667,7 @@
 						"translation.y": 245.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -766,7 +697,7 @@
 						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -794,7 +725,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -803,15 +734,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1725,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1628,
-								1628
+								0,
+								0
 							]
 						],
 						"settings":
@@ -821,10 +752,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 479.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -846,13 +777,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -888,251 +821,11 @@
 			]
 		},
 		{
-			"selected": 7,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 10,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Model/UserRegistrationFormModel.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 614,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/ArticleAdminController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3481,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								782,
-								782
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1836.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/ArticleFormType.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								865,
-								865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/ArticleRepository.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2391,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1316,
-								1342
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 432.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/UserRepository.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1936,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								824,
-								860
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/_form.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 812,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								516,
-								524
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/SecurityController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1655,
-								1655
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 810.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/src/Form/UserRegistrationFormType.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2066,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								543,
-								543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 329.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
 					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
 					"semi_transient": false,
 					"settings":
@@ -1144,8 +837,8 @@
 						"selection":
 						[
 							[
-								19542,
-								19548
+								4412,
+								4416
 							]
 						],
 						"settings":
@@ -1155,19 +848,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 13163.0,
+						"translation.y": 2574.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/list.html.twig",
+					"buffer": 11,
+					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1137,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1180,7 +873,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1188,35 +881,96 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
-					"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/content_base.html.twig",
+					"buffer": 12,
+					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 381,
+						"buffer_size": 19321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								53,
-								138
+								7176,
+								7176
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/E/work/Laravel/lararoot/octobercms/src/Controller/ArticleAdminController.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1255,7 +1009,7 @@
 		"rows":
 		[
 			0.0,
-			0.558965102286,
+			0.511258680268,
 			1.0
 		]
 	},
@@ -1382,7 +1136,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
