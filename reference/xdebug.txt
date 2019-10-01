@@ -1,0 +1,19 @@
+/var/log/xdebug
+
+netstat -rn | grep "^0.0.0.0 " | cut -d " " -f10
+
+xon
+
+sudo vim /etc/php/7.2/fpm/conf.d/20-xdebug.ini
+
+zend_extension=/usr/lib/php/20170718/xdebug.so
+xdebug.remote_enable = 1
+xdebug.remote_autostart = on
+xdebug.remote_port = 9001
+xdebug.remote_handler = "dbgp"
+xdebug.remote_mode = req
+xdebug.remote_connect_back = 1
+xdebug.remote_host="10.52.137.127"
+xdebug.remote_log="/var/log/xdebug/xdebug.log"
+xdebug.show_error_trace = 1
+
