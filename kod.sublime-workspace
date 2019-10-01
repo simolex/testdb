@@ -93,63 +93,6 @@
 			}
 		},
 		{
-			"file": "templates/help/index.html.twig",
-			"settings":
-			{
-				"buffer_size": 445,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\nnamespace App\\Form;\n\nuse App\\Entity\\VerBlocks;\nuse App\\Form\\VerKindType;\nuse App\\Repository\\VerBlocksRepository;\nuse Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType;\nuse Symfony\\Component\\Form\\AbstractType;\nuse Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType;\nuse Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType;\nuse Symfony\\Component\\Form\\FormBuilderInterface;\n\nclass VerBlockType extends AbstractType\n{\n    private $verBlocksRepository;\n\n    public function __construct(VerBlocksRepository $verBlocksRepository)\n    {\n        $this->verBlocksRepository = $verBlocksRepository;\n    }\n\n\n    public function buildForm(FormBuilderInterface $builder, array $options)\n    {\n        //dd($this->verBlocksRepository);\n        $builder\n            ->add('Kind', VerKindType::class, [\n                'mapped' => false,\n                'help' => 'Разновидность видов работ',\n                'label' => 'Вид'\n            ])\n            ->add('type', EntityType::class,[\n                'class' => VerBlocks::class,\n                'mapped' => false,\n                'choice_label' => 'type',\n                'placeholder' => 'Choose a type',\n                'choices' => $this->verBlocksRepository->getAllDistinctType(),\n\n            ])\n            ->add('attr', EntityType::class,[\n                'class' => VerBlocks::class,\n                'choice_label' => 'attr',\n            ])\n            ->add('message', EntityType::class,[\n                'class' => VerBlocks::class,\n                'choice_label' => 'message',\n            ])\n        ;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    /*public function configureOptions(OptionsResolver $resolver)\n    {\n        $resolver->setDefaults([\n            'data_class' => VerBlocks::class\n\n        ]);\n    }*/\n}",
-			"file": "src/Form/VerBlockType.php",
-			"file_size": 1853,
-			"file_write_time": 132139902028926292,
-			"settings":
-			{
-				"buffer_size": 1767,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App\\Entity;\n\nuse Doctrine\\ORM\\Mapping as ORM;\n\n/**\n * VerBlocks\n *\n * @ORM\\Table(\n *     name=\"VER_BLOCKS\",\n *     uniqueConstraints={\n *         @ORM\\UniqueConstraint(\n *             name=\"i_og_ver_blocks_code\", columns={\"ID\"}\n *         )\n *     },\n *     indexes={\n *         @ORM\\Index(name=\"i_og_ver_blocks_type\", columns={\"VER_TYPE\"}),\n *         @ORM\\Index(name=\"i_og_ver_blocks_kind\", columns={\"ATTR\", \"MESSAGE\"}),\n *         @ORM\\Index(name=\"i_og_ver_blocks_block_type\", columns={\"BLOCK_TYPE\"})\n *     }\n * )\n * @ORM\\Entity(repositoryClass=\"App\\Repository\\VerBlocksRepository\")\n */\nclass VerBlocks\n{\n    /**\n     * @var string|null\n     *\n     * @ORM\\Column(name=\"VER_TYPE\", type=\"string\", length=1000, nullable=true)\n     */\n    private $type;\n\n    /**\n     * @var string|null\n     *\n     * @ORM\\Column(name=\"ATTR\", type=\"string\", length=1000, nullable=true)\n     */\n    private $attr;\n\n    /**\n     * @var string|null\n     *\n     * @ORM\\Column(name=\"MESSAGE\", type=\"string\", length=1000, nullable=true)\n     */\n    private $message;\n\n    /**\n     * @var int\n     *\n     * @ORM\\Column(name=\"ID\", type=\"integer\", nullable=false, options={\"comment\"=\"kls_code\"})\n     */\n    private $klsCode;\n\n    /**\n     * @var int|null\n     *\n     * @ORM\\Column(name=\"BLOCK_TYPE\", type=\"integer\", nullable=true)\n     */\n    private $blockType;\n\n    /**\n     * @var int\n     *\n     * @ORM\\Column(name=\"BL_ID\", type=\"integer\", nullable=false, options={\"comment\"=\"id\"})\n     * @ORM\\Id\n     * @ORM\\GeneratedValue(strategy=\"SEQUENCE\")\n     * @ORM\\SequenceGenerator(sequenceName=\"VER_BLOCKS_BL_ID_seq\", allocationSize=1, initialValue=1)\n     */\n    private $Id;\n\n    private function setSplitCode()\n    {\n        preg_match(\n            '/^(\\d{1,})(\\d{2,2})(\\d{2,2})(\\d{2,2})$/',\n            $this->klsCode,\n            $split\n        );\n        array_shift($split);\n        return $split;\n    }\n\n    public function getType(): ?string\n    {\n        return $this->type;\n    }\n\n    public function setType(?string $Type): self\n    {\n        $this->type = $type;\n\n        return $this;\n    }\n\n    public function getAttr(): ?string\n    {\n        return $this->attr;\n    }\n\n    public function setAttr(?string $attr): self\n    {\n        $this->attr = $attr;\n\n        return $this;\n    }\n\n    public function getMessage(): ?string\n    {\n        return $this->message;\n    }\n\n    public function setMessage(?string $message): self\n    {\n        $this->message = $message;\n\n        return $this;\n    }\n\n    public function getKlsCode(): ?string//?int\n    {\n        return\n            //implode(' ', $this->setSplitCode());\n            $this->setSplitCode()[1];\n            //$this->klsCode;\n    }\n\n    public function setKlsCode(int $klsCode): self\n    {\n        $this->klsCode = $klsCode;\n        return $this;\n    }\n\n    public function getBlockType(): ?int\n    {\n        return $this->blockType;\n    }\n\n    public function setBlockType(?int $blockType): self\n    {\n        $this->blockType = $blockType;\n\n        return $this;\n    }\n\n    public function getId(): ?int\n    {\n        return $this->Id;\n    }\n\n\n\n}\n",
-			"file": "src/Entity/VerBlocks.php",
-			"file_size": 3265,
-			"file_write_time": 132139902028806276,
-			"settings":
-			{
-				"buffer_size": 3113,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
-			"settings":
-			{
-				"buffer_size": 1470,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SqlResultSetMapping.php",
-			"settings":
-			{
-				"buffer_size": 1885,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
-			"settings":
-			{
-				"buffer_size": 1725,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "config/packages/doctrine.yaml",
 			"settings":
 			{
@@ -159,58 +102,71 @@
 			}
 		},
 		{
-			"file": "vendor/doctrine/doctrine-migrations-bundle/DoctrineMigrationsBundle.php",
+			"file": ".env",
 			"settings":
 			{
-				"buffer_size": 271,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/doctrine/doctrine-migrations-bundle/README.markdown",
-			"settings":
-			{
-				"buffer_size": 463,
-				"line_ending": "Unix"
+				"buffer_size": 1760,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "config/packages/doctrine_migrations.yaml",
 			"settings":
 			{
-				"buffer_size": 272,
+				"buffer_size": 263,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
+			"file": "src/Entity/NormBlock.php",
 			"settings":
 			{
-				"buffer_size": 42253,
+				"buffer_size": 678,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Entity/NormProcess.php",
+			"settings":
+			{
+				"buffer_size": 1209,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Migrations/Version20190930193352.php",
+			"settings":
+			{
+				"buffer_size": 634,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
+			"file": "symfony.lock",
 			"settings":
 			{
-				"buffer_size": 27567,
-				"line_ending": "Unix"
+				"buffer_size": 15557,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
+			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 19321,
-				"line_ending": "Unix"
+				"buffer_size": 959,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".env",
+			"file": "kod.sublime-project",
 			"settings":
 			{
-				"buffer_size": 1760,
+				"buffer_size": 630,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -327,19 +283,51 @@
 	},
 	"expanded_folders":
 	[
-		"/E/work/Laravel/lararoot/kodicms",
-		"/E/work/Laravel/lararoot/kodicms/config",
-		"/E/work/Laravel/lararoot/kodicms/config/packages",
-		"/E/work/Laravel/lararoot/octobercms",
-		"/E/work/Laravel/lararoot/octobercms/vendor",
-		"/E/work/Laravel/lararoot/octobercms/vendor/symfony",
-		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle",
-		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src",
-		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src/Command",
-		"/E/work/Laravel/lararoot/octobercms/vendor/symfony/maker-bundle/src/Doctrine"
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/reference/xdebug.txt",
+		"/E/work/Laravel/Homestead/Vagrantfile",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/Configuration.php",
+		"/E/work/Laravel/lararoot/kodicms/.env",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Command/DoctrineCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/Resources/config/orm.xml",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadata.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsStatusDoctrineCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/StatusCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/AbstractCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/DependencyFactory.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/DependencyInjection/Configuration.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Configuration.php",
+		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20190930075103.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/ClassMetadata.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/README.md",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/UPGRADE-2.0.md",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/Command/GenerateEntitiesDoctrineCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/Command/DoctrineCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/XML/configuration.xsd",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Resources/config/schema/doctrine_migrations-1.0.xsd",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Resources/config/services.xml",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Tests/DependencyInjection/DoctrineMigrationsExtensionTest.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/Tests/Command/DoctrineCommandTest.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/.doctrine-project.json",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/composer.json",
+		"/E/work/Laravel/lararoot/kodicms/var/cache/dev/ContainerWbc2WvP/getDoctrine_MappingConvertCommandService.php",
+		"/E/work/Laravel/lararoot/kodicms/var/log/dev.log",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
+		"/E/work/Laravel/lararoot/kodicms/templates/help/index.html.twig",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SqlResultSetMapping.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
+		"/E/work/Laravel/lararoot/kodicms/config/packages/doctrine.yaml",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/DoctrineMigrationsBundle.php",
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/doctrine-migrations-bundle/README.markdown",
+		"/E/work/Laravel/lararoot/kodicms/src/Entity/VerBlocks.php",
+		"/E/work/Laravel/lararoot/kodicms/src/Form/VerBlockType.php",
 		"/E/work/Laravel/lararoot/kodicms/src/Form/Model/VerKindModel.php",
 		"/E/work/Laravel/lararoot/kodicms/src/Repository/VerBlocksRepository.php",
 		"/E/work/Laravel/lararoot/kodicms/config/packages/doctrine_migrations.yaml",
@@ -425,49 +413,7 @@
 		"/D/work/Utilities/sublimetext/Data/Packages/User/PHP Companion.sublime-settings",
 		"/D/work/Utilities/sublimetext/Data/Packages/User/ProjectPHPClassBrowser.sublime-settings",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/http-foundation/Request.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/HelpController.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/DefaultController.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/routes.yaml",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Kernel.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/public/index.php",
-		"/C/xampp/htdocs/works/recalc_request/index.php",
-		"//r52p-01-app1/d$/to_fir/R52GZK0_ora_9681_ZKOKS_TRIG_TRACE.trc",
-		"//r52p-01-app1/d$/to_fir/R52GZK0_ora_9994_REQUEST_TRIG_TRACE.trc",
-		"//r52p-01-app1/d$/to_fir/R52GZK0_ora_9994_trace_file.trc",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/storage/logs/system.log",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/curl.log",
-		"/d/@USER_~1/AppData/Local/Temp/Rar$DRa0.484/download.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/artisaninweb/laravel-soap/src/Artisaninweb/SoapWrapper/Exceptions/ServiceAlreadyExists.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Style/OutputStyle.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Command/Command.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Output/ConsoleOutputInterface.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Output/BufferedOutput.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Output/ConsoleOutput.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/modules/backend/widgets/ReportContainer.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/october/drivers/vendor/league/flysystem/src/Adapter/AbstractAdapter.php",
-		"/D/work/Web_exchange/fias-master/src/service/downloader/Curl.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/contracts/UpdateService.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/Provider/FiasServiceProvider.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/Plugin.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/components/Weather.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/finder/Iterator/RecursiveDirectoryIterator.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/october/drivers/vendor/league/flysystem/src/File.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/modules/cms/helpers/File.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/config/config.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Adapter/Local.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/finder/SplFileInfo.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Adapter/AbstractAdapter.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/league/flysystem/src/Filesystem.php",
-		"/D/laravel-distr/HSVM/any_libs/multicurl-0.1.0/MultiCurlQueue.php",
-		"/D/laravel-distr/HSVM/any_libs/multicurl-0.1.0/MultiCurlRequest.php",
-		"/D/laravel-distr/HSVM/any_libs/multicurl-0.1.0/MultiCurl.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/october/rain/src/Network/Http.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/artisaninweb/laravel-soap/src/Artisaninweb/SoapWrapper/SoapWrapper.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/models/settings/fields.yaml",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/models/settings/fields_bck.yaml",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/october/rain/src/Network/NetworkServiceProvider.php"
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/HelpController.php"
 	],
 	"find":
 	{
@@ -534,7 +480,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -564,189 +510,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/help/index.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 445,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								418,
-								418
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Form/VerBlockType.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1767,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1051,
-								1051
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 72.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/Entity/VerBlocks.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29,
-								29
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1470,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1077,
-								1077
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SqlResultSetMapping.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1885,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1353,
-								1372
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 342.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "config/packages/doctrine.yaml",
 					"semi_transient": false,
 					"settings":
@@ -758,8 +526,8 @@
 						"selection":
 						[
 							[
-								144,
-								144
+								112,
+								194
 							]
 						],
 						"settings":
@@ -769,83 +537,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "vendor/doctrine/doctrine-migrations-bundle/DoctrineMigrationsBundle.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 83.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "vendor/doctrine/doctrine-migrations-bundle/README.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 463,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								165
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "config/packages/doctrine_migrations.yaml",
+					"buffer": 2,
+					"file": ".env",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 272,
+						"buffer_size": 1760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1369,
+								1417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/packages/doctrine_migrations.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
 							]
 						],
 						"settings":
@@ -856,30 +596,52 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 11,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
+					"buffer": 4,
+					"file": "src/Entity/NormBlock.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 42253,
+						"buffer_size": 678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4412,
-								4416
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Entity/NormProcess.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								741,
+								741
 							]
 						],
 						"settings":
@@ -889,19 +651,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2574.0,
+						"translation.y": 594.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 6,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
 				{
-					"buffer": 12,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
+					"buffer": 6,
+					"file": "src/Migrations/Version20190930193352.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27567,
+						"buffer_size": 634,
 						"regions":
 						{
 						},
@@ -919,69 +687,99 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php",
+					"buffer": 7,
+					"file": "symfony.lock",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19321,
+						"buffer_size": 15557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7176,
-								7176
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4105.0,
+						"translation.y": 5346.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": ".env",
+					"buffer": 8,
+					"file": "test.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1760,
+						"buffer_size": 959,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								960,
-								960
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "kod.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1147,7 +945,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

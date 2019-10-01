@@ -15,7 +15,8 @@
 	"settings": {
         "xdebug": {
         	"path_mapping": {
-                "/home/vagrant/code/": "D:/laravel-distr/HSVM/laraval/"
+                "/home/vagrant/code/": "D:/laravel-distr/HSVM/laraval/",
+                "/home/vagrant/laravel/": "E:/work/Laravel/lararoot/"
             },
             "url": "http://kodicms.tst/",
             "port": 9001,
