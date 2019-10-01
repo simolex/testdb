@@ -1,5 +1,7 @@
 <?php
 
+use Doctrine\Migrations\Tools\Console\Command\StatusCommand;
+
 function e($e) {
     if (!$e) {
         $e = oci_error();

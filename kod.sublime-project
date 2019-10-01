@@ -20,7 +20,7 @@
             },
             "url": "http://kodicms.tst/",
             "port": 9001,
-            "max_depth": 3,
+            "max_depth": 7,
         	"max_children": 100,
         	"super_globals": false,
         	"close_on_stop": true,

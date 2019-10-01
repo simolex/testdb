@@ -96,7 +96,7 @@
 			"file": "config/packages/doctrine.yaml",
 			"settings":
 			{
-				"buffer_size": 1481,
+				"buffer_size": 1437,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -137,6 +137,190 @@
 			}
 		},
 		{
+			"file": "config/bootstrap.php",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vendor/symfony/debug/DebugClassLoader.php",
+			"settings":
+			{
+				"buffer_size": 20740,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/Configuration.php",
+			"settings":
+			{
+				"buffer_size": 15861,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php",
+			"settings":
+			{
+				"buffer_size": 14515,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/DependencyFactory.php",
+			"settings":
+			{
+				"buffer_size": 9739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/MigrationRepository.php",
+			"settings":
+			{
+				"buffer_size": 11117,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/OutputWriter.php",
+			"settings":
+			{
+				"buffer_size": 886,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/composer/ClassLoader.php",
+			"settings":
+			{
+				"buffer_size": 13459,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-migrations-bundle/Command/Helper/DoctrineCommandHelper.php",
+			"settings":
+			{
+				"buffer_size": 2167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/console/Input/Input.php",
+			"settings":
+			{
+				"buffer_size": 4978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/console/Command/Command.php",
+			"settings":
+			{
+				"buffer_size": 19372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/console/Helper/HelperSet.php",
+			"settings":
+			{
+				"buffer_size": 2497,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/dependency-injection/Container.php",
+			"settings":
+			{
+				"buffer_size": 14472,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/framework-bundle/Console/Application.php",
+			"settings":
+			{
+				"buffer_size": 6126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/http-kernel/Kernel.php",
+			"settings":
+			{
+				"buffer_size": 28602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-migrations-bundle/Command/DoctrineCommand.php",
+			"settings":
+			{
+				"buffer_size": 5570,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "var/cache/dev/ContainerX0qvKKx/srcApp_KernelDevDebugContainer.php",
+			"settings":
+			{
+				"buffer_size": 302443,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/console/Application.php",
+			"settings":
+			{
+				"buffer_size": 41127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/framework-bundle/Command/ContainerAwareCommand.php",
+			"settings":
+			{
+				"buffer_size": 1647,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "var/cache/dev/ContainerX0qvKKx/getSonataDumpDoctrineMetaCommandService.php",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/StatusCommand.php",
+			"settings":
+			{
+				"buffer_size": 5038,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/AbstractCommand.php",
+			"settings":
+			{
+				"buffer_size": 6165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Helper/ConfigurationHelper.php",
+			"settings":
+			{
+				"buffer_size": 3354,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/Migrations/Version20190930193352.php",
 			"settings":
 			{
@@ -156,18 +340,169 @@
 			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 959,
+				"buffer_size": 1021,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "kod.sublime-project",
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver/EasyConnectString.php",
 			"settings":
 			{
-				"buffer_size": 630,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 2793,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsStatusDoctrineCommand.php",
+			"settings":
+			{
+				"buffer_size": 1915,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Connection.php",
+			"settings":
+			{
+				"buffer_size": 5332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableManipulator.php",
+			"settings":
+			{
+				"buffer_size": 1970,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableStatus.php",
+			"settings":
+			{
+				"buffer_size": 1735,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableDefinition.php",
+			"settings":
+			{
+				"buffer_size": 3530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/AbstractSchemaManager.php",
+			"settings":
+			{
+				"buffer_size": 29542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-bundle/Dbal/SchemaAssetsFilterManager.php",
+			"settings":
+			{
+				"buffer_size": 686,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/doctrine-bundle/Dbal/RegexSchemaAssetFilter.php",
+			"settings":
+			{
+				"buffer_size": 542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/OracleSchemaManager.php",
+			"settings":
+			{
+				"buffer_size": 11620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php",
+			"settings":
+			{
+				"buffer_size": 50701,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/LoggerChain.php",
+			"settings":
+			{
+				"buffer_size": 769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/doctrine-bridge/Logger/DbalLogger.php",
+			"settings":
+			{
+				"buffer_size": 2528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/stopwatch/Stopwatch.php",
+			"settings":
+			{
+				"buffer_size": 4251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/stopwatch/Section.php",
+			"settings":
+			{
+				"buffer_size": 4490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/symfony/stopwatch/StopwatchEvent.php",
+			"settings":
+			{
+				"buffer_size": 5599,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Configuration.php",
+			"settings":
+			{
+				"buffer_size": 4720,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/Driver.php",
+			"settings":
+			{
+				"buffer_size": 1189,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver.php",
+			"settings":
+			{
+				"buffer_size": 2716,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/OraclePlatform.php",
+			"settings":
+			{
+				"buffer_size": 33148,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -283,9 +618,16 @@
 	},
 	"expanded_folders":
 	[
+		"/E/work/Laravel/lararoot/kodicms",
+		"/E/work/Laravel/lararoot/kodicms/config",
+		"/E/work/Laravel/lararoot/kodicms/src",
+		"/E/work/Laravel/lararoot/kodicms/src/Entity",
+		"/E/work/Laravel/lararoot/kodicms/src/Migrations"
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/FetchMode.php",
+		"/E/work/Laravel/lararoot/kodicms/kod.sublime-project",
 		"/E/work/Laravel/lararoot/kodicms/reference/xdebug.txt",
 		"/E/work/Laravel/Homestead/Vagrantfile",
 		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/Configuration.php",
@@ -411,9 +753,7 @@
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/vendor/symfony/console/Helper/ProgressBar.php",
 		"/D/work/Utilities/sublimetext/Data/Packages/Package Control/Package Control.sublime-settings",
 		"/D/work/Utilities/sublimetext/Data/Packages/User/PHP Companion.sublime-settings",
-		"/D/work/Utilities/sublimetext/Data/Packages/User/ProjectPHPClassBrowser.sublime-settings",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/http-foundation/Request.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/HelpController.php"
+		"/D/work/Utilities/sublimetext/Data/Packages/User/ProjectPHPClassBrowser.sublime-settings"
 	],
 	"find":
 	{
@@ -480,7 +820,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 29,
 			"sheets":
 			[
 				{
@@ -510,7 +850,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -519,15 +859,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1481,
+						"buffer_size": 1437,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								194
+								529,
+								529
 							]
 						],
 						"settings":
@@ -540,7 +880,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -556,8 +896,8 @@
 						"selection":
 						[
 							[
-								1369,
-								1417
+								1304,
+								1304
 							]
 						],
 						"settings":
@@ -568,7 +908,7 @@
 						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 50,
 					"type": "text"
 				},
 				{
@@ -585,7 +925,7 @@
 						[
 							[
 								249,
-								249
+								262
 							]
 						],
 						"settings":
@@ -596,7 +936,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -612,8 +952,8 @@
 						"selection":
 						[
 							[
-								633,
-								633
+								121,
+								131
 							]
 						],
 						"settings":
@@ -621,7 +961,7 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
@@ -640,8 +980,8 @@
 						"selection":
 						[
 							[
-								741,
-								741
+								122,
+								134
 							]
 						],
 						"settings":
@@ -651,20 +991,702 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 6,
+					"file": "config/bootstrap.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "vendor/symfony/debug/DebugClassLoader.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5239,
+								5239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2875.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/Configuration.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7714,
+								7714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4657.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13848,
+								13848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8545.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/DependencyFactory.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9566,
+								9566
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4819.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/MigrationRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2076,
+								2076
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1458.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/OutputWriter.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								684,
+								684
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 283.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 41,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "vendor/composer/ClassLoader.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10907,
+								10907
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6349.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "vendor/doctrine/doctrine-migrations-bundle/Command/Helper/DoctrineCommandHelper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1394,
+								1394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 391.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "vendor/symfony/console/Input/Input.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3876,
+								3876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2515.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "vendor/symfony/console/Command/Command.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3011,
+								3011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1723.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 47,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "vendor/symfony/console/Helper/HelperSet.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1549,
+								1549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 859.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "vendor/symfony/dependency-injection/Container.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8326,
+								8326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "vendor/symfony/framework-bundle/Console/Application.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1845,
+								1845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 715.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "vendor/symfony/http-kernel/Kernel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10362,
+								10362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6385.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "vendor/doctrine/doctrine-migrations-bundle/Command/DoctrineCommand.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5063,
+								5063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2119.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "var/cache/dev/ContainerX0qvKKx/srcApp_KernelDevDebugContainer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233212,
+								233212
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 68125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "vendor/symfony/console/Application.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32240,
+								32240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16861.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "vendor/symfony/framework-bundle/Command/ContainerAwareCommand.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "var/cache/dev/ContainerX0qvKKx/getSonataDumpDoctrineMetaCommandService.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/StatusCommand.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								712,
+								712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 481.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Command/AbstractCommand.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2262,
+								2262
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1075.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tools/Console/Helper/ConfigurationHelper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2294,
+								2294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1057.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
 					"file": "src/Migrations/Version20190930193352.php",
 					"semi_transient": false,
 					"settings":
@@ -687,14 +1709,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 36.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 30,
 					"file": "symfony.lock",
 					"semi_transient": false,
 					"settings":
@@ -720,24 +1742,24 @@
 						"translation.y": 5346.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 51,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 31,
 					"file": "test.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 959,
+						"buffer_size": 1021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								67,
+								67
 							]
 						],
 						"settings":
@@ -750,36 +1772,607 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "kod.sublime-project",
+					"buffer": 32,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver/EasyConnectString.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 630,
+						"buffer_size": 2793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								404,
-								404
+								528,
+								528
 							]
 						],
 						"settings":
 						{
-							"auto_complete": true,
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 193.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsStatusDoctrineCommand.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1462,
+								1462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 481.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Connection.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3086,
+								3086
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1795.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableManipulator.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1833,
+								1833
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 949.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableStatus.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1061,
+								1061
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 589.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "vendor/doctrine/migrations/lib/Doctrine/Migrations/Tracking/TableDefinition.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1333,
+								1333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/AbstractSchemaManager.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6206,
+								6206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3793.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "vendor/doctrine/doctrine-bundle/Dbal/SchemaAssetsFilterManager.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "vendor/doctrine/doctrine-bundle/Dbal/RegexSchemaAssetFilter.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 103.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/OracleSchemaManager.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10594,
+								10594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5935.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7564,
+								7564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5107.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/LoggerChain.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589,
+								589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 247.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "vendor/symfony/doctrine-bridge/Logger/DbalLogger.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1170,
+								1170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 535.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "vendor/symfony/stopwatch/Stopwatch.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2679,
+								2679
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1962.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "vendor/symfony/stopwatch/Section.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2753,
+								2753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2047.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "vendor/symfony/stopwatch/StopwatchEvent.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1869,
+								1869
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1327.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Configuration.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3628,
+								3628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2011.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/Driver.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1025,
+								1025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 463.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2630,
+								2630
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1728.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/OraclePlatform.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12078,
+								12078
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7974.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -802,12 +2395,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -818,7 +2405,6 @@
 		"rows":
 		[
 			0.0,
-			0.390458559949,
 			1.0
 		]
 	},
@@ -830,6 +2416,10 @@
 	"output.git":
 	{
 		"height": 27.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
 	},
 	"pinned_build_system": "",
 	"project": "kod.sublime-project",
@@ -945,15 +2535,309 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"108":
+				{
+					"group": 0,
+					"index": 24
+				},
+				"135":
+				{
+					"group": 0,
+					"index": 18
+				},
+				"14":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"15":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"163":
+				{
+					"group": 0,
+					"index": 8
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"177":
+				{
+					"group": 0,
+					"index": 14
+				},
+				"178":
+				{
+					"group": 0,
+					"index": 15
+				},
+				"179":
+				{
+					"group": 0,
+					"index": 21
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 30
+				},
+				"206":
+				{
+					"group": 0,
+					"index": 16
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 31
+				},
+				"22":
+				{
+					"group": 0,
+					"index": 32
+				},
+				"24":
+				{
+					"group": 0,
+					"index": 34
+				},
+				"273":
+				{
+					"group": 0,
+					"index": 29
+				},
+				"274":
+				{
+					"group": 0,
+					"index": 9
+				},
+				"288":
+				{
+					"group": 0,
+					"index": 13
+				},
+				"315":
+				{
+					"group": 0,
+					"index": 22
+				},
+				"329":
+				{
+					"group": 0,
+					"index": 23
+				},
+				"356":
+				{
+					"group": 0,
+					"index": 11
+				},
+				"357":
+				{
+					"group": 0,
+					"index": 12
+				},
+				"384":
+				{
+					"group": 0,
+					"index": 10
+				},
+				"39":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"47":
+				{
+					"group": 0,
+					"index": 27
+				},
+				"508":
+				{
+					"group": 0,
+					"index": 36
+				},
+				"509":
+				{
+					"group": 0,
+					"index": 37
+				},
+				"523":
+				{
+					"group": 0,
+					"index": 38
+				},
+				"524":
+				{
+					"group": 0,
+					"index": 39
+				},
+				"552":
+				{
+					"group": 0,
+					"index": 52
+				},
+				"553":
+				{
+					"group": 0,
+					"index": 43
+				},
+				"567":
+				{
+					"group": 0,
+					"index": 50
+				},
+				"568":
+				{
+					"group": 0,
+					"index": 51
+				},
+				"569":
+				{
+					"group": 0,
+					"index": 33
+				},
+				"570":
+				{
+					"group": 0,
+					"index": 35
+				},
+				"571":
+				{
+					"group": 0,
+					"index": 49
+				},
+				"572":
+				{
+					"group": 0,
+					"index": 44
+				},
+				"573":
+				{
+					"group": 0,
+					"index": 45
+				},
+				"574":
+				{
+					"group": 0,
+					"index": 46
+				},
+				"575":
+				{
+					"group": 0,
+					"index": 47
+				},
+				"576":
+				{
+					"group": 0,
+					"index": 48
+				},
+				"605":
+				{
+					"group": 0,
+					"index": 42
+				},
+				"606":
+				{
+					"group": 0,
+					"index": 40
+				},
+				"607":
+				{
+					"group": 0,
+					"index": 41
+				},
+				"608":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"61":
+				{
+					"group": 0,
+					"index": 28
+				},
+				"89":
+				{
+					"group": 0,
+					"index": 17
+				},
+				"90":
+				{
+					"group": 0,
+					"index": 19
+				},
+				"91":
+				{
+					"group": 0,
+					"index": 20
+				},
+				"92":
+				{
+					"group": 0,
+					"index": 25
+				},
+				"93":
+				{
+					"group": 0,
+					"index": 26
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 255.0,
+	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
