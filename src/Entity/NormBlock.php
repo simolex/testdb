@@ -25,7 +25,7 @@ class NormBlock
      * @ORM\Column(name="ID", type="integer", nullable=false, options={"comment"="id"})
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_BLOCK_ID", allocationSize=1, initialValue=1)
+     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_BLOCK_ID", allocationSize=2, initialValue=1)
      */
     private $Id;
 }
