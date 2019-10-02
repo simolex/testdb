@@ -5,7 +5,6 @@ use App\Entity\NormBlock;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\QueryBuilder;
-use Doctrine\DBAL\Driver\OCI8;
 
 
 
@@ -24,7 +23,7 @@ class NormBlockRepository extends ServiceEntityRepository
 
     private function getOrCreateQueryBuilder(QueryBuilder $qb = null)
     {
-        return $qb ?: $this->createQueryBuilder('vb');
+        return $qb ?: $this->createQueryBuilder('nb');
     }
 
 
