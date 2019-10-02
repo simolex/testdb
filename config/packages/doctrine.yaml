@@ -1,6 +1,5 @@
 doctrine:
     dbal:
-
         default_connection: oracle
         connections:
             oracle:
@@ -14,7 +13,7 @@ doctrine:
                 # servicename: 'R52GZK0'
                 charset: utf8
                 url: '%env(resolve:DATABASE_URL)%'
-                schema_filter: /^(VER_BLOCK_STAGES|VER_PROC_STAGES|VER_PROCESS|VER_BLOCK|VER_KINDS|VER_BLOCK_STAGES)/
+                schema_filter: /^(NORM_MIGR_VER|NORM_BLOCK|NORM_PROCESS)/
         # configure these for your database server
 
     orm:
@@ -24,7 +23,7 @@ doctrine:
         entity_managers:
             oracle_em:
                 connection: oracle
-                auto_mapping: true
+                auto_mapping: false
                 mappings:
                     App:
                         is_bundle: false

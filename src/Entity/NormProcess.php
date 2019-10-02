@@ -29,7 +29,7 @@ class NormProcess
      * @ORM\Column(name="ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_PROCESS_ID", allocationSize=1, initialValue=1)
+     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_PROCESS_ID", allocationSize=2, initialValue=1)
      */
     private $id;
 
