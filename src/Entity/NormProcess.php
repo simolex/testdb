@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * VerProcess
  *
  * @ORM\Table(
- *     name="OTHERGKN.NORM_PROCESS",
+ *     name="NORM_PROCESS",
  *     uniqueConstraints={
  *         @ORM\UniqueConstraint(
  *             name="pk_process_id", columns={"ID"}
@@ -29,7 +29,7 @@ class NormProcess
      * @ORM\Column(name="ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_PROCESS_ID", allocationSize=2, initialValue=1)
+     * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_PROCESS_ID", allocationSize=1, initialValue=1)
      */
     private $id;
 
