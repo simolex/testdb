@@ -18,7 +18,7 @@ class NormBlockFixtures extends Fixture
     	$connection = $manager->getConnection('oracle');
     	$stmt = $connection->prepare($this->GET_OLD_BLOCKS_TABLE);
     	$stmt->execute();
-    	var_dump($stmt->fetchAll());die;
+    	dd($stmt->fetchAll());
         // $product = new Product();
         // $manager->persist($product);
 

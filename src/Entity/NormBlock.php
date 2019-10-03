@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  *     name="NORM_BLOCK",
  *     uniqueConstraints={
  *         @ORM\UniqueConstraint(
- *             name="pk_block_id", columns={"ID"}
+ *             name="PK_NORM_BLOCK_ID", columns={"ID"}
  *         )
  *     },
  * )
