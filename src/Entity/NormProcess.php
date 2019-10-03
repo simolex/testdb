@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  *     name="NORM_PROCESS",
  *     uniqueConstraints={
  *         @ORM\UniqueConstraint(
- *             name="pk_process_id", columns={"ID"}
+ *             name="PK_NORM_PROCESS_ID", columns={"ID"}
  *         )
  *     },
  *     indexes={
