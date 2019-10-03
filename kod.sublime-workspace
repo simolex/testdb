@@ -325,6 +325,7 @@
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
 		"/E/work/Laravel/lararoot/kodicms/reference/index_rn.sql",
 		"/E/work/Laravel/lararoot/kodicms/reference/Form/Model/VerKindModel.php",
 		"/E/work/Laravel/lararoot/kodicms/reference/Form/VerKindType.php",
@@ -451,8 +452,7 @@
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/contracts/DownloadService.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/classes/DownloadServiceCurl.php",
 		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/classes/UpdateServiceSoap.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/contracts/DirectoryService.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/classes/DirectoryServiceLocal.php"
+		"/D/laravel-distr/HSVM/laraval/octobercms/public/plugins/salxig/fias/contracts/DirectoryService.php"
 	],
 	"find":
 	{
