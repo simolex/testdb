@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DoctrineMigrations;
 
+use App\Helper\RenameIndexTrait;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
@@ -12,6 +13,17 @@ use Doctrine\Migrations\AbstractMigration;
  */
 final class Version20191002080421 extends AbstractMigration
 {
+
+    /*****  RenameIndexTrait *****
+     *
+     * private $ownerDatabase;
+     *
+     * private function renameIndexPrimaryKey(?string $tableName, ?string $indexName) : void
+     *
+     */
+    use RenameIndexTrait;
+
+
     public function getDescription() : string
     {
         return '';
@@ -22,6 +34,8 @@ final class Version20191002080421 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'oracle', 'Migration can only be executed safely on \'oracle\'.');
 
+        $this->renameIndexPrimaryKey('NORM_BLOCK', 'PK_BLOCK_ID');
+        $this->renameIndexPrimaryKey('NORM_PROCESS','PK_PROCESS_ID');
 
         $this->addSql('ALTER TABLE NORM_BLOCK ADD (parent_id NUMBER DEFAULT NULL NULL, name VARCHAR2(1000) NOT NULL)');
         $this->addSql('COMMENT ON COLUMN NORM_BLOCK.parent_id IS \'fk_id\'');
