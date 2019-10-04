@@ -23,7 +23,7 @@ doctrine:
         entity_managers:
             oracle_em:
                 connection: oracle
-                auto_mapping: false
+                auto_mapping: true
                 mappings:
                     App:
                         is_bundle: false

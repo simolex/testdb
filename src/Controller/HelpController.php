@@ -15,12 +15,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class HelpController extends AbstractController
 {
     private $GET_OLD_BLOCKS_TABLE = '
-    select id, ver_type, attr, message
-    from OTHERGKN.VER_BLOCKS
-    order by id';
+        SELECT id, ver_type, attr, message
+        FROM othergkn.ver_blocks
+        ORDER BY id';
 
     private $CLEAR_TABLE_NORM_BLOCK = '
-        truncate table othergkn.norm_block
+        TRUNCATE TABLE othergkn.norm_block
+    ';
+
+    private $RESET_GENERATOR_NORM_BLOCK = '
+        ALTER SEQUENCE othergkn.seq_norm_block_id  INCREMENT BY 1
     ';
     /**
      * @Route("/help", name="help")
@@ -48,11 +52,12 @@ class HelpController extends AbstractController
         $connection->beginTransaction();
 
         try {
-            //$connection->query('SET FOREIGN_KEY_CHECKS=0');
             $connection->query($this->CLEAR_TABLE_NORM_BLOCK);
-            //$connection->query('SET FOREIGN_KEY_CHECKS=1');
+            $connection->query($this->RESET_GENERATOR_NORM_BLOCK);
+
             $connection->commit();
             $em->flush();
+            $em->clear();
         } catch (\Exception $e) {
             try {
                 $logger->error('Can\'t truncate table OTHERGKN.NORM_BLOCK.', [ $e->getMessage() ]);
@@ -73,44 +78,50 @@ class HelpController extends AbstractController
                 return array_change_key_case($node, CASE_LOWER);
             }
         );
+        $em->flush();
+        $em->clear();
 
 
         $templateTree = [];
 
-        $nb1 = new NormBlock();
+        $nb1 = new NormBlock;
         $nb1->setCode('1');
         $nb1->setName('Нормализация ГКН');
         $em->persist($nb1);
+        //$em->flush();
 
         $templateTree['1'] = [
-            'id' => $nb1->getId(),
+            'id' => $nb1,
             'parent_id' => null,
             'childs' => [],
         ];
 
-        $nb2 = new NormBlock();
+        $nb2 = new NormBlock;
         $nb2->setCode('2');
         $nb2->setName('Установление местоположения ОКС на ЗУ');
         $em->persist($nb2);
+        //$em->flush();
 
         $templateTree['2'] = [
-            'id' => $nb2->getId(),
+            'id' => $nb2,
             'parent_id' => null,
             'childs' => [],
         ];
 
-        $nb3 = new NormBlock();
+        $nb3 = new NormBlock;
         $nb3->setCode('3');
         $nb3->setName('Пересчет координат УСК в МСК-52');
         $em->persist($nb3);
+        $em->flush();
 
         $templateTree['3'] = [
-            'id' => $nb3->getId(),
+            'id' => $nb3,
             'parent_id' => null,
             'childs' => [],
         ];
 
         $em->flush();
+        $em->clear();
 
         $mapParams = [
             'id',
@@ -125,7 +136,14 @@ class HelpController extends AbstractController
             $oldCodeAllNodes = $this->splitCode($row['id']);
             $parentId = null;
 
-            $tree_recursive = function (
+            $this->treeRecursive($templateTree,
+        $oldCodeAllNodes,
+        $parentId,
+        $mapParams,
+        $row,
+        $em);
+
+            /*$tree_recursive = function (
                 &$templateTree,
                 $oldCodeAllNodes,
                 $parentId,
@@ -162,10 +180,12 @@ class HelpController extends AbstractController
                     $mapParams
                 );
 
-            };
+            };*/
 
             //TODO
         }
+        $em->flush();
+        $em->clear();
         dd($templateTree);
         //Garbidge:
         //iconv_recursive
@@ -188,7 +208,59 @@ class HelpController extends AbstractController
         //$stmt->closeCursor();
     }
 
-    private function splitCode(?string $code): ?string
+    private function treeRecursive(
+        &$templateTree,
+        $oldCodeAllNodes,
+        $parentId,
+        $mapParams,
+        $row,
+        $em)
+    {
+        $currentCode = array_shift($oldCodeAllNodes);
+        $currentParam = array_shift($mapParams);
+        if($currentCode === null) {
+            return;
+        }
+
+        if(!array_key_exists($currentCode, $templateTree)) {
+
+            $nb = new NormBlock;
+
+            $nb->setParentId($parentId);
+            $nb->setCode('0'.$currentCode);
+
+            if ($row[$currentParam] !== null) {
+                $nb->setName($row[$currentParam]);
+            }
+            //$parentId->addChild($nb);
+            $em->persist($nb);
+
+
+
+            $templateTree[$currentCode] = [
+                'id' => $nb,
+                'parent_id' => $parentId,
+                'childs' => [],
+            ];
+            //$em->flush();
+            //$em->clear();
+        }
+
+        $childTree = &$templateTree[$currentCode]['childs'];
+
+        $this->treeRecursive (
+            $childTree,
+            $oldCodeAllNodes,
+            $templateTree[$currentCode]['id'],
+            $mapParams,
+            $row,
+            $em
+        );
+
+        return;
+    }
+
+    private function splitCode(?string $code): array
     {
         preg_match(
             '/^(\d{1,})(\d{2,2})(\d{2,2})(\d{2,2})$/',

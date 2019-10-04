@@ -5,7 +5,6 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * VerBlocks
  *
@@ -28,38 +27,46 @@ class NormBlock
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
      * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_BLOCK_ID", allocationSize=1, initialValue=1)
+     * @ORM\OneToMany(targetEntity="App\Entity\NormBlock", mappedBy="parent_id")
      */
-    private $id;
+    private $Id;
 
     /**
+     * @var int|null
+     *
+     * @ORM\Column(name="PARENT_ID", type="integer", nullable=true)
      * @ORM\ManyToOne(targetEntity="App\Entity\NormBlock", inversedBy="childs")
-     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
      */
     private $parent_id;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\NormBlock", mappedBy="parent_id")
+     *
+     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
      */
-    private $childs;
+    /*private $childs;*/
 
     /**
-     * @ORM\Column(type="string", length=1000)
+     * @var string|null
+     *
+     * @ORM\Column(name="NAME", type="string", length=1000, nullable=true)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=3)
+     * @var string
+     *
+     * @ORM\Column(name="CODE", type="string", length=3)
      */
     private $code;
 
-    public function __construct()
+    /*public function __construct()
     {
         $this->childs = new ArrayCollection();
-    }
+    }*/
 
-    public function getId(): ?string
+    public function getId(): int
     {
-        return $this->id;
+        return $this->Id;
     }
 
     public function getName(): ?string
@@ -81,7 +88,7 @@ class NormBlock
 
     public function setParentId(?self $parent_id): self
     {
-        $this->parent_id = $parent_id;
+        $this->parent_id = $parent_id->getId();
 
         return $this;
     }
@@ -89,7 +96,7 @@ class NormBlock
     /**
      * @return Collection|self[]
      */
-    public function getChilds(): Collection
+    /*public function getChilds(): Collection
     {
         return $this->childs;
     }
@@ -102,14 +109,21 @@ class NormBlock
         }
 
         return $this;
-    }
+    }*/
 
     public function getCode(): ?string
     {
         return $this->code;
     }
 
-    public function getFullCode(): ?string
+    public function setCode(string $code): self
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /*public function getFullCode(): ?string
     {
     	$fullCode=[];
     	$parentBlock = $this;
@@ -119,14 +133,9 @@ class NormBlock
     	}while ($parentBlock->parent_id !== null);
     	array_unshift($fullCode, $parentBlock->getCode());
     	return implode($fullCode);
-    }
+    }*/
 
-    public function setCode(string $code): self
-    {
-        $this->code = $code;
 
-        return $this;
-    }
 
     /*public function removeChild(self $child): self
     {
@@ -141,3 +150,5 @@ class NormBlock
         return $this;
     }*/
 }
+//@ORM\JoinColumn(name="parent_id", referencedColumnName="id")
+//
