@@ -74,6 +74,7 @@ class HelpController extends AbstractController
             }
         );
 
+
         $templateTree = [];
 
         $nb1 = new NormBlock();
@@ -111,15 +112,61 @@ class HelpController extends AbstractController
 
         $em->flush();
 
-        $isExistsNode = function () {
+        $mapParams = [
+            'id',
+            'ver_type',
+            'attr',
+            'message'
+        ];
 
-        };
 
         foreach ($result as $row) {
-            $levels = $this->splitCode($row['id']);
+
+            $oldCodeAllNodes = $this->splitCode($row['id']);
+            $parentId = null;
+
+            $tree_recursive = function (
+                &$templateTree,
+                $oldCodeAllNodes,
+                $parentId,
+                $mapParams
+            ) use (&$tree_recursive, $row, $em) {
+
+                $currentCode = array_shift($oldCodeAllNodes);
+                $currentParam = array_shift($mapParams);
+                if($currentCode === null) {
+                    return;
+                }
+
+                if(!array_key_exists($currentCode, $templateTree)) {
+
+                    $nb = new NormBlock();
+                    $nb->setParentId($parentId);
+                    $nb->setCode('0'.$currentCode);
+                    $nb->setName($row[$currentParam]);
+                    $em->persist($nb);
+
+                    $templateTree[$currentCode] = [
+                        'id' => $nb->getId(),
+                        'parent_id' => $parentId,
+                        'childs' => [],
+                    ];
+                }
+
+                $childTree = &$templateTree[$currentCode]['childs'];
+
+                return $tree_recursive (
+                    $childTree,
+                    $oldCodeAllNodes,
+                    $templateTree[$currentCode]['id'],
+                    $mapParams
+                );
+
+            };
 
             //TODO
         }
+        dd($templateTree);
         //Garbidge:
         //iconv_recursive
             /*$f = function ($a) use (&$f)

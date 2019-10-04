@@ -30,10 +30,9 @@ trait RenameIndexTrait
                 Connection::PARAM_STR_ARRAY*/
         );
         if (isset($result)) {
-            $this->addSql('ALTER INDEX :old_index_name RENAME TO :new_index_name', [
-                'old_index_name' => $result['INDEX_NAME'],
-                'new_index_name' => $indexName,
-            ]);
+            $this->addSql(
+                sprintf('ALTER INDEX %1$s RENAME TO %2$s', $result['INDEX_NAME'],  $indexName)
+            );
         }
     }
 }
