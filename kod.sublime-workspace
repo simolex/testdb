@@ -113,16 +113,16 @@
 			"file": "src/Controller/HelpController.php",
 			"settings":
 			{
-				"buffer_size": 7360,
+				"buffer_size": 5260,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/Migrations/Version20191002051448.php",
+			"file": "/E/work/Laravel/lararoot/octobercms/src/Form/ArticleFormType.php",
 			"settings":
 			{
-				"buffer_size": 1979,
+				"buffer_size": 5161,
 				"line_ending": "Windows"
 			}
 		},
@@ -363,11 +363,14 @@
 		"/E/work/Laravel/lararoot/kodicms",
 		"/E/work/Laravel/lararoot/kodicms/src",
 		"/E/work/Laravel/lararoot/kodicms/src/Entity",
+		"/E/work/Laravel/lararoot/kodicms/src/Form",
 		"/E/work/Laravel/lararoot/kodicms/src/Migrations",
 		"/D/laravel-distr/HSVM/laraval/octobercms",
 		"/E/work/Laravel/lararoot/octobercms",
 		"/E/work/Laravel/lararoot/octobercms/src",
-		"/E/work/Laravel/lararoot/octobercms/src/DataFixtures"
+		"/E/work/Laravel/lararoot/octobercms/src/DataFixtures",
+		"/E/work/Laravel/lararoot/octobercms/src/Form",
+		"/E/work/Laravel/lararoot/octobercms/src/Form/Type"
 	],
 	"file_history":
 	[
@@ -564,7 +567,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -634,15 +637,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7360,
+						"buffer_size": 5260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1613,
-								1613
+								1219,
+								1219
 							]
 						],
 						"settings":
@@ -653,40 +656,41 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/Migrations/Version20191002051448.php",
-					"semi_transient": true,
+					"file": "/E/work/Laravel/lararoot/octobercms/src/Form/ArticleFormType.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1979,
+						"buffer_size": 5161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								669,
-								686
+								2705,
+								2705
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1134.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{

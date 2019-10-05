@@ -42,7 +42,7 @@ class HelpController extends AbstractController
     }
 
     /**
-     * @Route("/set_block", name="block")
+     * @Route("/admin/set_block", name="admin_block")
      */
     public function set_block(LoggerInterface $logger)
     {
@@ -57,7 +57,6 @@ class HelpController extends AbstractController
 
             $connection->commit();
             $em->flush();
-            $em->clear();
         } catch (\Exception $e) {
             try {
                 $logger->error('Can\'t truncate table OTHERGKN.NORM_BLOCK.', [ $e->getMessage() ]);
@@ -78,8 +77,6 @@ class HelpController extends AbstractController
                 return array_change_key_case($node, CASE_LOWER);
             }
         );
-        $em->flush();
-        $em->clear();
 
 
         $templateTree = [];
@@ -88,7 +85,6 @@ class HelpController extends AbstractController
         $nb1->setCode('1');
         $nb1->setName('Нормализация ГКН');
         $em->persist($nb1);
-        //$em->flush();
 
         $templateTree['1'] = [
             'id' => $nb1,
@@ -100,7 +96,6 @@ class HelpController extends AbstractController
         $nb2->setCode('2');
         $nb2->setName('Установление местоположения ОКС на ЗУ');
         $em->persist($nb2);
-        //$em->flush();
 
         $templateTree['2'] = [
             'id' => $nb2,
@@ -112,7 +107,6 @@ class HelpController extends AbstractController
         $nb3->setCode('3');
         $nb3->setName('Пересчет координат УСК в МСК-52');
         $em->persist($nb3);
-        $em->flush();
 
         $templateTree['3'] = [
             'id' => $nb3,
@@ -121,15 +115,8 @@ class HelpController extends AbstractController
         ];
 
         $em->flush();
-        $em->clear();
 
-        $mapParams = [
-            'id',
-            'ver_type',
-            'attr',
-            'message'
-        ];
-
+        $mapParams = ['id', 'ver_type', 'attr', 'message'];
 
         foreach ($result as $row) {
 
@@ -137,75 +124,19 @@ class HelpController extends AbstractController
             $parentId = null;
 
             $this->treeRecursive($templateTree,
-        $oldCodeAllNodes,
-        $parentId,
-        $mapParams,
-        $row,
-        $em);
-
-            /*$tree_recursive = function (
-                &$templateTree,
-                $oldCodeAllNodes,
-                $parentId,
-                $mapParams
-            ) use (&$tree_recursive, $row, $em) {
-
-                $currentCode = array_shift($oldCodeAllNodes);
-                $currentParam = array_shift($mapParams);
-                if($currentCode === null) {
-                    return;
-                }
-
-                if(!array_key_exists($currentCode, $templateTree)) {
-
-                    $nb = new NormBlock();
-                    $nb->setParentId($parentId);
-                    $nb->setCode('0'.$currentCode);
-                    $nb->setName($row[$currentParam]);
-                    $em->persist($nb);
-
-                    $templateTree[$currentCode] = [
-                        'id' => $nb->getId(),
-                        'parent_id' => $parentId,
-                        'childs' => [],
-                    ];
-                }
-
-                $childTree = &$templateTree[$currentCode]['childs'];
-
-                return $tree_recursive (
-                    $childTree,
                     $oldCodeAllNodes,
-                    $templateTree[$currentCode]['id'],
-                    $mapParams
-                );
+                    $parentId,
+                    $mapParams,
+                    $row,
+                    $em
+            );
 
-            };*/
-
-            //TODO
         }
+
         $em->flush();
         $em->clear();
+
         dd($templateTree);
-        //Garbidge:
-        //iconv_recursive
-            /*$f = function ($a) use (&$f)
-                {
-
-                    return array_map (
-                        function ($b) use (&$f)
-                        {
-
-                            if(is_array($b)) {
-                                 return $f($b);
-                            } else {
-                                return iconv('cp1251','utf-8', $b);
-                            }
-                        },
-                        $a
-                    );
-                };*/
-        //$stmt->closeCursor();
     }
 
     private function treeRecursive(
@@ -232,18 +163,14 @@ class HelpController extends AbstractController
             if ($row[$currentParam] !== null) {
                 $nb->setName($row[$currentParam]);
             }
-            //$parentId->addChild($nb);
+
             $em->persist($nb);
-
-
 
             $templateTree[$currentCode] = [
                 'id' => $nb,
                 'parent_id' => $parentId,
                 'childs' => [],
             ];
-            //$em->flush();
-            //$em->clear();
         }
 
         $childTree = &$templateTree[$currentCode]['childs'];
