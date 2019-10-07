@@ -374,6 +374,7 @@
 	],
 	"file_history":
 	[
+		"/E/work/Laravel/lararoot/kodicms/.git/COMMIT_EDITMSG",
 		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php",
 		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20191004175745.php",
 		"/E/work/Laravel/lararoot/kodicms/var/cache/dev/ContainerXl0hDkU/getSonata_Core_Model_Adapter_ChainService.php",
@@ -500,8 +501,7 @@
 		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Type/VerKindType.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerBlocks.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Type/VerBlockType.php"
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerBlocks.php"
 	],
 	"find":
 	{
