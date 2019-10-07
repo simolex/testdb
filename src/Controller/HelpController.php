@@ -88,7 +88,7 @@ class HelpController extends AbstractController
 
         $templateTree['1'] = [
             'id' => $nb1,
-            'parent_id' => null,
+            'parent_id' => -1,
             'childs' => [],
         ];
 
@@ -99,7 +99,7 @@ class HelpController extends AbstractController
 
         $templateTree['2'] = [
             'id' => $nb2,
-            'parent_id' => null,
+            'parent_id' => -1,
             'childs' => [],
         ];
 
@@ -110,7 +110,7 @@ class HelpController extends AbstractController
 
         $templateTree['3'] = [
             'id' => $nb3,
-            'parent_id' => null,
+            'parent_id' => -1,
             'childs' => [],
         ];
 
@@ -121,7 +121,7 @@ class HelpController extends AbstractController
         foreach ($result as $row) {
 
             $oldCodeAllNodes = $this->splitCode($row['id']);
-            $parentId = null;
+            $parentId = -1;
 
             $this->treeRecursive($templateTree,
                     $oldCodeAllNodes,
@@ -140,13 +140,13 @@ class HelpController extends AbstractController
     }
 
     private function treeRecursive(
-        &$templateTree,
-        $oldCodeAllNodes,
-        $parentId,
-        $mapParams,
-        $row,
-        $em)
-    {
+                                    &$templateTree,
+                                    $oldCodeAllNodes,
+                                    $parentId,
+                                    $mapParams,
+                                    $row,
+                                    $em
+    ) {
         $currentCode = array_shift($oldCodeAllNodes);
         $currentParam = array_shift($mapParams);
         if($currentCode === null) {

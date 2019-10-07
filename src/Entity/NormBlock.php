@@ -16,7 +16,7 @@ use Doctrine\ORM\Mapping as ORM;
  *         )
  *     },
  * )
- * @ORM\Entity(repositoryClass="App\Entity\Repository\NormBlockRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\NormBlockRepository")
  */
 class NormBlock
 {
@@ -123,7 +123,7 @@ class NormBlock
         return $this;
     }
 
-    /*public function getFullCode(): ?string
+    public function getFullCode(): ?string
     {
     	$fullCode=[];
     	$parentBlock = $this;
@@ -133,7 +133,7 @@ class NormBlock
     	}while ($parentBlock->parent_id !== null);
     	array_unshift($fullCode, $parentBlock->getCode());
     	return implode($fullCode);
-    }*/
+    }
 
 
 

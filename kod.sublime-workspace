@@ -104,7 +104,53 @@
 			"file": "src/Entity/NormBlock.php",
 			"settings":
 			{
-				"buffer_size": 3384,
+				"buffer_size": 3373,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/packages/workflow.yaml",
+			"settings":
+			{
+				"buffer_size": 1277,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Repository/NormBlockRepository.php",
+			"settings":
+			{
+				"buffer_size": 1268,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 20731 files for \"NormBlockRepository\"\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\reference\\Form\\VerBlockType.php:\n    2  namespace App\\Form;\n    3  \n    4: use App\\Entity\\Repository\\NormBlockRepository;\n    5  use App\\Entity\\NormBlock;\n    6  //use App\\Form\\VerKindType;\n    .\n   13  class VerBlockType extends AbstractType\n   14  {\n   15:     private $normBlockRepository;\n   16  \n   17:     public function __construct(NormBlockRepository $normBlockRepository)\n   18      {\n   19:         $this->normBlockRepository = $normBlockRepository;\n   20      }\n   21  \n   ..\n   35                  'choice_label' => 'type',\n   36                  'placeholder' => 'Choose a type',\n   37:                 //'choices' => $this->normBlockRepository->getAllDistinctType(),\n   38  \n   39              ])\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\src\\Entity\\NormBlock.php:\n   17   *     },\n   18   * )\n   19:  * @ORM\\Entity(repositoryClass=\"App\\Repository\\NormBlockRepository\")\n   20   */\n   21  class NormBlock\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\src\\Form\\NormBlockType.php:\n    3  \n    4  use App\\Entity\\NormBlock;\n    5: use App\\Repository\\NormBlockRepository;\n    6  use Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType;\n    7  use Symfony\\Component\\Form\\AbstractType;\n    .\n   12  class NormBlockType extends AbstractType\n   13  {\n   14:     private $normBlockRepository;\n   15  \n   16:     public function __construct(NormBlockRepository $normBlockRepository)\n   17      {\n   18:         $this->normBlockRepository = $normBlockRepository;\n   19      }\n   20  \n   ..\n   35                  'choice_label' => 'type',\n   36                  'placeholder' => 'Choose a type',\n   37:                 //'choices' => $this->normBlockRepository->getAllDistinctType(),\n   38  \n   39              ])\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\src\\Repository\\NormBlockRepository.php:\n   15   * @method NormBlock[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)\n   16   */\n   17: class NormBlockRepository extends ServiceEntityRepository\n   18  {\n   19  \tpublic function __construct(ManagerRegistry $registry)\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\var\\cache\\dev\\pools\\gv+zHEnKgq\\K\\P\\kBx7GCdJtPCy2R1uPVow:\n   27              ],\n   28              'repositoryClass' => [\n   29:                 2 => 'App\\\\Entity\\\\Repository\\\\NormBlockRepository',\n   30              ],\n   31          ],\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine-dbal:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\doctrine-migrations:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\php-parse:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\psysh:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\simple-phpunit:\n    ERROR: Unable to open file\n\nD:\\laravel-distr\\HSVM\\laraval\\kodicms\\vendor\\bin\\var-dump-server:\n    ERROR: Unable to open file\n\n17 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 3091,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 1697,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Form/NormBlockType.php",
+			"settings":
+			{
+				"buffer_size": 1749,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -113,16 +159,8 @@
 			"file": "src/Controller/HelpController.php",
 			"settings":
 			{
-				"buffer_size": 5260,
+				"buffer_size": 5421,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/work/Laravel/lararoot/octobercms/src/Form/ArticleFormType.php",
-			"settings":
-			{
-				"buffer_size": 5161,
 				"line_ending": "Windows"
 			}
 		},
@@ -172,14 +210,6 @@
 			"settings":
 			{
 				"buffer_size": 28519,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "var/cache/dev/ContainerXl0hDkU/srcApp_KernelDevDebugContainer.php",
-			"settings":
-			{
-				"buffer_size": 361140,
 				"line_ending": "Unix"
 			}
 		},
@@ -360,148 +390,18 @@
 	},
 	"expanded_folders":
 	[
-		"/E/work/Laravel/lararoot/kodicms",
-		"/E/work/Laravel/lararoot/kodicms/src",
-		"/E/work/Laravel/lararoot/kodicms/src/Entity",
-		"/E/work/Laravel/lararoot/kodicms/src/Form",
-		"/E/work/Laravel/lararoot/kodicms/src/Migrations",
+		"/D/laravel-distr/HSVM/laraval/kodicms",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config",
+		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Helper",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Repository",
 		"/D/laravel-distr/HSVM/laraval/octobercms",
-		"/E/work/Laravel/lararoot/octobercms",
-		"/E/work/Laravel/lararoot/octobercms/src",
-		"/E/work/Laravel/lararoot/octobercms/src/DataFixtures",
-		"/E/work/Laravel/lararoot/octobercms/src/Form",
-		"/E/work/Laravel/lararoot/octobercms/src/Form/Type"
-	],
-	"file_history":
-	[
-		"/E/work/Laravel/lararoot/kodicms/.git/COMMIT_EDITMSG",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20191004175745.php",
-		"/E/work/Laravel/lararoot/kodicms/var/cache/dev/ContainerXl0hDkU/getSonata_Core_Model_Adapter_ChainService.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/sonata-project/core-bundle/src/CoreBundle/Model/Adapter/AdapterChain.php",
-		"/E/work/Laravel/lararoot/kodicms/var/cache/dev/ContainerXl0hDkU/getSonata_Core_Model_Adapter_DoctrineOrmService.php",
-		"/E/work/Laravel/lararoot/kodicms/kod.sublime-project",
-		"/E/work/Laravel/lararoot/kodicms/vendor/sonata-project/core-bundle/src/CoreBundle/Model/Adapter/DoctrineORMAdapter.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ObjectManager.php",
-		"/E/work/Laravel/lararoot/kodicms/config/packages/doctrine.yaml",
-		"/E/work/Laravel/lararoot/kodicms/vendor/symfony/framework-bundle/Command/ContainerAwareCommand.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/sonata-project/block-bundle/src/Block/Service/AdminBlockServiceInterface.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/sonata-project/block-bundle/src/Block/Service/AbstractAdminBlockService.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/sonata-project/core-bundle/src/CoreBundle/Validator/InlineValidator.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/symfony/debug/DebugClassLoader.php",
-		"/E/work/Laravel/lararoot/kodicms/config/bootstrap.php",
-		"/E/work/Laravel/lararoot/kodicms/.env",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Query/ResultSetMappingBuilder.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Entity/Repository/NormBlockRepository.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20191002051448.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php",
-		"/E/work/Laravel/lararoot/kodicms/.gitignore",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Version/Executor.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Helper/RenameIndexTrait.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Version/ExecutorInterface.php",
-		"/E/work/Laravel/lararoot/octobercms/vendor/doctrine/migrations/lib/Doctrine/Migrations/Version/Version.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/AbstractMigration.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Table.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20191003114157.php",
-		"/E/work/Laravel/lararoot/kodicms/src/Migrations/Version20191002080421.php",
-		"/E/work/Laravel/lararoot/octobercms/src/Service/SlackClient.php",
-		"/E/work/Laravel/lararoot/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
-		"/E/work/Laravel/lararoot/kodicms/reference/index_rn.sql",
-		"/E/work/Laravel/lararoot/kodicms/reference/Form/Model/VerKindModel.php",
-		"/E/work/Laravel/lararoot/kodicms/reference/Form/VerKindType.php",
-		"/E/work/Laravel/lararoot/kodicms/reference/Form/VerBlockType.php",
-		"/E/work/Laravel/lararoot/kodicms/config/packages/doctrine_migrations.yaml",
-		"/E/work/Laravel/lararoot/kodicms/src/DataFixtures/NormBlockFixtures.php",
-		"/E/work/Laravel/lararoot/kodicms/src/DataFixtures/BaseFixture.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/DataFixtures/ArticleFixtures.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/DataFixtures/UserFixture.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/AbstractManagerRegistry.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-fixtures-bundle/Fixture.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/AbstractFixture.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/SharedFixtureInterface.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-fixtures-bundle/ORMFixtureInterface.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/FixtureInterface.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/kod.sublime-project",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/bundles.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20191002080421.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20191002051448.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsStatusDoctrineCommand.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/console/Command/Command.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SequenceGenerator.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/framework-bundle/Command/ContainerAwareCommand.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/bin/console",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/composer/ClassLoader.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/.env",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/Repository/NormBlockRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/doctrine.yaml",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/autoload.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/doctrine_migrations.yaml",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/docs/en/reference/namingstrategy.rst",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20190930075103.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/migrations/lib/Doctrine/Migrations/AbstractMigration.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/bootstrap.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/NormProcess.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/public/index.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/NormBlock.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Connection.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/Driver.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/TableDiff.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Table.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Schema.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/AbstractAsset.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/NamingStrategy.php",
-		"/D/work/Utilities/sublimetext/Data/Packages/Xdebug Client/xdebug/protocol.py",
-		"/D/work/Utilities/sublimetext/Data/Packages/User/Xdebug.sublime-settings",
-		"/D/work/Utilities/sublimetext/Data/Packages/Xdebug Client/Xdebug.sublime-settings",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver/EasyConnectString.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/SchemaConfig.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/.env.local.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Kernel.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Column.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/Model/UserRegistrationFormModel.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/ArticleAdminController.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/ArticleFormType.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/ArticleRepository.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Repository/UserRepository.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/_form.html.twig",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Controller/SecurityController.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/src/Form/UserRegistrationFormType.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php",
-		"/D/laravel-distr/HSVM/laraval/octobercms/templates/article_admin/list.html.twig",
-		"/D/laravel-distr/HSVM/laraval/octobercms/templates/content_base.html.twig",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/HelpController.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/config/services.yaml",
-		"/D/laravel-distr/HSVM/laraval/kodicms/templates/help/index.html.twig",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerProcess.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Repository/VerBlocksRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Model/VerKindModel.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/VerKindType.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/VerBlockType.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/Repository/VerBlockRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerProcStages.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/symfony/form/ChoiceList/Loader/CallbackChoiceLoader.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Table.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/SqlResultSetMapping.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ManagerRegistry.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ConnectionRegistry.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller/NormalizationController.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin/VerBlockStagesAdmin.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin/VerProcessAdmin.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerBlockStages.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/templates/process/index.html.twig",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin/EventListener/AddNameFieldSubscriber.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/sonata-project/admin-bundle/src/Form/FormMapper.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin/VerBlocksAdmin.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerKinds.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Form/Type/VerKindType.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity/VerBlocks.php"
+		"/E/work/Laravel/lararoot/octobercms"
 	],
 	"find":
 	{
@@ -526,6 +426,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"NormBlockRepository",
 			"oci_connect",
 			"VerKindType",
 			"ClassMetadataInfo",
@@ -567,7 +468,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -594,10 +495,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -606,15 +507,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3384,
+						"buffer_size": 3373,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								613,
-								605
+								2569,
+								2569
 							]
 						],
 						"settings":
@@ -625,32 +526,59 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 1836.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/Controller/HelpController.php",
+					"file": "config/packages/workflow.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5260,
+						"buffer_size": 1277,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1219,
-								1219
+								254,
+								254
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Repository/NormBlockRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -659,24 +587,192 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/E/work/Laravel/lararoot/octobercms/src/Form/ArticleFormType.php",
+					"buffer": 4,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5161,
+						"buffer_size": 3091,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										188,
+										207
+									],
+									[
+										359,
+										378
+									],
+									[
+										427,
+										446
+									],
+									[
+										448,
+										467
+									],
+									[
+										504,
+										523
+									],
+									[
+										527,
+										546
+									],
+									[
+										726,
+										745
+									],
+									[
+										947,
+										966
+									],
+									[
+										1137,
+										1156
+									],
+									[
+										1346,
+										1365
+									],
+									[
+										1414,
+										1433
+									],
+									[
+										1435,
+										1454
+									],
+									[
+										1491,
+										1510
+									],
+									[
+										1514,
+										1533
+									],
+									[
+										1713,
+										1732
+									],
+									[
+										2000,
+										2019
+									],
+									[
+										2338,
+										2357
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1697,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2705,
-								2705
+								1354,
+								1354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Form/NormBlockType.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Controller/HelpController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2750,
+								2750
 							]
 						],
 						"settings":
@@ -687,14 +783,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1134.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
 					"file": "vendor/sonata-project/core-bundle/src/CoreBundle/Model/Adapter/DoctrineORMAdapter.php",
 					"semi_transient": false,
 					"settings":
@@ -720,11 +816,11 @@
 						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 9,
 					"file": "config/bootstrap.php",
 					"semi_transient": false,
 					"settings":
@@ -748,11 +844,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 10,
 					"file": "vendor/symfony/http-kernel/Kernel.php",
 					"semi_transient": false,
 					"settings":
@@ -778,11 +874,11 @@
 						"translation.y": 3618.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 11,
 					"file": "vendor/symfony/debug/ErrorHandler.php",
 					"semi_transient": false,
 					"settings":
@@ -808,11 +904,11 @@
 						"translation.y": 12145.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 12,
 					"file": "vendor/sonata-project/core-bundle/src/Twig/Extension/TemplateExtension.php",
 					"semi_transient": false,
 					"settings":
@@ -838,11 +934,11 @@
 						"translation.y": 553.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 13,
 					"file": "vendor/twig/twig/src/Environment.php",
 					"semi_transient": false,
 					"settings":
@@ -868,41 +964,11 @@
 						"translation.y": 12577.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "var/cache/dev/ContainerXl0hDkU/srcApp_KernelDevDebugContainer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 361140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148544,
-								148544
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 41845.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "vendor/symfony/twig-bridge/DataCollector/TwigDataCollector.php",
 					"semi_transient": false,
 					"settings":
@@ -928,11 +994,11 @@
 						"translation.y": 391.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 15,
 					"file": "vendor/symfony/http-kernel/Profiler/Profiler.php",
 					"semi_transient": false,
 					"settings":
@@ -958,11 +1024,11 @@
 						"translation.y": 3361.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "vendor/symfony/debug/DebugClassLoader.php",
 					"semi_transient": false,
 					"settings":
@@ -988,11 +1054,11 @@
 						"translation.y": 2731.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 17,
 					"file": "vendor/sonata-project/doctrine-extensions/src/Adapter/ORM/DoctrineORMAdapter.php",
 					"semi_transient": false,
 					"settings":
@@ -1018,11 +1084,11 @@
 						"translation.y": 283.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 18,
 					"file": "vendor/sonata-project/doctrine-extensions/src/Adapter/AdapterChain.php",
 					"semi_transient": false,
 					"settings":
@@ -1048,11 +1114,11 @@
 						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 19,
 					"file": "public/index.php",
 					"semi_transient": false,
 					"settings":
@@ -1076,7 +1142,7 @@
 						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]

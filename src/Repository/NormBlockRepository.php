@@ -1,5 +1,5 @@
 <?php
-namespace App\Entity\Repository;
+namespace App\Repository;
 
 use App\Entity\NormBlock;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;

@@ -1,16 +1,15 @@
 <?php
 namespace App\Form;
 
-use App\Entity\Repository\NormBlockRepository;
 use App\Entity\NormBlock;
-//use App\Form\VerKindType;
+use App\Repository\NormBlockRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class VerBlockType extends AbstractType
+class NormBlockType extends AbstractType
 {
     private $normBlockRepository;
 
@@ -23,12 +22,13 @@ class VerBlockType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         //dd($this->verBlocksRepository);
-        $builder
+
             /*->add('Kind', VerKindType::class, [
                 'mapped' => false,
                 'help' => 'Разновидность видов работ',
                 'label' => 'Вид'
             ])*/
+        $builder
             ->add('type', EntityType::class,[
                 'class' => NormBlock::class,
                 'mapped' => false,

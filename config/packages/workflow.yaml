@@ -1,2 +1,50 @@
 framework:
-    workflows: null
+    workflows:
+      loading_document_verification:
+        type: 'workflow'
+        audit_trail:
+          enabled: true
+        marking_store:
+          type: 'method'
+          property: 'currentPlace'
+        supports:
+          - stdClass
+        initial_marking: start
+        places:
+          - start
+          - load_xls
+          - prepare_xls
+          - download_midmif
+          - prepare_midmif
+          - calculate_rows
+          - get_gkn_documents
+          - review_result
+          - check_result
+        transitions:
+          selected_xls_data:
+            from: start
+            to:   load_xls
+          selected_midmif_data:
+            from: start
+            to:   download_midmif
+          selected_column:
+            from: load_xls
+            to: prepare_xls
+          uploaded_mif:
+            from: download_midmif
+            to: prepare_midmif
+          check_scalar_data:
+            from: prepare_xls
+            to: calculate_rows
+          check_midmif_data:
+            from: prepare_midmif
+            to: calculate_rows
+          request_create_gkn_docs:
+            from: calculate_rows
+            to: get_gkn_documents
+          load_data_to_gkn_docs:
+            from: get_gkn_documents
+            to: review_result
+
+
+
