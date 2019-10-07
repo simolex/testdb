@@ -23,12 +23,13 @@ class VerBlockType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         //dd($this->verBlocksRepository);
-        $builder
+
             /*->add('Kind', VerKindType::class, [
                 'mapped' => false,
                 'help' => 'Разновидность видов работ',
                 'label' => 'Вид'
             ])*/
+        $builder
             ->add('type', EntityType::class,[
                 'class' => NormBlock::class,
                 'mapped' => false,
