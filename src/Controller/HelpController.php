@@ -3,14 +3,14 @@
 namespace App\Controller;
 
 use App\Entity\NormBlock;
+use App\Entity\NormProcess;
 use App\Form\VerBlockType;
-use Psr\Log\LoggerInterface;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ConnectionException;
-//use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LoggerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HelpController extends AbstractController
 {
@@ -22,6 +22,16 @@ class HelpController extends AbstractController
     private $CLEAR_TABLE_NORM_BLOCK = '
         TRUNCATE TABLE othergkn.norm_block
     ';
+
+    private $GET_OLD_PROCESSES_TABLE = '
+        SELECT id, parent_id, id_ver_block, note
+        FROM othergkn.ver_process
+        ORDER BY id';
+
+    private $CLEAR_TABLE_NORM_PROCESS = '
+        TRUNCATE TABLE othergkn.norm_process
+    ';
+
 
     private $RESET_GENERATOR_NORM_BLOCK = '
         ALTER SEQUENCE othergkn.seq_norm_block_id  INCREMENT BY 1
@@ -137,6 +147,63 @@ class HelpController extends AbstractController
         $em->clear();
 
         dd($templateTree);
+    }
+
+    /**
+     * @Route("/admin/set_process", name="admin_process")
+     */
+    public function set_process(LoggerInterface $logger)
+    {
+        //$cmd = $em->getClassMetadata($className);
+        $em = $this->getDoctrine()->getManager();
+        $connection = $em->getConnection();
+        $connection->beginTransaction();
+
+        try {
+            $connection->query($this->CLEAR_TABLE_NORM_PROCESS);
+            //$connection->query($this->RESET_GENERATOR_NORM_BLOCK);
+
+            $connection->commit();
+            $em->flush();
+        } catch (\Exception $e) {
+            try {
+                $logger->error('Can\'t truncate table OTHERGKN.NORM_PROCESS.', [ $e->getMessage() ]);
+                $connection->rollback();
+                throw new \Exception('Can\'t truncate table OTHERGKN.NORM_PROCESS.');
+            } catch (ConnectionException $connectionException) {
+                $logger->error('Can\'t rollback truncating table OTHERGKN.NORM_PROCESS.', [
+                    $connectionException->getMessage()
+                ]);
+               throw new \Exception('Can\'t rollback truncating table OTHERGKN.NORM_PROCESS.');
+            }
+        }
+
+        $result = $connection->project(
+            $this->GET_OLD_PROCESSES_TABLE,
+            [],
+            function ($node){
+                return array_change_key_case($node, CASE_LOWER);
+            }
+        );
+
+        $remapperId = [];
+        foreach ($result as $row) {
+            $np = new NormProcess;
+            $np->createProcess(
+                $row['note'],
+                $row['id_ver_block'],
+                ($row['parent_id'] !== null) ? $remapperId[$row['parent_id']] : null
+            );
+
+            $em->persist($np);
+            $remapperId[$row['id']] = $np->getId();
+        }
+
+        $em->flush();
+        $em->clear();
+
+        return $this->json($result);
+
     }
 
     private function treeRecursive(

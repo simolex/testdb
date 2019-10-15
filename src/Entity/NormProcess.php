@@ -65,7 +65,22 @@ class NormProcess
 
     public function getId(): int
     {
-        return $this->Id;
+        return $this->id;
+    }
+
+    public function getParentId()
+    {
+        return $this->parentId;
+    }
+
+    public function getNormBlock()
+    {
+        return $this->idNormBlock;
+    }
+
+    public function getNote()
+    {
+        return $this->note;
     }
 
     public function getStage()
@@ -76,6 +91,17 @@ class NormProcess
     public function setStage($stage)
     {
         $this->stage = $stage;
+    }
+    public function createProcess(?string $note, ?int $blockId = null, ?int $parentId = null)
+    {
+        $this->note = $note;
+        if($blockId !== null) {
+            $this->idNormBlock = $blockId;
+        }
+        if($parentId !== null) {
+            $this->parentId = $parentId;
+        }
+
     }
 
 

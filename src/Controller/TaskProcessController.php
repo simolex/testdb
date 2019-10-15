@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\NormProcess;
 use App\Repository\NormProcessRepository;
 use Doctrine\DBAL\Driver\Connection;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -28,7 +29,7 @@ class TaskProcessController extends AbstractController
     public function new(NormProcess $process)
     {
         $Tasks = $repository->findAll();
-        return $this->redirectToRoute('task_process')
+        return $this->redirectToRoute('task_process');
 
         return $this->json($Tasks);
     }
