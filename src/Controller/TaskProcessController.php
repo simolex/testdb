@@ -18,8 +18,10 @@ class TaskProcessController extends AbstractController
     {
         $processes = $repository->findAll();
 
-
-        return $this->json($processes);
+        return $this->render('process/list.html.twig', [
+            'processes' => $processes,
+        ]);
+        //return $this->json($processes);
     }
 
 
