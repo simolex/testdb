@@ -2,7 +2,6 @@
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
 			"path": "."
 		},
 		{
@@ -10,20 +9,26 @@
 		},
 		{
 			"path": "E:\\work\\Laravel\\lararoot\\octobercms"
+		},
+		{
+			"path": "D:\\laravel-distr\\HSVM\\laraval\\laraval"
 		}
 	],
-	"settings": {
-        "xdebug": {
-        	"path_mapping": {
-                "/home/vagrant/code/": "D:/laravel-distr/HSVM/laraval/",
-                "/home/vagrant/laravel/": "E:/work/Laravel/lararoot/"
-            },
-            "url": "http://kodicms.tst/",
-            "port": 9001,
-            "max_depth": 4,
-        	"max_children": 10,
-        	"super_globals": false,
-        	"close_on_stop": true,
-        }
-    }
+	"settings":
+	{
+		"xdebug":
+		{
+			"close_on_stop": true,
+			"max_children": 10,
+			"max_depth": 4,
+			"path_mapping":
+			{
+				"/home/vagrant/code/": "D:/laravel-distr/HSVM/laraval/",
+				"/home/vagrant/laravel/": "E:/work/Laravel/lararoot/"
+			},
+			"port": 9001,
+			"super_globals": false,
+			"url": "http://kodicms.tst/"
+		}
+	}
 }

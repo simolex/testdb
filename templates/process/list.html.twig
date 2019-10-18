@@ -24,11 +24,19 @@
     {% endfor %}
 </tr>
 #}			<tbody>
+
 			    {% for process in processes %}
 					<tr>
 						<th scope="row"> {{ process.id }} </th>
 						<td> {{ process.normblock }}</td>
-						<td> {{ process.note }} </td>
+
+						{% if process.parentid != null %}
+							<td> L </td>
+							<td> {{ processes[process.parentid].note ~ ' ' ~ process.note }} </td>
+						{% else %}
+							<td> </td>
+							<td> {{ process.note }} </td>
+						{% endif %}
 					</tr>
 			    {% endfor %}
 			</tbody>
