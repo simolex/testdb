@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\NormProcess;
+use App\Repository\NormBlockRepository;
 use App\Repository\NormProcessRepository;
 use Doctrine\DBAL\Driver\Connection;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -40,6 +41,22 @@ class ProcessController extends AbstractController
 
         return $this->json($Tasks);
     }
+
+
+    /**
+     * @Route("/process/test", name="process_test")
+     */
+    public function test(NormBlockRepository $repository)
+    {
+        $processesQuery = $repository->findAll();
+
+
+        //dd( $processes);
+
+
+        return $this->json($processesQuery);
+    }
+
 
 
 }
