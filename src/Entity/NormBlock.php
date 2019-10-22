@@ -6,6 +6,8 @@ use App\Entity\NormBlock;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+
 /**
  * VerBlocks
  *
@@ -17,7 +19,9 @@ use Doctrine\ORM\Mapping as ORM;
  *         )
  *     },
  * )
+ * @Gedmo\Tree(type="nested")
  * @ORM\Entity(repositoryClass="App\Repository\NormBlockRepository")
+ *
  */
 class NormBlock
 {
@@ -28,22 +32,40 @@ class NormBlock
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
      * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_BLOCK_ID", allocationSize=1, initialValue=1)
-     *
      */
     private $id;
 
     /**
+     * @Gedmo\TreeLeft
+     * @ORM\Column(name="LGT", type="integer")
+     */
+    private $lft;
+
+    /**
+     * @Gedmo\TreeLevel
+     * @ORM\Column(name="LVL", type="integer")
+     */
+    private $lvl;
+
+    /**
+     * @Gedmo\TreeRight
+     * @ORM\Column(name="RGT", type="integer")
+     */
+    private $rgt;
+
+    /**
      *
-     * @ORM\Column(name="PARENT_ID", type="integer", nullable=true)
-     * @ORM\ManyToOne(targetEntity="NormBlock", inversedBy="childs")
-     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", nullable=true)
+     * @ORM\ManyToOne(targetEntity="NormBlock", inversedBy="children")
+     * @ORM\JoinColumn(name="PARENT_ID", referencedColumnName="ID", nullable=true)
+     * @Gedmo\TreeParent
      */
     private $parent;
 
     /**
-     * @ORM\OneToMany(targetEntity="NormBlock", mappedBy="parent")
+     * @ORM\OneToMany(targetEntity="NormBlock", mappedBy="PARENT_ID")
+     * @ORM\OrderBy({"lft" = "ASC"})
      */
-    private $childs;
+    private $children;
 
     /**
      * @var string|null
@@ -59,10 +81,18 @@ class NormBlock
      */
     private $code;
 
-    public function __construct()
-    {
-        $this->childs = new ArrayCollection();
+    /**
+     *
+     * No mapped properties
+     */
+
+    private $indentedName;
+
+    public function getIndentedName() {
+        return str_repeat(" - ", $this->lvl) . $this->name;
     }
+
+    /** END (No mapped properties) */
 
     public function getId(): int
     {
@@ -88,25 +118,7 @@ class NormBlock
 
     public function setParent(?self $parent): self
     {
-        $this->parent = $parent->getId();
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|self[]
-     */
-    public function getChilds(): ?Collection
-    {
-        return $this->childs;
-    }
-
-    public function addChild(self $child): self
-    {
-        if (!$this->childs->contains($child)) {
-            $this->childs[] = $child;
-            $child->setParent($this);
-        }
+        $this->parent = $parent;
 
         return $this;
     }
@@ -123,33 +135,4 @@ class NormBlock
         return $this;
     }
 
-    /*public function getFullCode(): ?string
-    {
-    	$fullCode=[];
-    	$parentBlock = $this;
-    	do{
-    		if (!isset($parentBlock)) break;
-            array_unshift($fullCode, $parentBlock->getCode());
-    		$parentBlock = $parentBlock->getParentId();
-            //dd($parentBlock);
-            if (!isset($parentBlock)) break;
-    	} while ( !($parentBlock->getParentId()));
-    	//array_unshift($fullCode, $parentBlock->getCode());
-    	return implode($fullCode);
-    }*/
-
-
-
-    /*public function removeChild(self $child): self
-    {
-        if ($this->childs->contains($child)) {
-            $this->childs->removeElement($child);
-            // set the owning side to null (unless already changed)
-            if ($child->getParentId() === $this) {
-                $child->setParentId(null);
-            }
-        }
-
-        return $this;
-    }*/
 }

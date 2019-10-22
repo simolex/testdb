@@ -1,24 +1,32 @@
 <?php
+
 namespace App\Repository;
 
 use App\Entity\NormBlock;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\ORM\EntityManagerInterface;
+//use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\QueryBuilder;
+use Gedmo\Tree\Entity\Repository\NestedTreeRepository;
 
 
 
 /**
- * @method NormBlock|null find($id, $lockMode = null, $lockVersion = null)
- * @method NormBlock|null findOneBy(array $criteria, array $orderBy = null)
- * @method NormBlock[]    findAll()
- * @method NormBlock[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method persistAsFirstChild($node)
+ * @method persistAsFirstChildOf($node, $parent)
+ * @method persistAsLastChild($node)
+ * @method persistAsLastChildOf($node, $parent)
+ * @method persistAsNextSibling($node)
+ * @method persistAsNextSiblingOf($node, $sibling)
+ * @method persistAsPrevSibling($node)
+ * @method persistAsPrevSiblingOf($node, $sibling)
  */
-class NormBlockRepository extends ServiceEntityRepository
+class NormBlockRepository extends NestedTreeRepository
 {
-	public function __construct(ManagerRegistry $registry)
+    public function __construct(EntityManagerInterface $em)
     {
-        parent::__construct($registry, NormBlock::class);
+        $class = $em->getClassMetadata(NormBlock::class);
+        parent::__construct($em, $class);
+       // $this->initializeTreeRepository($em, $class);
     }
 
     private function getOrCreateQueryBuilder(QueryBuilder $qb = null)

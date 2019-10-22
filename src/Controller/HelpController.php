@@ -96,10 +96,12 @@ class HelpController extends AbstractController
         $nb1->setName('Нормализация ГКН');
         $em->persist($nb1);
 
+
+
         $templateTree['1'] = [
             'id' => $nb1,
             'parent_id' => -1,
-            'childs' => [],
+            'children' => [],
         ];
 
         $nb2 = new NormBlock;
@@ -110,7 +112,7 @@ class HelpController extends AbstractController
         $templateTree['2'] = [
             'id' => $nb2,
             'parent_id' => -1,
-            'childs' => [],
+            'children' => [],
         ];
 
         $nb3 = new NormBlock;
@@ -121,8 +123,10 @@ class HelpController extends AbstractController
         $templateTree['3'] = [
             'id' => $nb3,
             'parent_id' => -1,
-            'childs' => [],
+            'children' => [],
         ];
+
+        //dd($templateTree);
 
         $em->flush();
 
@@ -224,7 +228,7 @@ class HelpController extends AbstractController
 
             $nb = new NormBlock;
 
-            $nb->setParentId($parentId);
+            $nb->setParent($parentId);
             $nb->setCode('0'.$currentCode);
 
             if ($row[$currentParam] !== null) {
@@ -236,11 +240,11 @@ class HelpController extends AbstractController
             $templateTree[$currentCode] = [
                 'id' => $nb,
                 'parent_id' => $parentId,
-                'childs' => [],
+                'children' => [],
             ];
         }
 
-        $childTree = &$templateTree[$currentCode]['childs'];
+        $childTree = &$templateTree[$currentCode]['children'];
 
         $this->treeRecursive (
             $childTree,

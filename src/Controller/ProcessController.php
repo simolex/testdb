@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\NormBlock;
 use App\Entity\NormProcess;
+use App\Form\NormBlockType;
 use App\Repository\NormBlockRepository;
 use App\Repository\NormProcessRepository;
 use Doctrine\DBAL\Driver\Connection;
@@ -46,15 +48,22 @@ class ProcessController extends AbstractController
     /**
      * @Route("/process/test", name="process_test")
      */
-    public function test(NormBlockRepository $repository)
+    public function test(/*NormBlockRepository $repository*/)
     {
-        $processesQuery = $repository->findAll();
+        // $node1 = $repository->findOneBy(['code' => 3, 'parent' => null]);
+        // $processesQuery = $repository->getChildren($node1, false, null, 'asc', true);
 
 
-        //dd( $processes);
+        // dd( $processesQuery);
+        //
+         $block = new NormBlock();
 
+        $form = $this->createForm(NormBlockType::class, $block);
 
-        return $this->json($processesQuery);
+        return $this->render('process/test.html.twig', [
+            'form' => $form->createView(),
+        ]);
+        //return $this->json($processesQuery);
     }
 
 
