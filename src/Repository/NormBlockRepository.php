@@ -34,7 +34,21 @@ class NormBlockRepository extends NestedTreeRepository
         return $qb ?: $this->createQueryBuilder('nb');
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getChildrenWithDepthQueryBuilder($node = null, $depth = null, $direct = false, $sortByField = null, $direction = 'ASC', $includeNode = false)
+    {
+        $meta = $this->getClassMetadata();
+        $config = $this->listener->getConfiguration($this->_em, $meta->name);
+        //dd($config);
 
+        $qb = $this->getChildrenQueryBuilder($node, $direct, $sortByField, $direction, $includeNode);
+        if ($depth !== null) {
+            $qb->andWhere($qb->expr()->lte('node.'.$config['level'], $depth));
+        }
+        return $qb;
+    }
     /**
      * @return NormBlock[] Returns an array of VerBlocks objects
      */

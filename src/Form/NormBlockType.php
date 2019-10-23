@@ -29,30 +29,34 @@ class NormBlockType extends AbstractType
                 'help' => 'Разновидность видов работ',
                 'label' => 'Вид'
             ])*/
-             $er = $this->normBlockRepository;
+             /*$er = $this->normBlockRepository;
                     $root = $er->findOneBy(['code' => 1, 'parent' => null]);
-                    $ch = $er->getChildren($root, false, null, 'asc', true);
+                    $ch = $er->childrenHierarchy($root, false, null, 'asc', true);*/
         $builder
             ->add('name', EntityType::class,[
                 'class' => NormBlock::class,
-                'mapped' => false,
+                //'mapped' => false,
+                'block_name' => 'choice_type_tag',
                 'choice_label' => 'indentedName',
                 'placeholder' => 'Choose a type',
-                'attr' => array('class' => 'col-sm-8'),
+                'attr' => [ 'class' => 'custom-select row' ],
+                'choice_attr' => function($choice, $key, $value) {
+                    return ['class' => 'col-md-6 offset-md-'.strtolower($choice->getLevel())];
+                },
                 'multiple' => false,
                 'expanded' => false ,
                 /*'group_by' => function($choice, $key, $value){
                     return $this->normBlockRepository->getPath($choice);
                     //if($choice->getParent()) return $choice->getParent()->getName();
                 },*/
-                //'query_builder'
-                'choices' => $ch,
-                /*function () {
+                'query_builder' =>
+                //'choices' => $ch,
+                function () {
                     $er = $this->normBlockRepository;
                     $root = $er->findOneBy(['code' => 1, 'parent' => null]);
-                    return $er->getChildren($root, false, null, 'asc', true);
-                    //return $er->getChildrenQueryBuilder($root, false, null, 'asc', true);*/
-                //}
+                    //return $er->getNodesHierarchyQueryBuilder($root);
+                    return $er->getChildrenWithDepthQueryBuilder($root, 2, false, null, 'asc', false);
+                }
                 //'choices' => $this->normBlockRepository->getAllDistinctType(),
 
             ])

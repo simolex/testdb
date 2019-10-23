@@ -48,10 +48,10 @@ class ProcessController extends AbstractController
     /**
      * @Route("/process/test", name="process_test")
      */
-    public function test(/*NormBlockRepository $repository*/)
+    public function test(NormBlockRepository $repository)
     {
         // $node1 = $repository->findOneBy(['code' => 3, 'parent' => null]);
-        // $processesQuery = $repository->getChildren($node1, false, null, 'asc', true);
+        // $processesQuery = $repository->childrenHierarchy($node1);
 
 
         // dd( $processesQuery);
