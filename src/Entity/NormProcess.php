@@ -19,7 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
  *         @ORM\Index(name="i_norm_process_block_id", columns={"ID_NORM_BLOCK"})
  *     }
  * )
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\NormProcessRepository")
  */
 class NormProcess
 {
@@ -51,7 +51,58 @@ class NormProcess
     /**
      * @var string|null
      *
+     * @ORM\Column(name="STAGE", type="string", length=100, nullable=true)
+     */
+    private $stage;
+
+    /**
+     * @var string|null
+     *
      * @ORM\Column(name="NOTE", type="string", length=1000, nullable=true)
      */
     private $note;
+
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function getParentId()
+    {
+        return $this->parentId;
+    }
+
+    public function getNormBlock()
+    {
+        return $this->idNormBlock;
+    }
+
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    public function getStage()
+    {
+        return $this->stage;
+    }
+
+    public function setStage($stage)
+    {
+        $this->stage = $stage;
+    }
+    public function createProcess(?string $note, ?int $blockId = null, ?int $parentId = null)
+    {
+        $this->note = $note;
+        if($blockId !== null) {
+            $this->idNormBlock = $blockId;
+        }
+        if($parentId !== null) {
+            $this->parentId = $parentId;
+        }
+
+    }
+
+
 }

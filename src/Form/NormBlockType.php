@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class NormBlockType extends AbstractType
 {
@@ -28,22 +29,37 @@ class NormBlockType extends AbstractType
                 'help' => 'Разновидность видов работ',
                 'label' => 'Вид'
             ])*/
+             /*$er = $this->normBlockRepository;
+                    $root = $er->findOneBy(['code' => 1, 'parent' => null]);
+                    $ch = $er->childrenHierarchy($root, false, null, 'asc', true);*/
         $builder
-            ->add('type', EntityType::class,[
+            ->add('name', EntityType::class,[
                 'class' => NormBlock::class,
-                'mapped' => false,
-                'choice_label' => 'type',
+                //'mapped' => false,
+                'block_name' => 'choice_type_tag',
+                'choice_label' => 'indentedName',
                 'placeholder' => 'Choose a type',
+                'attr' => [ 'class' => 'custom-select row' ],
+                'choice_attr' => function($choice, $key, $value) {
+
+                    return ['class' => 'option-lev'.strtolower($choice->getLevel())];
+                },
+                'multiple' => false,
+                'expanded' => false ,
+                /*'group_by' => function($choice, $key, $value){
+                    return $this->normBlockRepository->getPath($choice);
+                    //if($choice->getParent()) return $choice->getParent()->getName();
+                },*/
+                'query_builder' =>
+                //'choices' => $ch,
+                function () {
+                    $er = $this->normBlockRepository;
+                    $root = $er->findOneBy(['code' => 1, 'parent' => null]);
+                    //return $er->getNodesHierarchyQueryBuilder($root);
+                    return $er->getChildrenWithDepthQueryBuilder($root, 2, false, null, 'asc', false);
+                }
                 //'choices' => $this->normBlockRepository->getAllDistinctType(),
 
-            ])
-            ->add('attr', EntityType::class,[
-                'class' => NormBlock::class,
-                'choice_label' => 'attr',
-            ])
-            ->add('message', EntityType::class,[
-                'class' => NormBlock::class,
-                'choice_label' => 'message',
             ])
         ;
     }
@@ -51,11 +67,11 @@ class NormBlockType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    /*public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => VerBlocks::class
+            'data_class' => NormBlock::class
 
         ]);
-    }*/
+    }
 }

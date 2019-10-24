@@ -1,14 +1,14 @@
 framework:
     workflows:
       loading_document_verification:
-        type: 'workflow'
+        type: 'state_machine'
         audit_trail:
           enabled: true
         marking_store:
           type: 'method'
-          property: 'currentPlace'
+          property: 'stage'
         supports:
-          - stdClass
+          App\Entity\NormProcess
         initial_marking: start
         places:
           - start
@@ -42,9 +42,18 @@ framework:
           request_create_gkn_docs:
             from: calculate_rows
             to: get_gkn_documents
+          query_docs_list:
+            from: get_gkn_documents
+            to: get_gkn_documents
           load_data_to_gkn_docs:
             from: get_gkn_documents
             to: review_result
+          reset_errors:
+            from: review_result
+            to: review_result
+          signed_gkn_docs:
+            from: review_result
+            to: check_result
 
 
 

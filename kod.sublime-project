@@ -11,7 +11,11 @@
 			"path": "E:\\work\\Laravel\\lararoot\\octobercms"
 		},
 		{
+<<<<<<< HEAD
 			"path": "E:\\work\\Laravel\\lararoot\\firstsite"
+=======
+			"path": "D:\\laravel-distr\\HSVM\\laraval\\laraval"
+>>>>>>> c2be2ce658510be8634fe3b6563a4f288e0cfd40
 		}
 	],
 	"settings":

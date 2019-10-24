@@ -2,9 +2,12 @@
 
 namespace App\Entity;
 
+use App\Entity\NormBlock;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+
 /**
  * VerBlocks
  *
@@ -16,7 +19,9 @@ use Doctrine\ORM\Mapping as ORM;
  *         )
  *     },
  * )
+ * @Gedmo\Tree(type="nested")
  * @ORM\Entity(repositoryClass="App\Repository\NormBlockRepository")
+ *
  */
 class NormBlock
 {
@@ -27,23 +32,40 @@ class NormBlock
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="SEQUENCE")
      * @ORM\SequenceGenerator(sequenceName="SEQ_NORM_BLOCK_ID", allocationSize=1, initialValue=1)
-     * @ORM\OneToMany(targetEntity="App\Entity\NormBlock", mappedBy="parent_id")
      */
-    private $Id;
+    private $id;
 
     /**
-     * @var int|null
-     *
-     * @ORM\Column(name="PARENT_ID", type="integer", nullable=true)
-     * @ORM\ManyToOne(targetEntity="App\Entity\NormBlock", inversedBy="childs")
+     * @Gedmo\TreeLeft
+     * @ORM\Column(name="LGT", type="integer")
      */
-    private $parent_id;
+    private $lft;
+
+    /**
+     * @Gedmo\TreeLevel
+     * @ORM\Column(name="LVL", type="integer")
+     */
+    private $lvl;
+
+    /**
+     * @Gedmo\TreeRight
+     * @ORM\Column(name="RGT", type="integer")
+     */
+    private $rgt;
 
     /**
      *
-     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="NormBlock", inversedBy="children")
+     * @ORM\JoinColumn(name="PARENT_ID", referencedColumnName="ID", nullable=true)
+     * @Gedmo\TreeParent
      */
-    /*private $childs;*/
+    private $parent;
+
+    /**
+     * @ORM\OneToMany(targetEntity="NormBlock", mappedBy="PARENT_ID")
+     * @ORM\OrderBy({"lft" = "ASC"})
+     */
+    private $children;
 
     /**
      * @var string|null
@@ -59,14 +81,22 @@ class NormBlock
      */
     private $code;
 
-    /*public function __construct()
-    {
-        $this->childs = new ArrayCollection();
-    }*/
+    /**
+     *
+     * No mapped properties
+     */
+
+    private $indentedName;
+
+    public function getIndentedName() {
+        return str_repeat('#tab', $this->lvl) . $this->name;
+    }
+
+    /** END (No mapped properties) */
 
     public function getId(): int
     {
-        return $this->Id;
+        return $this->id;
     }
 
     public function getName(): ?string
@@ -81,35 +111,17 @@ class NormBlock
         return $this;
     }
 
-    public function getParentId(): ?self
+    public function getParent(): ?self
     {
-        return $this->parent_id;
+        return $this->parent;
     }
 
-    public function setParentId(?self $parent_id): self
+    public function setParent(?self $parent): self
     {
-        $this->parent_id = $parent_id->getId();
+        $this->parent = $parent;
 
         return $this;
     }
-
-    /**
-     * @return Collection|self[]
-     */
-    /*public function getChilds(): Collection
-    {
-        return $this->childs;
-    }
-
-    public function addChild(self $child): self
-    {
-        if (!$this->childs->contains($child)) {
-            $this->childs[] = $child;
-            $child->setParentId($this);
-        }
-
-        return $this;
-    }*/
 
     public function getCode(): ?string
     {
@@ -123,32 +135,9 @@ class NormBlock
         return $this;
     }
 
-    public function getFullCode(): ?string
+    public function getLevel(): int
     {
-    	$fullCode=[];
-    	$parentBlock = $this;
-    	do{
-    		array_unshift($fullCode, $parentBlock->getCode());
-    		$parentBlock = $parentBlock->getParentId();
-    	}while ($parentBlock->parent_id !== null);
-    	array_unshift($fullCode, $parentBlock->getCode());
-    	return implode($fullCode);
+        return $this->lvl;
     }
 
-
-
-    /*public function removeChild(self $child): self
-    {
-        if ($this->childs->contains($child)) {
-            $this->childs->removeElement($child);
-            // set the owning side to null (unless already changed)
-            if ($child->getParentId() === $this) {
-                $child->setParentId(null);
-            }
-        }
-
-        return $this;
-    }*/
 }
-//@ORM\JoinColumn(name="parent_id", referencedColumnName="id")
-//

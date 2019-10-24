@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HelpController!{% endblock %}
+
+{% block process %}
+
+	{# <form enctype="multipart/form-data" method="post" action="index.php#start"> #}
+	<div class="table-responsive">
+		<caption>List of users</caption>
+  		<table class="table">
+
+  			<thead>
+			    <tr>
+					<th scope="col">#</th>
+					<th scope="col">First</th>
+					<th scope="col">Last</th>
+					<th scope="col">Handle</th>
+			    </tr>
+			</thead>
+{# 			<tr>
+	{% for oneThProcess in thProcess %}
+        <th {% if oneThProcess['colspan'] is defined %} colspan={{ oneThProcess['colspan'] }} {% endif %}>
+		{{ oneThProcess[0] }}</th>
+    {% endfor %}
+</tr>
+#}			<tbody>
+
+			    {% for process in processes %}
+					<tr>
+						<th scope="row"> {{ process.id }} </th>
+						<td> {{ process.normblock }}</td>
+
+						{% if process.parentid != null %}
+							<td> L </td>
+							<td> {{ processes[process.parentid].note ~ ' ' ~ process.note }} </td>
+						{% else %}
+							<td> </td>
+							<td> {{ process.note }} </td>
+						{% endif %}
+					</tr>
+			    {% endfor %}
+			</tbody>
+
+		   {# {{ html|raw }} |convert_encoding('utf-8','cp1251')#}
+		</table>
+	</div>
+{% endblock %}

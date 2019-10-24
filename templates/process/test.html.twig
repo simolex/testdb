@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{% autoescape  %}
+	{{ form_start(form) }}
+		{{- form_label(form.name) -}}
+		{% set strategy = 'html' %}
+
+			{{ form_widget(form.name)|replace({'#tab':'&tab;'})|raw }}
+
+
+		{{- form_errors(form.name) -}}
+	{{ form_end(form) }}
+
+	{#
+	{{ dump(form.name.vars) }} {{ form(form) }}
+	#}
+	{% endautoescape %}
+{% endblock %}

@@ -5,7 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class NormalizationController extends AbstractController
+class OldNormalizationController extends AbstractController
 {
     // no-refactoring data
     private $db;
