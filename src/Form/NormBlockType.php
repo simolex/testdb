@@ -41,7 +41,8 @@ class NormBlockType extends AbstractType
                 'placeholder' => 'Choose a type',
                 'attr' => [ 'class' => 'custom-select row' ],
                 'choice_attr' => function($choice, $key, $value) {
-                    return ['class' => 'col-md-6 offset-md-'.strtolower($choice->getLevel())];
+
+                    return ['class' => 'option-lev'.strtolower($choice->getLevel())];
                 },
                 'multiple' => false,
                 'expanded' => false ,

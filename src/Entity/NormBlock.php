@@ -89,7 +89,7 @@ class NormBlock
     private $indentedName;
 
     public function getIndentedName() {
-        return str_repeat('&quot; ', $this->lvl) . $this->name;
+        return str_repeat('#tab', $this->lvl) . $this->name;
     }
 
     /** END (No mapped properties) */
