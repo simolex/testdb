@@ -29,6 +29,7 @@
 			"port": 9001,
 			"super_globals": false,
 			"url": "http://kodicms.tst/"
-		}
+		},
+		"font_size": 9,
 	}
 }
