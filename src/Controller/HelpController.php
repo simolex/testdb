@@ -52,7 +52,7 @@ class HelpController extends AbstractController
     }
 
     /**
-     * @Route("/admin/set_block", name="admin_block")
+     * @Route("/adm/set_block", name="admin_block")
      */
     public function set_block(LoggerInterface $logger)
     {
@@ -154,7 +154,7 @@ class HelpController extends AbstractController
     }
 
     /**
-     * @Route("/admin/set_process", name="admin_process")
+     * @Route("/adm/set_process", name="admin_process")
      */
     public function set_process(LoggerInterface $logger)
     {

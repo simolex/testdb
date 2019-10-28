@@ -56,3 +56,17 @@ services:
     #     tags:
     #         - { name: sonata.admin, manager_type: orm, group: Verification, label: VerKinds }
     #     #public: true
+
+    admin.menu:
+        class: App\Admin\MenuAdmin
+        arguments: [~, App\Entity\Menu, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: 'Меню', label: 'Меню' }
+        #public: true
+
+    admin.menu_type:
+        class: App\Admin\MenuTypeAdmin
+        arguments: [~, App\Entity\MenuType, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: 'Меню', label: 'Тип' }
+        #public: true
