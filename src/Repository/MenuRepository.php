@@ -22,7 +22,7 @@ class MenuRepository extends ServiceEntityRepository
 
     public function getMainMenu()
     {
-        return $this->findBy(array('menuTypeId' => 1));
+        return $this->findBy(['menuTypeId' => 1], ['id' => 'ASC']);
     }
     // /**
     //  * @return Menu[] Returns an array of Menu objects

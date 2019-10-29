@@ -86,8 +86,16 @@
                 {% endblock %}
             </header>
             {% block menu %}
-                {{ knp_menu_render('main') }}
+
                 <div class="navi-block">
+
+                    <nav class="navbar">
+                        <div id="bs-example-navbar-collapse-2">
+                            <nav class="main-navi">
+                                {{ knp_menu_render('main', { 'currentClass': 'active'}) }}
+                            </nav>
+                        </div>
+                    </nav>
                     <nav class="navbar navbar-light bg-light">
                         <div class="navbar1-header">
                             <div class="search-block active">

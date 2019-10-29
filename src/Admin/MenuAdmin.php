@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Admin;
 
+use App\Entity\Menu;
 use App\Entity\MenuType;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -31,7 +32,9 @@ final class MenuAdmin extends AbstractAdmin
         $listMapper
             ->addIdentifier('title')
             ->add('route')
+            ->add('parent.title')
             ->add('menuTypeId.title')
+
             /*->add('menuTypeId',null, [], EntityType::class, [
                 'class' => MenuType::class,
                 'choice_label' => 'title'
@@ -49,6 +52,11 @@ final class MenuAdmin extends AbstractAdmin
             ->add('static', null, ['required' => false,])
             ->add('menuTypeId', ModelType::class, [
                 'class' => MenuType::class,
+                'property' => 'title',
+                'required' => false,
+            ])
+            ->add('parent', ModelType::class, [
+                'class' => Menu::class,
                 'property' => 'title',
                 'required' => false,
             ])
