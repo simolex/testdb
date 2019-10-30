@@ -86,11 +86,9 @@
                 {% endblock %}
             </header>
             {% block menu %}
-
                 <div class="navi-block">
-
-                    <nav class="navbar">
-                        <div id="bs-example-navbar-collapse-1">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="mobile_hide" id="bs-example-navbar-collapse-1">
                             <nav class="main-navi">
                                 {{
                                     knp_menu_render('main', {
@@ -99,12 +97,13 @@
                                         'lastClass': null,
                                         'ancestorClass': null,
                                         'currentAsLink': null
-                                    }) |raw
+                                    }) |replace({'main-navi_item ':'main-navi_item', 'main-navi__drop menu_level_1':'main-navi__drop',
+                                    'main-navi__drop_item  ':'main-navi__drop_item'})|raw
                                 }}
                             </nav>
                         </div>
                     </nav>
-                    <nav class="navbar navbar-light bg-light">
+                    {# <nav class="navbar navbar-light bg-light">
                         <div class="navbar1-header">
                             <div class="search-block active">
                                 <form method="get" action="https://kadastr.ru/site/search.htm">
@@ -270,7 +269,7 @@
                                 </ul>
                             </nav>
                         </div>
-                    </nav>
+                    </nav>  #}
                 </div>
             {% endblock %}
 
