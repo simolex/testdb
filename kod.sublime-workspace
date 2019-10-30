@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"menu",
+				"MenuType"
+			],
+			[
 				"Task",
 				"TaskListType"
 			],
@@ -141,15 +145,6 @@
 			}
 		},
 		{
-			"file": "public/css/main.css",
-			"settings":
-			{
-				"buffer_size": 105,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/Form/NormBlockType.php",
 			"settings":
 			{
@@ -209,12 +204,12 @@
 			}
 		},
 		{
-			"file": "templates/base.html.twig",
+			"file": "public/css/media_all.css",
 			"settings":
 			{
-				"buffer_size": 4936,
+				"buffer_size": 9376,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -230,7 +225,7 @@
 			"file": "src/Controller/HelpController.php",
 			"settings":
 			{
-				"buffer_size": 7561,
+				"buffer_size": 7557,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -239,9 +234,44 @@
 			"file": "config/packages/doctrine.yaml",
 			"settings":
 			{
-				"buffer_size": 1709,
+				"buffer_size": 1729,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Migrations/Version20191028091625.php",
+			"settings":
+			{
+				"buffer_size": 2468,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Admin/MenuAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1934,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Admin/MenuTypeAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1001,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/sonata-project/admin-bundle/src/Datagrid/ListMapper.php",
+			"settings":
+			{
+				"buffer_size": 5966,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -325,7 +355,87 @@
 			"file": "config/services.yaml",
 			"settings":
 			{
-				"buffer_size": 2419,
+				"buffer_size": 2865,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 2549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Menu/MenuBuilder.php",
+			"settings":
+			{
+				"buffer_size": 1860,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Service/MenuService.php",
+			"settings":
+			{
+				"buffer_size": 525,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Entity/Menu.php",
+			"settings":
+			{
+				"buffer_size": 3740,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Repository/MenuRepository.php",
+			"settings":
+			{
+				"buffer_size": 1458,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Entity/MenuType.php",
+			"settings":
+			{
+				"buffer_size": 2040,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/packages/knp_menu.yml",
+			"settings":
+			{
+				"buffer_size": 519,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/base.html.twig",
+			"settings":
+			{
+				"buffer_size": 18719,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/_main.css",
+			"settings":
+			{
+				"buffer_size": 14202,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -467,11 +577,28 @@
 	},
 	"expanded_folders":
 	[
+		"/D/laravel-distr/HSVM/laraval/kodicms",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Admin",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Controller",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Entity",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Menu",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Repository",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Service",
+		"/D/laravel-distr/HSVM/laraval/kodicms/templates"
 	],
 	"file_history":
 	[
-		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/app.css",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/bootstrap.min.css",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/_style.css",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/_style_plus.css",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/main.css",
 		"/D/laravel-distr/HSVM/laraval/kodicms/composer.json",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20191028091347.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/src/Migrations/Version20191028091007.php",
+		"/D/laravel-distr/HSVM/laraval/kodicms/public/css/app.css",
 		"/D/laravel-distr/HSVM/laraval/kodicms/config/packages/twig.yaml",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/sonata-project/admin-bundle/src/Resources/views/CRUD/show_choice.html.twig",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/sonata-project/admin-bundle/src/Resources/views/CRUD/base_show_field.html.twig",
@@ -591,17 +718,11 @@
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/TableDiff.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Table.php",
 		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Schema.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/AbstractAsset.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/NamingStrategy.php",
-		"/D/work/Utilities/sublimetext/Data/Packages/Xdebug Client/xdebug/protocol.py",
-		"/D/work/Utilities/sublimetext/Data/Packages/User/Xdebug.sublime-settings",
-		"/D/work/Utilities/sublimetext/Data/Packages/Xdebug Client/Xdebug.sublime-settings",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractOracleDriver/EasyConnectString.php",
-		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/SchemaConfig.php"
+		"/D/laravel-distr/HSVM/laraval/kodicms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/AbstractAsset.php"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -622,6 +743,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"position",
+			"ul.",
+			"social-block",
+			".h-social",
+			"search-block_inp",
+			"navi-block",
+			"p.",
+			"p {",
+			"p ",
+			".social-block",
+			".mobile_hide_only",
+			".contacts-block",
+			".col-lg-3",
+			"logotype",
+			".top-block",
+			".b",
+			".b ",
+			".b",
+			".b{",
+			".b ",
+			".b",
+			".bg-main",
+			"bg-main",
+			".main",
+			"nav",
+			"search-block_inp",
+			"main-navi",
+			"main_navi",
+			"navi",
+			"main-navi",
+			"images",
+			"../../im",
+			"image",
+			"../../im",
+			"imag",
+			"ima",
 			"NormBlockRepository",
 			"oci_connect",
 			"VerKindType",
@@ -664,7 +821,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 38,
 			"sheets":
 			[
 				{
@@ -693,7 +850,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
@@ -723,7 +880,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
@@ -753,7 +910,7 @@
 						"translation.y": 127.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -769,8 +926,8 @@
 						"selection":
 						[
 							[
-								1957,
-								1957
+								426,
+								242
 							]
 						],
 						"settings":
@@ -781,10 +938,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1379.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -814,40 +971,11 @@
 						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "public/css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								66,
-								76
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "src/Form/NormBlockType.php",
 					"semi_transient": false,
 					"settings":
@@ -873,11 +1001,11 @@
 						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "vendor/symfony/doctrine-bridge/Form/Type/EntityType.php",
 					"semi_transient": false,
 					"settings":
@@ -903,11 +1031,11 @@
 						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "vendor/symfony/doctrine-bridge/Form/Type/DoctrineType.php",
 					"semi_transient": false,
 					"settings":
@@ -933,11 +1061,11 @@
 						"translation.y": 25.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "vendor/symfony/form/FormView.php",
 					"semi_transient": false,
 					"settings":
@@ -963,11 +1091,11 @@
 						"translation.y": 2322.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "vendor/symfony/twig-bridge/Resources/views/Form/form_div_layout.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -993,11 +1121,11 @@
 						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 10,
 					"file": "src/Controller/ProcessController.php",
 					"semi_transient": false,
 					"settings":
@@ -1009,8 +1137,8 @@
 						"selection":
 						[
 							[
-								1632,
-								1636
+								444,
+								451
 							]
 						],
 						"settings":
@@ -1020,14 +1148,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 411.0,
+						"translation.y": 61.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 11,
 					"file": "templates/process/test.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -1052,41 +1180,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "templates/base.html.twig",
+					"buffer": 12,
+					"file": "public/css/media_all.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4936,
+						"buffer_size": 9376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1214,
-								1214
+								2071,
+								2073
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"_anf_new": "",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 907.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "kod.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1111,24 +1239,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "src/Controller/HelpController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7561,
+						"buffer_size": 7557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3033,
-								3033
+								4181,
+								4181
 							]
 						],
 						"settings":
@@ -1139,27 +1267,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1935.0,
+						"translation.y": 31.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "config/packages/doctrine.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1709,
+						"buffer_size": 1729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								831,
-								837
+								551,
+								551
 							]
 						],
 						"settings":
@@ -1169,14 +1297,134 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/Migrations/Version20191028091625.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2459,
+								2459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
 					"buffer": 17,
+					"file": "src/Admin/MenuAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								865,
+								865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/Admin/MenuTypeAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "vendor/sonata-project/admin-bundle/src/Datagrid/ListMapper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1233,
+								1246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 25.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
 					"file": "config/packages/doctrine_extensions.yml",
 					"semi_transient": false,
 					"settings":
@@ -1201,11 +1449,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 21,
 					"file": "src/Form/TaskListType.php",
 					"semi_transient": false,
 					"settings":
@@ -1231,11 +1479,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 22,
 					"file": "/D/laravel-distr/HSVM/laraval/workflow/src/Entity/Article.php",
 					"semi_transient": false,
 					"settings":
@@ -1261,11 +1509,11 @@
 						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 23,
 					"file": "/D/laravel-distr/HSVM/laraval/workflow/src/Entity/Task.php",
 					"semi_transient": false,
 					"settings":
@@ -1291,11 +1539,11 @@
 						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 24,
 					"file": "config/packages/workflow.yaml",
 					"semi_transient": false,
 					"settings":
@@ -1321,11 +1569,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 25,
 					"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/workflow/wf.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -1352,11 +1600,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 26,
 					"file": "/D/laravel-distr/HSVM/laraval/octobercms/templates/workflow/flash-messages.html.twig",
 					"semi_transient": false,
 					"settings":
@@ -1381,11 +1629,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 27,
 					"file": "vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity/Repository/NestedTreeRepository.php",
 					"semi_transient": false,
 					"settings":
@@ -1411,11 +1659,11 @@
 						"translation.y": 3967.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 28,
 					"file": "vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity/Repository/AbstractTreeRepository.php",
 					"semi_transient": false,
 					"settings":
@@ -1441,24 +1689,24 @@
 						"translation.y": 2111.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 29,
 					"file": "config/services.yaml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2419,
+						"buffer_size": 2865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								391,
-								391
+								2839,
+								2839
 							]
 						],
 						"settings":
@@ -1468,10 +1716,278 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1299,
+								1299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "src/Menu/MenuBuilder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1363,
+								1363
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 146.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "src/Service/MenuService.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "src/Entity/Menu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1224,
+								1234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 672.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "src/Repository/MenuRepository.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								735,
+								735
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "src/Entity/MenuType.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "config/packages/knp_menu.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "templates/base.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5412,
+								5412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "public/css/_main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10288,
+								10288
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6268.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1479,7 +1995,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 48.0
 	},
 	"input":
 	{
@@ -1778,7 +2294,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 289.0,
+	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

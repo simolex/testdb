@@ -48,8 +48,8 @@ class MenuBuilder
 	        	$itemTitle = $item->getTitle();
 	            $menu->addChild($itemTitle, array('uri' => $item->getRoute()));
 	            $menu[$itemTitle]
-	            	->setAttribute('class', 'nav-item main-navi_item')
-	            	->setLinkAttribute('class', 'nav-link main-navi_link')
+	            	->setAttribute('class', 'main-navi_item')
+	            	->setLinkAttribute('class', 'main-navi_link')
 	            ;
 	        }
 
