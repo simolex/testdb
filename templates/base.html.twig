@@ -1,26 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}КП{% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-			 <link href="{{ asset('css/main.css') }}" rel="stylesheet"/>
-        {% endblock %}
-        <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
-    </head>
-    <body>
-        {% block body %}
-        {% endblock %}
-        {% block process %}
-        {% endblock %}
+            <link href="{{ asset('css/_main.css') }}" rel="stylesheet"/>
 
+            <link href="{{ asset('css/jquery-ui-bootstrap.css') }}" rel="stylesheet"/>
+            {# <link href="{{ asset('css/_style.css') }}" rel="stylesheet"/> #}
+            {# <link href="{{ asset('css/_style_plus.css') }}" rel="stylesheet"/> #}
+            {# <link href="{{ asset('css/media_all.css') }}" rel="stylesheet"/> #}
+
+        {% endblock %}
+        {# <link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}"> #}
+        {# <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet"> #}
+
+
+
+         {#<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script> #}
+
+    </head>
+    <body class>
+        <div class="main">
+            <div class="b bg-main"></div>
+            <div class="main-picture"></div>
+            <header class="header">
+                {% block header %}
+                    <div class="top-block">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                                <a href="http://octobercms.tst/" class="logotype">
+                                    <img src="{{ asset('img/rr_inside.svg') }}" onerror="this.onerror=null; this.src='RR.png'">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                                <div class="contacts-block">
+                                    <p>КРУГЛОСУТОЧНАЯ СПРАВОЧНАЯ</p>
+                                    <div class="contacts-block_phone">
+                                        8 800 100-34-34
+                                    </div>
+                                    <p class="mobile_hide_only">Звонок по России бесплатный</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                                <div class="contacts-block">
+                                    <p>НАШ ТЕЛЕФОН</p>
+
+                                    <div class="contacts-block_phone">
+                                        8 831 422-17-77
+                                    </div>
+                                    <p class="mobile_hide_only">Справочная филиала</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                <div class="h-social">
+                                    <div class="h-social_name">
+                                        БУДЬТЕ С НАМИ
+                                    </div>
+                                    <ul class="social-block gr">
+                                        <li class="social-block_item">
+                                            <a href="https://www.facebook.com/fkprf.ru" class="social-block_link ic"></a>
+                                        </li>
+                                        <li class="social-block_item">
+                                            <a href="https://vk.com/fkprf_ru" class="social-block_link ic1"></a>
+                                        </li>
+                                        <li class="social-block_item">
+                                            <a href="https://twitter.com/fkprf_ru" class="social-block_link ic2"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-block active">
+                                    <form method="get" action="#">
+                                        <div class="search-block_inp">
+                                            <input type="text" name="text" placeholder="Поиск по сайту" value="">
+                                        </div>
+                                        <div class="search-block_button">
+                                            <input type="submit" class="search-block_btn" value="Найти">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+            </header>
+            {% block menu %}
+
+                <div class="navi-block">
+
+                    <nav class="navbar">
+                        <div id="bs-example-navbar-collapse-1">
+                            <nav class="main-navi">
+                                {{
+                                    knp_menu_render('main', {
+                                        'currentClass': 'active',
+                                        'firstClass': null,
+                                        'lastClass': null,
+                                        'ancestorClass': null,
+                                        'currentAsLink': null
+                                    }) |raw
+                                }}
+                            </nav>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="navbar1-header">
+                            <div class="search-block active">
+                                <form method="get" action="https://kadastr.ru/site/search.htm">
+                                    <div class="search-block_inp">
+                                        <input type="text" name="text" placeholder="Поиск по сайту" value="">
+                                    </div>
+                                    <div class="search-block_button">
+                                        <input type="submit" class="search-block_btn" value="Найти">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mobile_hide" id="bs-example-navbar-collapse-1">
+                            <nav class="main-navi">
+                                <ul class="main-navi_list" id="yw0">
+                                    <li class="main-navi_item">
+                                        <a href="http://kadastr.ru/site/about.htm" class="main-navi_link">
+                                            Об учреждении
+                                        </a>
+                                        <ul class="main-navi__drop">
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/about/structure" href="http://kadastr.ru/site/about/structure.htm">
+                                                    Структура
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/about/direction" href="http://kadastr.ru/site/about/direction.htm">
+                                                    Руководство
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/about/history" href="http://kadastr.ru/site/about/history.htm">
+                                                    История
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/about/kadry" href="http://kadastr.ru/site/about/kadry.htm">
+                                                    Кадровое обеспечение
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/about/gosbuy" href="http://kadastr.ru/site/about/gosbuy.htm">
+                                                    Закупки
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-navi_item">
+                                        <a href="http://kadastr.ru/site/Activities.htm" class="main-navi_link">
+                                            Деятельность
+                                        </a>
+                                        <ul class="main-navi__drop">
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/Activities/gosservices" href="http://kadastr.ru/site/Activities/gosservices.htm">
+                                                    Сведения из ЕГРН
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/Activities/consult" href="http://kadastr.ru/site/Activities/consult.htm">
+                                                    Консультационные услуги
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/Activities/vyezd" href="http://kadastr.ru/site/Activities/vyezd.htm">
+                                                    Выездное обслуживание
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/Activities/phoneserv" href="http://kadastr.ru/site/Activities/phoneserv.htm">
+                                                    Контактный центр
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-navi_item">
+                                        <a href="http://kadastr.ru/site/spec.htm" class="main-navi_link">
+                                            Специалистам
+                                        </a>
+                                        <ul class="main-navi__drop">
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/Activities/documents" href="http://kadastr.ru/site/Activities/documents.htm">
+                                                    Документы
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/spec/webinar" href="http://kadastr.ru/site/spec/webinar.htm">
+                                                    Вебинары и видеолекции
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-navi_item">
+                                    <a href="http://kadastr.ru/site/press.htm" class="main-navi_link">
+                                        Пресс-центр
+                                    </a>
+                                        <ul class="main-navi__drop">
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/news" href="http://kadastr.ru/site/press/news.htm">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/pub" href="http://kadastr.ru/site/press/pub.htm">
+                                                    Публикации
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/print" href="http://kadastr.ru/site/press/print.htm">
+                                                    Печатные издания
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/contacts" href="http://kadastr.ru/site/press/contacts.htm">
+                                                    Контакты для СМИ
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/video" href="http://kadastr.ru/site/press/video.htm">
+                                                    Видео
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/press/gallery" href="http://kadastr.ru/site/press/gallery.htm">
+                                                Фотогалереи
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-navi_item">
+                                        <a href="http://kadastr.ru/site/opendata.htm" class="main-navi_link">
+                                            Открытые данные
+                                        </a>
+                                        <ul class="main-navi__drop">
+                                        </ul>
+                                    </li>
+                                    <li class="main-navi_item">
+                                        <a href="http://kadastr.ru/site/fback.htm" class="main-navi_link">
+                                            Обратная связь
+                                        </a>
+                                        <ul class="main-navi__drop">
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/fback/contacts" href="http://kadastr.ru/site/fback/contacts.htm">
+                                                    Контакты
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/fback/online" href="http://kadastr.ru/site/fback/online.htm">
+                                                    Обращения граждан онлайн
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/fback/personal_reception" href="http://kadastr.ru/site/fback/personal_reception.htm">
+                                                    Запись на личный прием
+                                                </a>
+                                            </li>
+                                            <li class="main-navi__drop_item">
+                                                <a class="main-navi__drop_link site/fback/anticorrupt" href="http://kadastr.ru/site/fback/anticorrupt.htm">
+                                                    Противодействие коррупции
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+            {% endblock %}
+
+        <div class="content">
+            {% block body %}
+            {% endblock %}
+            {% block process %}
+            {% endblock %}
+        </div>
+        </div>
         {% block javascripts %}
 			{# <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> #}
-
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         {% endblock %}
     </body>
 </html>

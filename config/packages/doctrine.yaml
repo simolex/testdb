@@ -13,7 +13,7 @@ doctrine:
                 # servicename: 'R52GZK0'
                 charset: utf8
                 url: '%env(resolve:DATABASE_URL)%'
-                schema_filter: /^(NORM_MIGR_VER|NORM_BLOCK|NORM_PROCESS)/
+                schema_filter: /^(NORM_MIGR_VER|NORM_BLOCK|NORM_PROCESS|MENU|MENU_TYPE|USER)/
         # configure these for your database server
 
     orm:
