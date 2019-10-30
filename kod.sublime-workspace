@@ -71,6 +71,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 1722,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Repository/UserRepository.php",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -182,6 +199,15 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/E/work/Laravel/lararoot/kodicms",
+		"/E/work/Laravel/lararoot/kodicms/config",
+		"/E/work/Laravel/lararoot/kodicms/public",
+		"/E/work/Laravel/lararoot/kodicms/src",
+		"/E/work/Laravel/lararoot/kodicms/src/Entity",
+		"/E/work/Laravel/lararoot/kodicms/src/Repository"
+	],
 	"file_history":
 	[
 		"/G/127- Немецкий язык. 5кл.  Раб. тетрадь_Аверин М.М. и др_2015 -80с.pdf",
@@ -346,8 +372,67 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1721,
+								1721
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Repository/UserRepository.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
