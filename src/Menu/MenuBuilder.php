@@ -27,7 +27,7 @@ class MenuBuilder
         //$this->setCurrentItem($menu);
 
         $menu->setChildrenAttribute('class', 'main-navi_list');
-        $menu->setChildrenAttribute('id', 'yw0');
+        //$menu->setChildrenAttribute('id', 'yw0');
         $menu->setExtra('currentElement', 'active');
 
         foreach($menuItems as $item) {

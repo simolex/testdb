@@ -94,6 +94,15 @@ h2 {
     max-width: 1070px;
 }
 
+.top-line {
+border: 3px dashed orange;
+border: 0px dashed orange;
+    background: #0085dd;
+    zoom: 1;
+    display: block;
+    height: 38px;
+}
+
 .header-wrap a{
 color:#fff;
 color:#f00;
@@ -383,6 +392,10 @@ color:#f00;
     width: 18px;
 }
 
+.menu {
+    width: 100%;
+}
+
 .navi-block {
 border: 5px dashed violet;
 border: 0px dashed violet;
@@ -394,6 +407,7 @@ border: 0px dashed violet;
 }
 .navi-block .navbar {
     min-height: 10px;
+    padding: 0;
     border: none;
     margin: 0;
     background: none;
@@ -602,6 +616,96 @@ border: 0px dashed violet;
     position: absolute;
     top: -5px;
     width: 0;
+}
+
+.content {
+    border: 3px dashed red;
+    border: 0px dashed red;
+
+    max-width: 1070px;
+    margin: 0 auto;
+    position: relative;
+    background: #ffffff;
+}
+
+.content_services.content {
+    background: none;
+}
+
+.services-section {
+    margin-bottom: 92px;
+    position: relative;
+}
+
+.services-section_ins {
+    background: rgba(255,255,255,0.8);
+    position: relative;
+    padding: 20px 23px 0px;
+}
+.services-section_title {
+    zoom: 1; display: block;
+    margin-bottom: 24px;
+}
+.services-section_title:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.services-section_title h2 {
+    float: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+.services-section_title .more-link {
+    float: right;
+    margin-top: 9px;
+}
+.services-section_ins .col-md-2 {
+    height: 175px;
+    height: 150px;
+}
+
+.person-section {
+    text-align: center;
+    margin: 20px auto 15px auto;
+    padding: 0 15px;
+    max-width: 1070px;
+}
+
+.person-section_link {
+    display: inline-block;
+    margin: 15px auto;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "segoe_uibold";
+}
+.person-section_link_icon {
+    display: block;
+    text-align: center;
+    width: 145px;
+    padding: 7px;
+    height: 145px;
+    margin: 0 auto 10px auto;
+    background: url("../img/icon12.png") no-repeat;
+}
+
+.person-section_link:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.person-section_link:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+.person-section_link:hover .person-section_link_icon {
+    background-position: left -145px;
+}
+.person-section_link:active .person-section_link_icon {
+    background-position: left -290px;
 }
 
 body, html {
