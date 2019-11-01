@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block background %}
+	<div class="b bg-main"></div>
+    <div class="main-picture"></div>
+{% endblock %}
+
+ {% block main_content %}
+ 	<section class="person-section">
+		<div class="row">
+        </div>
+    </section>
+    <div class="content content_services">
+        <section class="services-section">
+            <style>
+                .main-banner {
+                    background-color: #fff;
+                    margin: 40px 0;
+                }
+                .main-banner .activities_btn a { color: #006FB8; }
+                .main-banner .activities_btn a:hover { color: #87bd57; }
+                .main-banner .banner-outer-left {
+                    background-image: url(img/actions/pubstatic/bannerEgrn/home.png);
+                    background-repeat: no-repeat;
+                    padding-left: 80px;
+                }
+                .main-banner .banner-outer-left .banner-left { margin-top: -10px; }
+                .main-banner .banner-outer-left .banner-left h2 {
+                    padding-top: 16px;
+                    margin-bottom: 4px;
+                }
+                .main-banner .banner-outer-left .banner-left p {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+                .main-banner .banner-outer-left .banner-left .activities_btn {
+                    width: 213px;
+                    height: 48px;
+                    margin-bottom: 38px;
+                }
+                .main-banner .banner-outer-right { position: relative; }
+                .main-banner .banner-outer-right .img-gu {
+                    background-image: url(img/actions/pubstatic/bannerEgrn/pic-gu.png);
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                    height: 15px;
+                    position: absolute;
+                    top: 8px;
+                    width: 100px;
+                    right: 200px;
+                }
+                .main-banner .banner-outer-right .img-rr {
+                    background-image: url(img/actions/pubstatic/bannerEgrn/pic-rr.png);
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                    height: 50px;
+                    position: absolute;
+                    top: 0px;
+                    right: 17px;
+                    width: 122px;
+                }
+                .main-banner .banner-outer-right .page-outer {
+                    position: absolute;
+                    right: 409px;
+                }
+                .main-banner .banner-outer-right .page-outer .page-small {
+                    background-image: url(img/actions/pubstatic/bannerEgrn/page-small.png);
+                    background-position: left bottom;
+                    background-repeat: no-repeat;
+                    height: 200px;
+                    position: absolute;
+                    top: 2px;
+                    left: -50px;
+                    width: 200px;
+                }
+                .main-banner .banner-outer-right .page-outer .page-small .page-big {
+                    background-image: url(img/actions/pubstatic/bannerEgrn/page-big.png);
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    height: 200px;
+                    position: absolute;
+                    top: 0px;
+                    left: 82px;
+                    width: 400px;
+                }
+            </style>
+            <div class="services-section-outer main-banner">
+                <div class="services-section_ins">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7">
+                            <div class="banner-outer-left">
+                                <div class="banner-left">
+                                    <h2>Главная новость</h2>
+                                    <p>
+                                        <br>
+                                        Нет новостей
+                                    </p>
+                                    <div class="activities_btn">
+                                        <a href="#">
+                                            <span>-</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs col-md-5">
+                            <div class="banner-outer-right">
+                                <div class="img-gu"></div>
+                                <div class="img-rr"></div>
+                                <div class="hidden-sm page-outer">
+                                    <div class="page-small">
+                                        <div class="page-big"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+ {% endblock %}
