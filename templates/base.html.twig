@@ -84,24 +84,24 @@
                     </div>
                 </header>
                 {% block menu %}
-                    <div class="navi-block">
-                        <nav class="navbar navbar-light bg-light">
-                            <div class="menu">
-                                <nav class="main-navi">
-                                    {{
-                                        knp_menu_render('main', {
-                                            'currentClass': 'active',
-                                            'firstClass': null,
-                                            'lastClass': null,
-                                            'ancestorClass': null,
-                                            'currentAsLink': null
-                                        }) |replace({'main-navi_item ':'main-navi_item', 'main-navi__drop menu_level_1':'main-navi__drop',
-                                        'main-navi__drop_item  ':'main-navi__drop_item'})|raw
-                                    }}
-                                </nav>
-                            </div>
-                        </nav>
-                    </div>
+                <div class="navi-block">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="menu">
+                            <nav class="main-navi">
+                                {{
+                                    knp_menu_render('main', {
+                                        'currentClass': 'active',
+                                        'firstClass': null,
+                                        'lastClass': null,
+                                        'ancestorClass': null,
+                                        'currentAsLink': null
+                                    }) |replace({'main-navi_item ':'main-navi_item', 'main-navi__drop menu_level_1':'main-navi__drop',
+                                    'main-navi__drop_item  ':'main-navi__drop_item'})|raw
+                                }}
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
                 {% endblock menu %}
             {% endblock header %}
 
@@ -114,6 +114,33 @@
                 {% block process %}
                 {% endblock %}
             </div>
+
+            {% block footer %}
+                <footer class="m-footer">
+                    <div class="m-footer_ins">
+                        <nav class="f-navi">
+                            {{
+                                knp_menu_render('main', {
+                                    'currentClass': 'active',
+                                    'firstClass': null,
+                                    'lastClass': null,
+                                    'ancestorClass': null,
+                                    'currentAsLink': null
+                                }) |replace({
+                                    'main-navi_list':'f-navi_list',
+                                    'main-navi_item ':'main-navi_item',
+                                    'main-navi__drop menu_level_1':'main-navi__drop',
+                                    'main-navi__drop_item  ':'main-navi__drop_item'
+                                })|raw
+                            }}
+                        </nav>
+                        <div class="copy-right">
+    © Федеральное государственное бюджетное учреждение «Федеральная кадастровая палата Федеральной службы государственной регистрации, кадастра и картографии», 2019 год
+                        </div>
+                    </div>
+                </footer>
+            {% endblock footer %}
+
         </div>
         {% block javascripts %}
 			{# <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> #}
