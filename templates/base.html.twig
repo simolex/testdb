@@ -114,34 +114,32 @@
                 {% block process %}
                 {% endblock %}
             </div>
-
-            {% block footer %}
-                <footer class="m-footer">
-                    <div class="m-footer_ins">
-                        <nav class="f-navi">
-                            {{
-                                knp_menu_render('main', {
-                                    'currentClass': 'active',
-                                    'firstClass': null,
-                                    'lastClass': null,
-                                    'ancestorClass': null,
-                                    'currentAsLink': null
-                                }) |replace({
-                                    'main-navi_list':'f-navi_list',
-                                    'main-navi_item ':'main-navi_item',
-                                    'main-navi__drop menu_level_1':'main-navi__drop',
-                                    'main-navi__drop_item  ':'main-navi__drop_item'
-                                })|raw
-                            }}
-                        </nav>
-                        <div class="copy-right">
-    © Федеральное государственное бюджетное учреждение «Федеральная кадастровая палата Федеральной службы государственной регистрации, кадастра и картографии», 2019 год
-                        </div>
-                    </div>
-                </footer>
-            {% endblock footer %}
-
         </div>
+        {% block footer %}
+            <footer class="m-footer">
+                <div class="m-footer_ins">
+                    <nav class="f-navi">
+                        {{
+                            knp_menu_render('main', {
+                                'currentClass': 'active',
+                                'firstClass': null,
+                                'lastClass': null,
+                                'ancestorClass': null,
+                                'currentAsLink': null
+                            }) |replace({
+                                'main-navi_list':'f-navi_list',
+                                'main-navi_item ':'main-navi_item',
+                                'main-navi__drop menu_level_1':'main-navi__drop',
+                                'main-navi__drop_item  ':'main-navi__drop_item'
+                            })|raw
+                        }}
+                    </nav>
+                    <div class="copy-right">
+                        © филиал ФГБУ «Федеральная кадастровая палата Росреестра» по Нижегородской области, 2019 год
+                    </div>
+                </div>
+            </footer>
+        {% endblock footer %}
         {% block javascripts %}
 			{# <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> #}
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

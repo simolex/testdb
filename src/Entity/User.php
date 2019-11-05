@@ -6,26 +6,42 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
+ * @ORM\Table(
+ *     name="USERS",
+ *     uniqueConstraints={
+ *         @ORM\UniqueConstraint(
+ *             name="PK_USER_ID", columns={"ID"}
+ *         )
+ *     },
+ * )
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
 class User implements UserInterface
 {
     /**
+     * @var int
+     *
      * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="SEQ_USER_ID", allocationSize=1, initialValue=1)
+     * @ORM\Column(name="ID", type="integer")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(name="EMAIL", type="string", length=180, unique=true)
      */
     private $email;
 
     /**
-     * @ORM\Column(type="json")
+     * @ORM\Column(name="ROLES", type="json")
      */
     private $roles = [];
+
+    /**
+     * @ORM\Column(name="FIRST_NAME", type="string", length=100, nullable=true)
+     */
+    private $firstName;
 
     public function getId(): ?int
     {
@@ -96,5 +112,17 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(?string $firstName): self
+    {
+        $this->firstName = $firstName;
+
+        return $this;
     }
 }
