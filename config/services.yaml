@@ -57,6 +57,15 @@ services:
     #         - { name: sonata.admin, manager_type: orm, group: Verification, label: VerKinds }
     #     #public: true
 
+    app.menu_builder:
+        class: App\Menu\MenuBuilder
+
+    app.main_menu:
+        class: 'Knp\Menu\MenuItem'
+        factory: ['@app.menu_builder', 'mainMenu']
+        tags:
+            - { name: knp_menu.menu, alias: main }
+
     admin.menu:
         class: App\Admin\MenuAdmin
         arguments: [~, App\Entity\Menu, ~]

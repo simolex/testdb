@@ -3,10 +3,12 @@
 namespace App\Menu;
 
 
-use App\Repository\MenuRepository;
-use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
+use Knp\Menu\FactoryInterface;
+use App\Repository\MenuRepository;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class MenuBuilder
 {
@@ -14,20 +16,23 @@ class MenuBuilder
 	private $repository;
     private $router;
 
-	public function __construct(FactoryInterface $factory, MenuRepository $repository, UrlGeneratorInterface $router)
+	public function __construct(
+        FactoryInterface $factory,
+        MenuRepository $repository,
+        UrlGeneratorInterface $router
+    )
 	{
 		$this->factory = $factory;
 		$this->repository = $repository;
-
         $this->router = $router;
 	}
 
-	public function mainMenu(array $options)
+	public function mainMenu(RequestStack $request): ItemInterface//array $options)
     {
         $menuItems = $this->repository->getMainMenu();
         $menu = $this->factory->createItem('root');
 
-        //$this->setCurrentItem($menu);
+        //$this->setCurrentItem($menu, $request);
 
         $menu->setChildrenAttribute('class', 'main-navi_list');
         //$menu->setChildrenAttribute('id', 'yw0');
@@ -61,7 +66,7 @@ class MenuBuilder
         return $menu;
     }
 
-    protected function setCurrentItem(ItemInterface $menu, Request $request)
+    protected function setCurrentItem(ItemInterface $menu, $request)
     {
         $menu->setCurrentUri($request->getPathInfo());
     }

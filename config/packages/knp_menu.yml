@@ -7,11 +7,3 @@ knp_menu:
     # the renderer to use, list is also available by default
     default_renderer: twig
 
-
-services:
-  app.menu_builder:
-    class: App\Menu\MenuBuilder
-    arguments: ["@knp_menu.factory", '@App\Repository\MenuRepository', '@router.default']
-    tags:
-      - { name: knp_menu.menu_builder, method: mainMenu, alias: main }
-

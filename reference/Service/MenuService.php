@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+/*namespace App\Service;
 
 use Symfony\Component\DependencyInjection\Container;
 
@@ -21,4 +21,4 @@ class MenuService
     {
         return $this->menuRepository->getMainMenu();
     }
-}
+}*/
