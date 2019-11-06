@@ -6,7 +6,7 @@
 		{{- form_label(form.name) -}}
 		{% set strategy = 'html' %}
 
-			{{ form_widget(form.name)|replace({'#tab':'&tab;'})|raw }}
+			{{ form_widget(form.name)|replace({'#tab':'%20'})|raw }}
 
 
 		{{- form_errors(form.name) -}}

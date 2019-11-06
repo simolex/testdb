@@ -11,7 +11,7 @@ knp_menu:
 services:
   app.menu_builder:
     class: App\Menu\MenuBuilder
-    arguments: ["@knp_menu.factory", '@App\Repository\MenuRepository']
+    arguments: ["@knp_menu.factory", '@App\Repository\MenuRepository', '@router.default']
     tags:
       - { name: knp_menu.menu_builder, method: mainMenu, alias: main }
 

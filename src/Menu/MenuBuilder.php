@@ -12,11 +12,14 @@ class MenuBuilder
 {
 	private $factory;
 	private $repository;
+    private $router;
 
-	public function __construct(FactoryInterface $factory, MenuRepository $repository)
+	public function __construct(FactoryInterface $factory, MenuRepository $repository, UrlGeneratorInterface $router)
 	{
 		$this->factory = $factory;
 		$this->repository = $repository;
+
+        $this->router = $router;
 	}
 
 	public function mainMenu(array $options)
@@ -38,7 +41,7 @@ class MenuBuilder
         		$parentItem
         			//->setAttribute("class", $parentItem->getAttribute('class')." dropdown")
         			->setChildrenAttribute('class', 'main-navi__drop')
-        			->addChild($item->getTitle(), array('uri' => $item->getRoute()))
+        			->addChild($item->getTitle(), array('uri' => $this->router->generate($item->getRoute())))
         			->setAttribute("class", "main-navi__drop_item")
         			->setLinkAttribute('class', 'main-navi__drop_link')
         		;
@@ -46,7 +49,7 @@ class MenuBuilder
 
         	} else {
 	        	$itemTitle = $item->getTitle();
-	            $menu->addChild($itemTitle, array('uri' => $item->getRoute()));
+	            $menu->addChild($itemTitle, array('uri' => $this->router->generate($item->getRoute())));
 	            $menu[$itemTitle]
 	            	->setAttribute('class', 'main-navi_item')
 	            	->setLinkAttribute('class', 'main-navi_link')
