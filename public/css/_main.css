@@ -918,3 +918,13 @@ td, th {
 }
 *, *:after, *:before {
 }
+
+.option-lev1::before {
+    content: "&#9;";
+    display: block;
+}
+
+.option-lev2::before {
+    content: "&#9;&#9;";
+    display: block;
+}

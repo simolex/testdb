@@ -93,7 +93,7 @@
                                         'currentClass': 'active',
                                         'firstClass': null,
                                         'lastClass': null,
-                                        'ancestorClass': null,
+                                         'ancestorClass': null,
                                         'currentAsLink': null
                                     }) |replace({'main-navi_item ':'main-navi_item', 'main-navi__drop menu_level_1':'main-navi__drop',
                                     'main-navi__drop_item  ':'main-navi__drop_item'})|raw
@@ -107,6 +107,18 @@
 
             {% block main_content %}
             {% endblock %}
+            {% block breadcrumb %}
+                <nav class="breadcrumbs">
+                    {{ dump(knp_menu_get_current_item('main'))}}
+                {% for breadcrumb_item in knp_menu_get_breadcrumbs_array(knp_menu_get_current_item('main')) %}
+                    {% if not loop.last %}
+                    <li><a href="{{ breadcrumb_item.uri }}">{{ breadcrumb_item.label }}</a></li>
+                    {% else %}
+                    <li class="active">{{ breadcrumb_item.label }}</li>
+                    {% endif %}
+                {% endfor %}
+                </ol>
+            {% endblock breadcrumb %}
 
             <div class="content">
                 {% block body %}
